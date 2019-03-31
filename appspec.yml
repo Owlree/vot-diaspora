@@ -1,8 +1,0 @@
-version: 0.0
-os: linux
-files:
-  - source: /
-    destination: /www/votdiaspora.ro
-hooks:
-  AfterInstall:
-    - location: scripts/install_and_build.sh
