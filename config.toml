@@ -1,3 +1,5 @@
 baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+languageCode = "ro-RO"
+DefaultContentLanguage = "ro"
+title = "Vot Diaspora"
+disableKinds = ["taxonomy", "taxonomyTerm"]
