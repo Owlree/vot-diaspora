@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 120%;
+}
+
+p {
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section div.content {
+    max-width: 40rem;
+}
+
+h1,h2, h3, h4, h5, h6 {
+     text-align: center;
+     text-transform: uppercase;
+     font-weight: normal;
+     letter-spacing: 0.1rem;
+}
+
+img {
+    margin: auto;
+}
+
+a:hover {
+    color: #fc0;
+    background-color: #352245
+}
+
+a {
+    background-color: #fc0;
+    color: #352245;
+    text-decoration: none;
+}
+
+a:after {
+    font-family: 'Font Awesome 5 Free';
+    content: " \f35d";
+}
