@@ -11,12 +11,17 @@ p {
     box-sizing: border-box;
 }
 
-section {
+section.code4.code4-section {
     padding: 5rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+section.code4.code4-section:nth-child(2n + 1) {
+    background-color:#352245; 
+    color:#fc0;
 }
 
 section div.content {
