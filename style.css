@@ -63,3 +63,9 @@ a:after {
     font-family: 'fontello';
     content: " \f08e";
 }
+
+/* General purpose classes */
+.hideOverflow {
+    height: 100%;
+    overflow: hidden;
+}
