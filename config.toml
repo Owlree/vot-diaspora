@@ -1,5 +1,0 @@
-baseURL = "http://example.org/"
-languageCode = "ro-RO"
-DefaultContentLanguage = "ro"
-title = "Vot Diaspora"
-disableKinds = ["taxonomy", "taxonomyTerm"]
