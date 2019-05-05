@@ -7,6 +7,7 @@
     <title>{{ .Site.Title }}</title>
     <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -14,6 +15,54 @@
 <body>
     {{ block "main" . }}
     {{ end }}
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+    <script>
+    
+        /*global L*/
+        var ourCustomControl = L.Control.extend({
+            options: {
+                position: 'topleft' 
+                //control position - allowed: 'topleft', 'topright', 'bottomleft', 'bottomright'
+            },
+            onAdd: function (map) {
+                var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-custom');
+                container.style.backgroundColor = 'white';
+                container.style.width = '30px';
+                container.style.height = '30px';
+                container.innerHTML = 'f';
+                container.onclick = function() {
+                    if (theMap.classList.contains('fullScreen')) {
+                        document.body.classList.remove('hideOverflow');
+                        window.scrollTo(0, scrollY);
+                        theMap.classList.remove('fullScreen');
+                        setTimeout(function() { map.invalidateSize(); }, 0);
+                    } else {
+                        document.body.classList.add('hideOverflow');
+                        scrollY = window.pageYOffset;
+                        window.scrollTo(0, 0);
+                        theMap.classList.add('fullScreen');
+                        setTimeout(function() { map.invalidateSize(); }, 0);
+                    }
+                }
+                return container;
+            }
+        });
+    
+        var map = L.map('theMap').setView([51.505, -0.09], 13);
+        map.addControl(new ourCustomControl());
+    
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+    
+        L.marker([51.5, -0.09]).addTo(map);
+        map.panTo(new L.LatLng(51.5, -0.09));
+    
+        let theMap = document.getElementById('theMap');
+        let scrollY = 0;
+        let isFullScreen = false;
+     </script>
+
 </body>
 
 </html>

@@ -1,9 +1,9 @@
 ---
 title: Prima pagină
 ---
-<div style='text-align:center'>
-<img src='logo.png' height=80/>
-</div>
+
+{{% section %}}
+{{< figure src="logo.png" alt="Vot Diaspora Logo" class="code4-center-text">}}
 # Votează din diaspora
 
 Pe 26 mai 2019 au loc alegerile europarlamentare. Românii de pretutindeni au dreptul de a-și alege reprezentanții în Parlamentul European.
@@ -15,3 +15,13 @@ Folosește harta de mai jos pentru a vedea care este cea mai apropiată secție 
 Surse:
 
 1. Situl oficial MAE, secțiunea privind exercitarea dreptului de vot https://www.mae.ro/node/48110
+{{% /section %}}
+{{% section %}} {{< maps >}} {{% /section %}}
+{{% section %}}
+# Înființarea unei secții
+Cea mai apropiată secție de vot e totuși prea departe de orașul sau satul unde locuiești?
+
+Poți cere înființarea unei secții de votare mai aproape de tine. Poți completa <a href='https://facem.declic.ro/campaigns/trimite-email-aep-mae'>acest formular</a> cu datele tale și trimite către AEP și MAE.
+
+După ce vei trimite cererea, un e-mail de confirmare te va ghida pentru trimiterea acesteia și către Ambasada României din țara unde locuiești.
+{{% /section %}}
