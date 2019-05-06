@@ -105,9 +105,19 @@
             .then(res => res.json())
             .then((out) => {
                 for (const location of out.locations) {
-                    L.marker(location.coordinates).addTo(map);
+                    L.marker(location.coordinates, {
+                        'title': location.name
+                    }).bindPopup("<b>" + location.name + "</b><br>" + location.address).addTo(map);
                 }
             }).catch(err => console.error(err));
+            
+        
+        navigator.geolocation.getCurrentPosition(function(position) {
+            map.setView([
+                position.coords.latitude,
+                position.coords.longitude
+            ], 13);
+        });
     
         let theMap = document.getElementById('theMap');
         let scrollY = 0;
