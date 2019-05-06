@@ -23,34 +23,11 @@ p, ul, ol {
     font-family: 'Roboto Slab', serif;
 }
 
-section {
-    padding: 5rem 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-section:nth-child(2n + 1) {
-    background-color:#352245; 
-    color:#fc0;
-}
-
-section div.content {
-    max-width: 40rem;
-}
-
-h1,h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
      text-align: center;
      text-transform: uppercase;
      font-weight: normal;
      letter-spacing: 0.1rem;
-}
-
-a:hover {
-    color: #fc0;
-    background-color: #352245;
-    text-decoration: underline;
 }
 
 a {
@@ -59,13 +36,84 @@ a {
     text-decoration: none;
 }
 
-a:after {
+a:hover {
+    color: #fc0;
+    background-color: #352245;
+    text-decoration: underline;
+}
+
+a[href^="http"]:after {
     font-family: 'fontello';
     content: " \f08e";
+}
+
+section.code4.code4-section {
+    padding: 5rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.code4.code4-section:nth-child(2n) {
+    background-color:#352245; 
+    color:#fc0;
+}
+
+section.code4.code4-section div.code4.code4-content {
+    max-width: 40rem;
+}
+
+section.code4.code4-section div.code4.code4-content-full {
+    width: 100%;
+}
+
+#theMap a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
 }
 
 /* General purpose classes */
 .hideOverflow {
     height: 100%;
     overflow: hidden;
+}
+
+.fullScreen {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    height: 100vh !important;
+    width: 100vw !important;
+    margin: 0 !important;
+}
+
+/* Leaflet */
+.leaflet-control-zoom-out, .leaflet-control-zoom-in {
+    border-radius: 0 !important;
+}
+
+.leaflet-bar {
+    box-shadow: none;
+}
+
+.leaflet-bar a, .leaflet-bar a:hover {
+    border-bottom: none;
+}
+
+.code4-center-text {
+    text-align: center;
+}
+
+p:empty {
+    display: none;
+}
+
+#theMapContainer {
+    width: 100%;
+}
+
+#theMap {
+    height: 27rem;
 }

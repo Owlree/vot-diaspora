@@ -15,12 +15,11 @@
 
 <body>
     
-    <section class='code4 code4-section'>
-    <div class='content'>
-
-<p><div style='text-align:center'>
-<img src='logo.png' height=80/>
-</div></p>
+    <p><section class='code4 code4-section'>
+    <div class='code4 code4-content'><figure class="code4-center-text">
+    <img src="logo.png"
+         alt="Vot Diaspora Logo"/> 
+</figure>
 
 <h1 id="votează-din-diaspora">Votează din diaspora</h1>
 
@@ -37,58 +36,84 @@
 </ol>
 </div>
 </section>
-    <section class='code4 code4-section'>
-    <div class='content'>
-        <h1>Unde poți vota?</h1>
-        <p>Caută orașul în care locuiești pentru a afla care sunt cele mai apropiate secții de votare.</p>
+
+<section class='code4 code4-section'>
+    <div class='code4 code4-content'><h1 id="unde-poți-vota">Unde poți vota?</h1>
+
+<p>Caută orașul în care locuiești pentru a afla care sunt cele mai apropiate secții de votare.</p>
+</div>
+    <div id='theMapContainer'>
+        <div id='theMap' class='votd-map'></div>
     </div>
-     <div id='theMap' style='width: 100%; height: 27rem; margin: 2rem; display: block;'>
-        <p>Harta vine aici</p>
-     </div>
-     <script>
-        let theMap = document.getElementById('theMap');
-        let theMapFullscreen = document.getElementById('theMapFullscreen');
-        let scrollY = 0;
-        
-        theMap.addEventListener('click', function() {
-            scrollY = window.pageYOffset;
-            document.body.className = 'hideOverflow';
-            window.scrollTo(0, 0);
-            theMap.style.position = 'absolute';
-            theMap.style.left = '0';
-            theMap.style.top = '0';
-            theMap.style.height = '100vh';
-            theMap.style.height = '100vw';
-            theMap.style.margin = '0';
-            map.invalidateSize();
-            map.panTo(new L.LatLng(51.5, -0.09));
-        });
-        
-     </script>
 </section>
 
-    <section class='code4 code4-section'>
-   <div class='content'>
-      <h1>Înființarea unei secții</h1>
-      <p>Cea mai apropiată secție de vot e totuși prea departe de orașul sau satul unde locuiești?</p>
-      <p>Poți cere înființarea unei secții de votare mai aproape de tine. Poți completa <a href='https://facem.declic.ro/campaigns/trimite-email-aep-mae'>acest formular</a> cu datele tale și trimite către AEP și MAE.</p>
-      <p>După ce vei trimite cererea, un e-mail de confirmare te va ghida pentru trimiterea acesteia și către Ambasada României din țara unde locuiești.</p>
-      </p>  
-   </div>
-</section>
+<section class='code4 code4-section'>
+    <div class='code4 code4-content'><h1 id="înființarea-unei-secții">Înființarea unei secții</h1>
 
-    
+<p>Cea mai apropiată secție de vot e totuși prea departe de orașul sau satul unde locuiești?</p>
+
+<p>Poți cere înființarea unei secții de votare mai aproape de tine. Poți completa <a href='https://facem.declic.ro/campaigns/trimite-email-aep-mae'>acest formular</a> cu datele tale și trimite către AEP și MAE.</p>
+
+<p>După ce vei trimite cererea, un e-mail de confirmare te va ghida pentru trimiterea acesteia și către Ambasada României din țara unde locuiești.</p>
+</div>
+</section>
+</p>
+
+
     <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
     <script>
+    
+         
+        var ourCustomControl = L.Control.extend({
+            options: {
+                position: 'topleft' 
+                
+            },
+            onAdd: function (map) {
+                var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-custom');
+                container.style.backgroundColor = 'white';
+                container.style.width = '30px';
+                container.style.height = '30px';
+                container.innerHTML = 'f';
+                container.onclick = function() {
+                    if (theMap.classList.contains('fullScreen')) {
+                        document.body.classList.remove('hideOverflow');
+                        window.scrollTo(0, scrollY);
+                        theMap.classList.remove('fullScreen');
+                        setTimeout(function() { map.invalidateSize(); }, 0);
+                    } else {
+                        document.body.classList.add('hideOverflow');
+                        scrollY = window.pageYOffset;
+                        window.scrollTo(0, 0);
+                        theMap.classList.add('fullScreen');
+                        setTimeout(function() { map.invalidateSize(); }, 0);
+                    }
+                }
+                return container;
+            }
+        });
+    
         var map = L.map('theMap').setView([51.505, -0.09], 13);
-        
+        map.addControl(new ourCustomControl());
+    
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
+    
         
-        L.marker([51.5, -0.09]).addTo(map);
-        map.panTo(new L.LatLng(51.5, -0.09));
-    </script>
+        fetch('data.json')
+            .then(res => res.json())
+            .then((out) => {
+                for (const location of out.locations) {
+                    L.marker(location.coordinates).addTo(map);
+                }
+            }).catch(err => console.error(err));
+    
+        let theMap = document.getElementById('theMap');
+        let scrollY = 0;
+        let isFullScreen = false;
+     </script>
+
 </body>
 
 </html>
