@@ -16,7 +16,10 @@ Surse:
 
 1. Situl oficial MAE, secțiunea privind exercitarea dreptului de vot https://www.mae.ro/node/48110
 {{% /section %}}
-{{% section %}} {{< maps >}} {{% /section %}}
+{{% section-map %}}
+# Unde poți vota?
+Caută orașul în care locuiești pentru a afla care sunt cele mai apropiate secții de votare.
+{{% /section-map %}}
 {{% section %}}
 # Înființarea unei secții
 Cea mai apropiată secție de vot e totuși prea departe de orașul sau satul unde locuiești?
