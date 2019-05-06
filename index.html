@@ -21,7 +21,7 @@
          alt="Vot Diaspora Logo"/> 
 </figure>
 
-<h1 id="votează-din-diaspora">Votează din diaspora</h1>
+<h1 id="vot-diaspora">Vot Diaspora</h1>
 
 <p>Pe 26 mai 2019 au loc alegerile europarlamentare. Românii de pretutindeni au dreptul de a-și alege reprezentanții în Parlamentul European.</p>
 
@@ -74,26 +74,26 @@
                 container.style.backgroundColor = 'white';
                 container.style.width = '30px';
                 container.style.height = '30px';
-                container.innerHTML = 'f';
-                container.onclick = function() {
+                container.innerHTML = '<a class="code4 code4-leaflet-control-fullScreen" href="#" title="Fullscreen" role="button" aria-label="Fullscreen">F</a>'
+                container.onclick = function(e) {
+                    e.preventDefault();
                     if (theMap.classList.contains('fullScreen')) {
                         document.body.classList.remove('hideOverflow');
                         window.scrollTo(0, scrollY);
                         theMap.classList.remove('fullScreen');
-                        setTimeout(function() { map.invalidateSize(); }, 0);
                     } else {
                         document.body.classList.add('hideOverflow');
                         scrollY = window.pageYOffset;
                         window.scrollTo(0, 0);
                         theMap.classList.add('fullScreen');
-                        setTimeout(function() { map.invalidateSize(); }, 0);
                     }
+                    setTimeout(function() { map.invalidateSize(); }, 0);
                 }
                 return container;
             }
         });
     
-        var map = L.map('theMap').setView([51.505, -0.09], 13);
+        var map = L.map('theMap').setView([51.505, -0.09], 8);
         map.addControl(new ourCustomControl());
     
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
