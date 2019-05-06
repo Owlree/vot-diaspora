@@ -4,7 +4,7 @@ title: Prima pagină
 
 {{% section %}}
 {{< figure src="logo.png" alt="Vot Diaspora Logo" class="code4-center-text">}}
-# Votează din diaspora
+# Vot Diaspora
 
 Pe 26 mai 2019 au loc alegerile europarlamentare. Românii de pretutindeni au dreptul de a-și alege reprezentanții în Parlamentul European.
 
