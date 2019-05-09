@@ -8,6 +8,7 @@
     <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -16,13 +17,13 @@
     {{ block "main" . }}
     {{ end }}
     <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
     <script>
-    
+
         /*global L*/
-        var ourCustomControl = L.Control.extend({
+        var fullScreenControl = L.Control.extend({
             options: {
-                position: 'topleft' 
-                //control position - allowed: 'topleft', 'topright', 'bottomleft', 'bottomright'
+                position: 'topleft'
             },
             onAdd: function (map) {
                 var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-custom');
@@ -32,46 +33,34 @@
                 container.innerHTML = '<a class="code4 code4-leaflet-control-fullScreen" href="#" title="Fullscreen" role="button" aria-label="Fullscreen">F</a>'
                 container.onclick = function(e) {
                     e.preventDefault();
-                    if (theMap.classList.contains('fullScreen')) {
-                        document.body.classList.remove('hideOverflow');
-                        window.scrollTo(0, scrollY);
-                        theMap.classList.remove('fullScreen');
-                    } else {
-                        document.body.classList.add('hideOverflow');
-                        scrollY = window.pageYOffset;
-                        window.scrollTo(0, 0);
-                        theMap.classList.add('fullScreen');
-                    }
-                    setTimeout(function() { map.invalidateSize(); }, 0);
+                    map.toggleFullscreen();
                 }
                 return container;
             }
         });
-    
+
         var map = L.map('theMap').setView([51.505, -0.09], 8);
-        map.addControl(new ourCustomControl());
-    
-        L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.{ext}', {
-        	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        	subdomains: 'abcd',
-        	minZoom: 0,
-        	maxZoom: 20,
-        	ext: 'png'
+        map.addControl(new fullScreenControl());
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            fullScreenControl: true,
+            zoomControl: false
         }).addTo(map);
-        
+
         // Create Vot Diaspora marker icon
         var votDiasporaMarker = L.icon({
             iconUrl: 'marker.png',
             iconSize: [20, 39],
             iconAnchor: [10, 39]
         });
-    
+
         // Get the JSON with locations
         fetch('data.json')
             .then(res => res.json())
             .then((out) => {
                 for (const location of out.locations) {
-                    const messageHtml = 
+                    const messageHtml =
                         '<b>' + location.name + '</b><br>' + location.address
                     L.marker(location.coordinates, {
                         'title': location.name,
@@ -81,15 +70,18 @@
                     }).addTo(map);
                 }
             }).catch(err => console.error(err));
-            
-        // Move to user's geolocation
-        navigator.geolocation.getCurrentPosition(function(position) {
-            map.setView([
-                position.coords.latitude,
-                position.coords.longitude
-            ], 13);
+        
+        let theLocateButton = document.getElementById('theLocateButton');
+        theLocateButton.addEventListener('mouseup', function(e) {
+            // Move to user's geolocation
+            navigator.geolocation.getCurrentPosition(function(position) {
+                map.setView([
+                    position.coords.latitude,
+                    position.coords.longitude
+                ], 13);
+            });
         });
-    
+
         let theMap = document.getElementById('theMap');
         let scrollY = 0;
         let isFullScreen = false;

@@ -23,7 +23,7 @@ p, ul, ol {
     font-family: 'Roboto Slab', serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, button {
      text-align: center;
      text-transform: uppercase;
      font-weight: normal;
@@ -53,11 +53,12 @@ section.code4.code4-section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: white;
 }
 
 section.code4.code4-section:nth-child(2n) {
-    background-color:#352245; 
-    color:#fc0;
+    background-color: #352245; 
+    color: #fc0;
 }
 
 section.code4.code4-section div.code4.code4-content {
@@ -106,6 +107,22 @@ section.code4.code4-section div.code4.code4-content-full {
     text-align: center;
 }
 
+button.code4.code4-button {
+    font-size: 1.1rem;
+    border: none;
+    padding: 1rem;
+    
+    background-color: #352245;
+    color: #fc0;
+    
+    cursor: pointer;
+}
+
+button.code4.code4-button:hover {
+    color: #352245;
+    background-color: #fc0;
+}
+
 p:empty {
     display: none;
 }
@@ -116,4 +133,5 @@ p:empty {
 
 #theMap {
     height: 27rem;
+    margin: 1rem 0;
 }
