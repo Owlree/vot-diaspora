@@ -1,13 +1,24 @@
 /* Delcare fontello font face (for icons) */
 @font-face {
     font-family: 'fontello';
-    src: url('fonts/fontello.eot?5819546');
-    src: url('fonts/fontello.eot?5819546#iefix')    format('embedded-opentype'),
-         url('fonts/fontello.woff?5819546')         format('woff'),
-         url('fonts/fontello.ttf?5819546')          format('truetype'),
-         url('fonts/fontello.svg?5819546#fontello') format('svg');
+    src: url('fonts/fontello.eot?32934886');
+    src: url('fonts/fontello.eot?32934886#iefix')    format('embedded-opentype'),
+         url('fonts/fontello.woff?32934886')         format('woff'),
+         url('fonts/fontello.ttf?32934886')          format('truetype'),
+         url('fonts/fontello.svg?32934886#fontello') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+
+/* Declare fontello classes */
+.icon-resize-full:before { font-family: 'fontello'; content: '\e800'; }
+.icon-link-ext:before    { font-family: 'fontello'; content: '\f08e'; }
+.icon-twitter:before     { font-family: 'fontello'; content: '\f099'; }
+.icon-facebook:before    { font-family: 'fontello'; content: '\f09a'; }
+.icon-linkedin:before    { font-family: 'fontello'; content: '\f0e1'; }
+
+p:empty {
+   display: none;
 }
 
 body {
@@ -24,10 +35,9 @@ p, ul, ol {
 }
 
 h1, h2, h3, h4, h5, h6, button {
-     text-align: center;
-     text-transform: uppercase;
-     font-weight: normal;
-     letter-spacing: 0.1rem;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
 }
 
 a {
@@ -56,7 +66,7 @@ section.code4.code4-section {
     background-color: white;
 }
 
-section.code4.code4-section:nth-child(2n) {
+section.code4.code4-section.code4-section-dark {
     background-color: #352245; 
     color: #fc0;
 }
@@ -69,25 +79,11 @@ section.code4.code4-section div.code4.code4-content-full {
     width: 100%;
 }
 
-#theMap a {
-    background-color: white;
-    color: black;
-    text-decoration: none;
-}
-
-/* General purpose classes */
-.hideOverflow {
-    height: 100%;
-    overflow: hidden;
-}
-
-.fullScreen {
-    position: absolute !important;
-    left: 0 !important;
-    top: 0 !important;
-    height: 100vh !important;
-    width: 100vw !important;
-    margin: 0 !important;
+section.code4.code4-section div.code4.code4-content.code4-content-alt {
+    background-color: #fc0;
+    color: #352245;
+    padding: 30pt;
+    margin: -60pt 0 0 0;
 }
 
 /* Leaflet */
@@ -124,6 +120,22 @@ button.code4.code4-button:hover {
     background-color: #fc0;
 }
 
+button.code4.code4-button-square {
+    width: 50px;
+    height: 50px;
+}
+
+div.code4.code4-content-alt button.code4.code4-button {
+    color: #352245;
+    background-color: #fc0;
+    border: 1px solid #352245;
+}
+
+div.code4.code4-content-alt button.code4.code4-button:hover {
+    background-color: #352245;
+    color: #fc0;
+}
+
 p:empty {
     display: none;
 }
@@ -135,4 +147,17 @@ p:empty {
 #theMap {
     height: 27rem;
     margin: 1rem 0;
+}
+
+#theDonateButton {
+    background-color: #3eb14d;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    font-weight: bold;
+}
+
+#theDonateButton:hover {
+    background-color: #5DCD66;
 }
