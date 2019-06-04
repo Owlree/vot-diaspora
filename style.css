@@ -89,6 +89,8 @@ section.code4.code4-section.code4-section-dark {
 /* Normal content */
 section.code4.code4-section div.code4.code4-content {
     max-width: 40rem;
+    padding: 3rem;
+    margin: -6rem 0 0 0;
 }
 
 /* Full width content */
@@ -100,8 +102,8 @@ section.code4.code4-section div.code4.code4-content-full {
 section.code4.code4-section div.code4.code4-content.code4-content-alt {
     background-color: #fc0;
     color: #352245;
-    padding: 30pt;
-    margin: -60pt 0 0 0;
+    padding: 3rem;
+    margin: -6rem 0 0 0;
 }
 
 /* Footer content */
