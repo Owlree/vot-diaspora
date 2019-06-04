@@ -19,7 +19,6 @@ Surse:
 {{% section-map %}}
 # Unde poți vota? {{% button id="theLocateButton" %}} Localizează-mă {{% /button %}}
 Caută orașul în care locuiești pentru a afla care sunt cele mai apropiate secții de votare.
-
 {{% /section-map %}}
 {{% section dark %}}
 # Înființarea unei secții
@@ -29,7 +28,6 @@ Poți cere înființarea unei secții de votare mai aproape de tine. Poți compl
 
 După ce vei trimite cererea, un e-mail de confirmare te va ghida pentru trimiterea acesteia și către Ambasada României din țara unde locuiești.
 {{% /section %}}
-
 {{% section dark alt %}}
 # Informează-ți prietenii
 Pe 26 mai 2019 au loc alegerile europarlamentare. Românii de pretutindeni au dreptul de a-și alege reprezentanții în Parlamentul European. Distribuie aceste informații în social media pentru a ajuta cât mai mulți români să afle unde pot vota.
@@ -40,10 +38,13 @@ Pe 26 mai 2019 au loc alegerile europarlamentare. Românii de pretutindeni au dr
 {{% button square %}} <span class='icon-linkedin'></span> {{% /button %}}
 </center>
 {{% /section %}}
-
 {{% section dark alt %}}
 # Susține-ne
 _Vot Diaspora_ este un proiect dezvoltat pro-bono de o echipă de voluntari [Code for Romania](https://code4.ro/ro/). În fiecare zi, sute dintre prietenii si colegii tăi lucrează pentru a construi intrumente digitale utile pentru a ne face viața mai ușoară și pentru a aduce România mai aproape de progresul tehnologic. Ajută-ne să mergem mai departe.
 
 <center><a id='theDonateButton' href='https://code4.ro/ro/doneaza/'>Donează</a></center>
+{{% /section %}}
+{{% section dark footer %}}
+© 2019 Code for Romania. Organizație neguvernamentală independentă, neafiliată politic și apolitică.
+{{< figure src="code4-white.svg" alt="Code for Romania Logo" class="code4-center-text" width="100">}}
 {{% /section %}}

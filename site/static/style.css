@@ -97,17 +97,16 @@ section.code4.code4-section div.code4.code4-content.code4-content-alt {
     margin: -60pt 0 0 0;
 }
 
-/* Leaflet */
-.leaflet-control-zoom-out, .leaflet-control-zoom-in {
-    border-radius: 0 !important;
+/* Footer content */
+section.code4.code4-section div.code4.code4-content.code4-content-footer {
+    text-align: center;
+    font-size: 1.2rem;
 }
-.leaflet-bar {
-    box-shadow: none;
-}
-.leaflet-bar a, .leaflet-bar a:hover {
-    border-bottom: none;
+section.code4.code4-section div.code4.code4-content.code4-content-footer p {
+    font-family: 'Roboto', sans-serif;
 }
 
+/* Code4 buttons */
 button.code4.code4-button {
     font-size: 1.1rem;
     border: none;
@@ -119,26 +118,33 @@ button.code4.code4-button {
     
     cursor: pointer;
 }
-
 button.code4.code4-button:hover {
     color: #352245;
     background-color: #fc0;
 }
-
 button.code4.code4-button-square {
     width: 50px;
     height: 50px;
 }
-
 div.code4.code4-content-alt button.code4.code4-button {
     color: #352245;
     background-color: #fc0;
     border: 1px solid #352245;
 }
-
 div.code4.code4-content-alt button.code4.code4-button:hover {
     background-color: #352245;
     color: #fc0;
+}
+
+/* Leaflet */
+.leaflet-control-zoom-out, .leaflet-control-zoom-in {
+    border-radius: 0 !important;
+}
+.leaflet-bar {
+    box-shadow: none;
+}
+.leaflet-bar a, .leaflet-bar a:hover {
+    border-bottom: none;
 }
 
 /* Special cases */
