@@ -65,12 +65,19 @@ a[href^="http"]:after {
 
 /* Normal section */
 section.code4.code4-section {
-    padding: 5rem 3rem;
+    padding: 5rem 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: white;
+}
+
+@media (min-width: 768px) {
+    section.code4.code4-section {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
 }
 
 /* Dark section */
