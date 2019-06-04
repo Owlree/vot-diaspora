@@ -45,6 +45,6 @@ _Vot Diaspora_ este un proiect dezvoltat pro-bono de o echipă de voluntari [Cod
 <center><a id='theDonateButton' href='https://code4.ro/ro/doneaza/'>Donează</a></center>
 {{% /section %}}
 {{% section dark footer %}}
-© 2019 Code for Romania. Organizație neguvernamentală independentă, neafiliată politic și apolitică.
+© 2019 Code for Romania.<br/>Organizație neguvernamentală independentă, neafiliată politic și apolitică.
 {{< figure src="code4-white.svg" alt="Code for Romania Logo" class="code4-center-text" width="100">}}
 {{% /section %}}
