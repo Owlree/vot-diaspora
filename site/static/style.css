@@ -17,8 +17,13 @@
 .icon-facebook:before    { font-family: 'fontello'; content: '\f09a'; }
 .icon-linkedin:before    { font-family: 'fontello'; content: '\f0e1'; }
 
-p:empty {
-   display: none;
+/* Hide empty elements */
+p:empty   { display: none; }
+div:empty { display: none; }
+
+/* General functionality */
+.code4-center-text {
+    text-align: center;
 }
 
 body {
@@ -52,11 +57,13 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Add external URL symbol to hrefs */
 a[href^="http"]:after {
     font-family: 'fontello';
     content: " \f08e";
 }
 
+/* Normal section */
 section.code4.code4-section {
     padding: 5rem 3rem;
     display: flex;
@@ -66,19 +73,23 @@ section.code4.code4-section {
     background-color: white;
 }
 
+/* Dark section */
 section.code4.code4-section.code4-section-dark {
     background-color: #352245; 
     color: #fc0;
 }
 
+/* Normal content */
 section.code4.code4-section div.code4.code4-content {
     max-width: 40rem;
 }
 
+/* Full width content */
 section.code4.code4-section div.code4.code4-content-full {
     width: 100%;
 }
 
+/* Highlighted content */
 section.code4.code4-section div.code4.code4-content.code4-content-alt {
     background-color: #fc0;
     color: #352245;
@@ -90,17 +101,11 @@ section.code4.code4-section div.code4.code4-content.code4-content-alt {
 .leaflet-control-zoom-out, .leaflet-control-zoom-in {
     border-radius: 0 !important;
 }
-
 .leaflet-bar {
     box-shadow: none;
 }
-
 .leaflet-bar a, .leaflet-bar a:hover {
     border-bottom: none;
-}
-
-.code4-center-text {
-    text-align: center;
 }
 
 button.code4.code4-button {
@@ -136,19 +141,14 @@ div.code4.code4-content-alt button.code4.code4-button:hover {
     color: #fc0;
 }
 
-p:empty {
-    display: none;
-}
-
+/* Special cases */
 #theMapContainer {
     width: 100%;
 }
-
 #theMap {
     height: 27rem;
     margin: 1rem 0;
 }
-
 #theDonateButton {
     background-color: #3eb14d;
     color: white;
@@ -157,7 +157,6 @@ p:empty {
     display: inline-block;
     font-weight: bold;
 }
-
 #theDonateButton:hover {
     background-color: #5DCD66;
 }
