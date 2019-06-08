@@ -1,7 +1,9 @@
 ---
 title: Prima pagină
 ---
-
+{{% section small %}}
+an app developed by <img src='code4-black.svg' style='vertical-align: middle; margin-top: -3px;' class='code4-text-height'/>
+{{% /section %}}
 {{% section dark %}}
 {{< figure src="logo.png" alt="Vot Diaspora Logo" class="code4-center-text">}}
 # Vot Diaspora

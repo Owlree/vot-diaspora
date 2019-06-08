@@ -25,6 +25,9 @@ div:empty { display: none; }
 .code4-center-text {
     text-align: center;
 }
+.code4-text-height {
+    height: 1em;
+}
 
 body {
     font-size: 120%;
@@ -80,6 +83,22 @@ section.code4.code4-section {
         padding-right: 3rem;
         padding-bottom: 5rem;
     }
+}
+
+/* Small section */
+section.code4.code4-section.code4-section-small {
+    padding: 0;
+}
+section.code4.code4-section.code4-section-small div.code4.code4-content {
+    padding: 0;
+    margin: 0;
+}
+section.code4.code4-section.code4-section-small a {
+    color: black;
+    background: none;
+}
+section.code4.code4-section.code4-section-small p {
+    margin: 1rem;
 }
 
 /* Dark section */
