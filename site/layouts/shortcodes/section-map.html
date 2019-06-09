@@ -1,5 +1,14 @@
-<section class='code4 code4-section'>
-    <div class='code4 code4-content'>{{ .Inner }}</div>
+{{ $sectionLayout := .Get 0 }}
+{{ $sectionColor := .Get 1 }}
+{{ $contentType := .Get 2 }}
+<section class='code4 code4-section 
+                {{ if $sectionLayout }} code4-section-{{ $sectionLayout }} {{ end }} 
+                {{ if $sectionColor }} code4-section-{{ $sectionColor }} {{ end }}'>
+    <div class='code4 code4-content {{ if $contentType }} code4-content-{{ $contentType }} {{ end }}'>
+        {{ .Inner }}
+        <div id='theLocations'>
+        </div>
+    </div>
     <div id='theMapContainer'>
         <div id='theMap' class='votd-map'></div>
     </div>

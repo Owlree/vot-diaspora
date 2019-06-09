@@ -20,7 +20,33 @@
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
     <script>
 
-        /*global L*/
+        /**
+         * Converts from degrees to radians.
+         */
+        function toRadians(degrees) {
+            return degrees * Math.PI / 180;
+        }
+
+        /**
+         * Returns the distance between two points on Earth using the haversine
+         * formula.
+         */
+        function getEarthDistance(lat1, lon1, lat2, lon2) {
+            var R = 6371e3; // Earth's radius in meters.
+            var φ1 = toRadians(lat1);
+            var φ2 = toRadians(lat2);
+
+            var Δφ = toRadians(lat2-lat1);
+            var Δλ = toRadians(lon2-lon1);
+
+            var a = Math.sin(Δφ/2) * Math.sin(Δφ/2) +
+                    Math.cos(φ1) * Math.cos(φ2) *
+                    Math.sin(Δλ/2) * Math.sin(Δλ/2);
+            var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+            var d = R * c;
+            return d;
+        }
+
         var fullScreenControl = L.Control.extend({
             options: {
                 position: 'topleft'
@@ -42,7 +68,7 @@
         var map = L.map('theMap').setView([51.505, -0.09], 8);
         map.addControl(new fullScreenControl());
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.svg?lang=ro', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
             fullScreenControl: true,
             zoomControl: false
@@ -55,11 +81,14 @@
             iconAnchor: [10, 39]
         });
 
+        let locations = [];
+
         // Get the JSON with locations
         fetch('data.json')
             .then(res => res.json())
             .then((out) => {
-                for (const location of out.locations) {
+                locations = out.locations;
+                for (const location of locations) {
                     const messageHtml =
                         '<b>' + location.name + '</b><br>' + location.address
                     L.marker(location.coordinates, {
@@ -70,11 +99,40 @@
                     }).addTo(map);
                 }
             }).catch(err => console.error(err));
-        
-        let theLocateButton = document.getElementById('theLocateButton');
+
+        let theLocateButton = document.getElementById('the-locate-button');
         theLocateButton.addEventListener('mouseup', function(e) {
-            // Move to user's geolocation
+
+            // Get user's current geolocation
             navigator.geolocation.getCurrentPosition(function(position) {
+                
+                console.log(position);
+
+                let myLat = position.coords.latitude;
+                let myLon = position.coords.longitude;
+
+                // Sort locations by distance to user
+                locations = locations.sort(function(l1, l2) {
+                    let lat1 = l1.coordinates[0];
+                    let lon1 = l1.coordinates[1];
+                    let lat2 = l2.coordinates[0];
+                    let lon2 = l2.coordinates[1];
+                    let d1 = getEarthDistance(myLat, myLon, lat1, lon1);
+                    let d2 = getEarthDistance(myLat, myLon, lat2, lon2);
+                    return d1 > d2;
+                });
+
+                // for (const location of locations) {
+                //     console.log(location.country, Math.floor(getEarthDistance(myLat, myLon, location.coordinates[0], location.coordinates[1])))
+                // }
+                
+                const theLocations = document.getElementById('theLocations');
+                theLocations.innerHTML = '<ol>';
+                for (let i = 0; i < 6; ++i) {
+                    theLocations.innerHTML += '<li>' + locations[i].address + ', ' + locations[i].country + '</li>';
+                }
+                theLocations.innerHTML += '</ol>';
+
                 map.setView([
                     position.coords.latitude,
                     position.coords.longitude
