@@ -46,6 +46,13 @@
             var d = R * c;
             return d;
         }
+        
+        //filter by class name if desired...
+        for (let p of document.getElementsByTagName('p')){
+            if (p.innerHTML.replace(/\s/g, '').length === 0){
+                p.style.display = 'none';
+            }
+        }
 
         var fullScreenControl = L.Control.extend({
             options: {
@@ -82,6 +89,7 @@
         });
 
         let locations = [];
+        let markers = [];
 
         // Get the JSON with locations
         fetch('data.json')
@@ -90,13 +98,15 @@
                 locations = out.locations;
                 for (const location of locations) {
                     const messageHtml =
-                        '<b>' + location.name + '</b><br>' + location.address
-                    L.marker(location.coordinates, {
+                        '<b>' + location.name + '</b><br>' + location.address;
+                    const marker = L.marker(location.coordinates, {
                         'title': location.name,
                         'icon': votDiasporaMarker
                     }).bindPopup(messageHtml, {
                         offset: [0, -34]
-                    }).addTo(map);
+                    });
+                    markers.push(marker);
+                    marker.addTo(map);
                 }
             }).catch(err => console.error(err));
 
@@ -121,24 +131,27 @@
                     let d2 = getEarthDistance(myLat, myLon, lat2, lon2);
                     return d1 > d2;
                 });
-
-                // for (const location of locations) {
-                //     console.log(location.country, Math.floor(getEarthDistance(myLat, myLon, location.coordinates[0], location.coordinates[1])))
-                // }
                 
                 const theLocations = document.getElementById('theLocations');
-                theLocations.innerHTML = '<ol>';
+                let ht = '<ol>';
+                let closestMarkers = [];
                 for (let i = 0; i < 6; ++i) {
-                    theLocations.innerHTML += '<li>' + locations[i].address + ', ' + locations[i].country + '</li>';
+                    closestMarkers.push(L.marker(locations[i].coordinates));
+                    ht += '<li onclick="goToLocation(' + i + ')"><h1>' + locations[i].name + '</h1><p>' + locations[i].address + ', ' + locations[i].country + '</p></li>';
                 }
-                theLocations.innerHTML += '</ol>';
-
-                map.setView([
-                    position.coords.latitude,
-                    position.coords.longitude
-                ], 13);
+                ht += '</ol>';
+                theLocations.innerHTML = ht;
+                
+                var group = new L.featureGroup(closestMarkers);
+                map.fitBounds(group.getBounds(), {
+                    'duration': 0
+                });
             });
         });
+        
+        function goToLocation(index) {
+            map.setView(locations[index].coordinates, 10);
+        }
 
         let theMap = document.getElementById('theMap');
         let scrollY = 0;

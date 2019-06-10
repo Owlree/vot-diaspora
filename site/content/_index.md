@@ -2,7 +2,7 @@
 title: Prima pagină
 ---
 {{% section small light %}}
-an app developed by <img src='code4-black.svg' style='vertical-align: middle; margin-top: -3px;' class='code4-text-height'/>
+o aplicație [dezvoltată](https://github.com/code4romania/vot-diaspora) de <img src='code4-black.svg' style='vertical-align: middle; margin-top: -3px;' class='code4-text-height'/>
 {{% /section %}}
 {{% section normal dark %}}
 {{< figure src="logo.png" alt="Vot Diaspora Logo" class="code4-center-text">}}
@@ -20,7 +20,7 @@ Surse:
 
 {{% /section %}}
 {{% section-map normal light %}}
-# Unde poți vota? {{% button locate %}} Localizează-mă {{% /button %}}
+# Unde pot vota? {{% button locate %}} Localizează-mă {{% /button %}}
 Caută orașul în care locuiești pentru a afla care sunt cele mai apropiate secții de votare.
 {{% /section-map %}}
 {{% section normal dark %}}
