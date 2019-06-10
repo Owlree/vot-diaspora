@@ -18,7 +18,20 @@
     
     <p>
 
-<section class='code4 code4-section  code4-section-dark '>
+
+<section class='code4 code4-section 
+                 code4-section-small  
+                 code4-section-light '>
+    <div class='code4 code4-content '><p>o aplicație <a href="https://github.com/code4romania/vot-diaspora">dezvoltată</a> de <img src='code4-black.svg' style='vertical-align: middle; margin-top: -3px;' class='code4-text-height'/></p>
+</div>
+</section>
+
+
+
+
+<section class='code4 code4-section 
+                 code4-section-normal  
+                 code4-section-dark '>
     <div class='code4 code4-content '><figure class="code4-center-text">
     <img src="logo.png"
          alt="Vot Diaspora Logo"/> 
@@ -40,11 +53,20 @@
 </div>
 </section>
 
-<section class='code4 code4-section'>
-    <div class='code4 code4-content'><h1 id="unde-poți-vota-button-class-code4-code4-button-code4-button-localizează-mă-button">Unde poți vota? <button class='code4 code4-button code4-button-'>Localizează-mă</button></h1>
+
+
+
+<section class='code4 code4-section 
+                 code4-section-normal  
+                 code4-section-light '>
+    <div class='code4 code4-content '>
+        <h1 id="unde-pot-vota-button-class-code4-code4-button-code4-button-locate-id-the-locate-button-localizează-mă-button">Unde pot vota? <button class='code4 code4-button code4-button-locate' id='the-locate-button'>Localizează-mă</button></h1>
 
 <p>Caută orașul în care locuiești pentru a afla care sunt cele mai apropiate secții de votare.</p>
-</div>
+
+        <div id='theLocations'>
+        </div>
+    </div>
     <div id='theMapContainer'>
         <div id='theMap' class='votd-map'></div>
     </div>
@@ -52,7 +74,10 @@
 
 
 
-<section class='code4 code4-section  code4-section-dark '>
+
+<section class='code4 code4-section 
+                 code4-section-normal  
+                 code4-section-dark '>
     <div class='code4 code4-content '><h1 id="înființarea-unei-secții">Înființarea unei secții</h1>
 
 <p>Cea mai apropiată secție de vot e totuși prea departe de orașul sau satul unde locuiești?</p>
@@ -65,23 +90,20 @@
 
 
 
-<section class='code4 code4-section  code4-section-dark '>
-    <div class='code4 code4-content  code4-content-alt '><h1 id="informează-ți-prietenii">Informează-ți prietenii</h1>
 
-<p>Pe 26 mai 2019 au loc alegerile europarlamentare. Românii de pretutindeni au dreptul de a-și alege reprezentanții în Parlamentul European. Distribuie aceste informații în social media pentru a ajuta cât mai mulți români să afle unde pot vota.</p>
+<section class='code4 code4-section 
+                 code4-section-small  
+                 code4-section-dark '>
+    <div class='code4 code4-content  code4-content-special '><h1 id="informează-ți-prietenii">Informează-ți prietenii</h1>
 
-<p><center>
-<button class='code4 code4-button code4-button-square'><span class='icon-facebook'></span></button>
-<button class='code4 code4-button code4-button-square'><span class='icon-twitter'></span></button>
-<button class='code4 code4-button code4-button-square'><span class='icon-linkedin'></span></button>
+<p>Pe 26 mai 2019 au loc alegerile europarlamentare. Românii de pretutindeni au dreptul de a-și alege reprezentanții în Parlamentul European. Distribuie aceste informații în social media pentru a ajuta cât mai mulți români să afle unde pot vota.
+<center>
+<button class='code4 code4-button code4-button-square' id='the-square-button'><span class='icon-facebook'></span></button>
+<button class='code4 code4-button code4-button-square' id='the-square-button'><span class='icon-twitter'></span></button>
+<button class='code4 code4-button code4-button-square' id='the-square-button'><span class='icon-linkedin'></span></button>
 </center></p>
-</div>
-</section>
 
-
-
-<section class='code4 code4-section  code4-section-dark '>
-    <div class='code4 code4-content  code4-content-alt '><h1 id="susține-ne">Susține-ne</h1>
+<h1 id="susține-ne">Susține-ne</h1>
 
 <p><em>Vot Diaspora</em> este un proiect dezvoltat pro-bono de o echipă de voluntari <a href="https://code4.ro/ro/">Code for Romania</a>. În fiecare zi, sute dintre prietenii si colegii tăi lucrează pentru a construi intrumente digitale utile pentru a ne face viața mai ușoară și pentru a aduce România mai aproape de progresul tehnologic. Ajută-ne să mergem mai departe.</p>
 
@@ -91,11 +113,14 @@
 
 
 
-<section class='code4 code4-section  code4-section-dark '>
-    <div class='code4 code4-content  code4-content-footer '><p>© 2019 Code for Romania.<br/>Organizație neguvernamentală independentă, neafiliată politic și apolitică.
+
+<section class='code4 code4-section 
+                 code4-section-normal  
+                 code4-section-dark '>
+    <div class='code4 code4-content  code4-content-footer '><p><center>© 2019 <a href="https://code4.ro/">Code for Romania</a><br/>Organizație neguvernamentală independentă, neafiliată politic și apolitică.</center>
 <figure class="code4-center-text">
-    <img src="code4-white.svg"
-         alt="Code for Romania Logo" width="100"/>
+    <img src="code4-symbol-yellow.png"
+         alt="Code for Romania Logo" height="32"/>
 </figure></p>
 </div>
 </section>
@@ -106,7 +131,37 @@
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
     <script>
 
-         
+        
+
+        function toRadians(degrees) {
+            return degrees * Math.PI / 180;
+        }
+
+        
+
+        function getEarthDistance(lat1, lon1, lat2, lon2) {
+            var R = 6371e3; 
+            var φ1 = toRadians(lat1);
+            var φ2 = toRadians(lat2);
+
+            var Δφ = toRadians(lat2-lat1);
+            var Δλ = toRadians(lon2-lon1);
+
+            var a = Math.sin(Δφ/2) * Math.sin(Δφ/2) +
+                    Math.cos(φ1) * Math.cos(φ2) *
+                    Math.sin(Δλ/2) * Math.sin(Δλ/2);
+            var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+            var d = R * c;
+            return d;
+        }
+        
+        
+        for (let p of document.getElementsByTagName('p')){
+            if (p.innerHTML.replace(/\s/g, '').length === 0){
+                p.style.display = 'none';
+            }
+        }
+
         var fullScreenControl = L.Control.extend({
             options: {
                 position: 'topleft'
@@ -128,7 +183,7 @@
         var map = L.map('theMap').setView([51.505, -0.09], 8);
         map.addControl(new fullScreenControl());
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.svg?lang=ro', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
             fullScreenControl: true,
             zoomControl: false
@@ -141,32 +196,70 @@
             iconAnchor: [10, 39]
         });
 
+        let locations = [];
+        let markers = [];
+
         
         fetch('data.json')
             .then(res => res.json())
             .then((out) => {
-                for (const location of out.locations) {
+                locations = out.locations;
+                for (const location of locations) {
                     const messageHtml =
-                        '<b>' + location.name + '</b><br>' + location.address
-                    L.marker(location.coordinates, {
+                        '<b>' + location.name + '</b><br>' + location.address;
+                    const marker = L.marker(location.coordinates, {
                         'title': location.name,
                         'icon': votDiasporaMarker
                     }).bindPopup(messageHtml, {
                         offset: [0, -34]
-                    }).addTo(map);
+                    });
+                    markers.push(marker);
+                    marker.addTo(map);
                 }
             }).catch(err => console.error(err));
-        
-        let theLocateButton = document.getElementById('theLocateButton');
+
+        let theLocateButton = document.getElementById('the-locate-button');
         theLocateButton.addEventListener('mouseup', function(e) {
+
             
             navigator.geolocation.getCurrentPosition(function(position) {
-                map.setView([
-                    position.coords.latitude,
-                    position.coords.longitude
-                ], 13);
+                
+                console.log(position);
+
+                let myLat = position.coords.latitude;
+                let myLon = position.coords.longitude;
+
+                
+                locations = locations.sort(function(l1, l2) {
+                    let lat1 = l1.coordinates[0];
+                    let lon1 = l1.coordinates[1];
+                    let lat2 = l2.coordinates[0];
+                    let lon2 = l2.coordinates[1];
+                    let d1 = getEarthDistance(myLat, myLon, lat1, lon1);
+                    let d2 = getEarthDistance(myLat, myLon, lat2, lon2);
+                    return d1 > d2;
+                });
+                
+                const theLocations = document.getElementById('theLocations');
+                let ht = '<ol>';
+                let closestMarkers = [];
+                for (let i = 0; i < 6; ++i) {
+                    closestMarkers.push(L.marker(locations[i].coordinates));
+                    ht += '<li onclick="goToLocation(' + i + ')"><h1>' + locations[i].name + '</h1><p>' + locations[i].address + ', ' + locations[i].country + '</p></li>';
+                }
+                ht += '</ol>';
+                theLocations.innerHTML = ht;
+                
+                var group = new L.featureGroup(closestMarkers);
+                map.fitBounds(group.getBounds(), {
+                    'duration': 0
+                });
             });
         });
+        
+        function goToLocation(index) {
+            map.setView(locations[index].coordinates, 10);
+        }
 
         let theMap = document.getElementById('theMap');
         let scrollY = 0;

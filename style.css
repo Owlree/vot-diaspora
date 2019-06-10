@@ -17,29 +17,32 @@
 .icon-facebook:before    { font-family: 'fontello'; content: '\f09a'; }
 .icon-linkedin:before    { font-family: 'fontello'; content: '\f0e1'; }
 
-/* Hide empty elements */
-p:empty   { display: none; }
-div:empty { display: none; }
-
 /* General functionality */
 .code4-center-text {
     text-align: center;
 }
+.code4-text-height {
+    height: 1em;
+}
 
 body {
-    font-size: 120%;
+    margin: 0; 
+    padding: 0; 
+    border: 0;
+}
+
+section.code4.code4-section div.code4.code4-content {
     font-family: 'Titillium Web', sans-serif;
-    
-    /* Reset sizings */
-    margin: 0; padding: 0; border: 0;
+    font-size: 120%;
 }
 
-p, ul, ol {
-    /* Only paragraphs and lists should have serifs */
-    font-family: 'Titillium Web', serif;
-}
-
-h1, h2, h3, h4, h5, h6, button {
+section.code4.code4-section div.code4.code4-content h1, 
+section.code4.code4-section div.code4.code4-content h2, 
+section.code4.code4-section div.code4.code4-content h3, 
+section.code4.code4-section div.code4.code4-content h4, 
+section.code4.code4-section div.code4.code4-content h5, 
+section.code4.code4-section div.code4.code4-content h6, 
+section.code4.code4-section div.code4.code4-content button {
     text-align: center;
     font-weight: normal;
     text-transform: uppercase;
@@ -47,130 +50,232 @@ h1, h2, h3, h4, h5, h6, button {
 
 /* Anchors */
 a {
-    color: #fc0;
-    background-color: #352245;
     text-decoration: underline;
     white-space: nowrap;
 }
 a:hover {
-    background-color: #fc0;
-    color: #352245;
     text-decoration: none;
 }
-
 /* Add external URL symbol to hrefs */
 a[href^='http']:after {
     font-family: 'fontello';
     content: '\00a0\f08e';
 }
 
-/* Normal section */
+/* Layout */
 section.code4.code4-section {
-    padding-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: white;
+}
+
+section.code4.code4-section.code4-section
+    div.code4.code4-content {
+        padding: 0 3rem;
+        max-width: 40rem;
+}
+
+section.code4.code4-section.code4-section
+    div.code4.code4-content.code4-content-special {
+        padding: 3rem;
 }
 
 @media (min-width: 768px) {
-    section.code4.code4-section {
-        padding-left: 3rem;
-        padding-right: 3rem;
-        padding-bottom: 5rem;
+    section.code4.code4-section.code4-section-normal {
+        padding: 3rem;
     }
 }
 
-/* Dark section */
-section.code4.code4-section.code4-section-dark {
-    background-color: #352245; 
-    color: #fc0;
-}
-
-/* Normal content */
-section.code4.code4-section div.code4.code4-content {
-    max-width: 40rem;
-    padding: 3rem;
-    margin: -6rem 0 0 0;
-}
-
-/* Full width content */
-section.code4.code4-section div.code4.code4-content-full {
-    width: 100%;
-}
-
-/* Highlighted content */
-section.code4.code4-section div.code4.code4-content.code4-content-alt {
-    background-color: #fc0;
-    color: #352245;
-}
-section.code4.code4-section div.code4.code4-content.code4-content-alt a {
-    background-color: #fc0;
-    color: #352245;
-    text-decoration: underline;
-    white-space: nowrap;
-}
-section.code4.code4-section div.code4.code4-content.code4-content-alt a:hover {
-    
-    color: #fc0;
-    background-color: #352245;
-    text-decoration: none;
-}
-
-/* Footer content */
-section.code4.code4-section div.code4.code4-content.code4-content-footer {
-    text-align: center;
-    font-size: 1.2rem;
-}
-section.code4.code4-section div.code4.code4-content.code4-content-footer p {
-    font-family: 'Titillium Web', sans-serif;
-}
-
-/* Code4 buttons */
 button.code4.code4-button {
     font-size: 1.1rem;
-    border: none;
     padding: 1rem;
     margin: 1rem 0;
-    
-    background-color: #352245;
-    color: #fc0;
-    
     cursor: pointer;
 }
-button.code4.code4-button:hover {
-    color: #352245;
-    background-color: #fc0;
-}
 button.code4.code4-button-square {
-    width: 50px;
-    height: 50px;
-}
-div.code4.code4-content-alt button.code4.code4-button {
-    color: #352245;
-    background-color: #fc0;
-    border: 1px solid #352245;
-}
-div.code4.code4-content-alt button.code4.code4-button:hover {
-    background-color: #352245;
-    color: #fc0;
+    width: 3em;
+    height: 3em;
 }
 
-/* Leaflet */
-.leaflet-control-zoom-out, .leaflet-control-zoom-in {
-    border-radius: 0 !important;
+/* Coloring */
+section.code4.code4-section.code4-section-light {
+    background-color: #FFF;
 }
-.leaflet-bar {
-    box-shadow: none;
+section.code4.code4-section.code4-section-light
+    div.code4.code4-content
+        button.code4.code4-button {
+            background-color: #352245;
+            color: #FFF;
+            border: 1px solid #352245;
 }
-.leaflet-bar a, .leaflet-bar a:hover {
-    border-bottom: none;
+section.code4.code4-section.code4-section-light
+    div.code4.code4-content
+        button.code4.code4-button:hover {
+            background-color: #FFF;
+            color: #000;
+            border: 1px solid #000;
 }
+section.code4.code4-section.code4-section-dark {
+    background-color: #352245;
+}
+section.code4.code4-section.code4-section-dark 
+    div.code4.code4-content {
+        color: #FC0;
+}
+section.code4.code4-section.code4-section-dark 
+    div.code4.code4-content
+        a {
+            color: #FC0;
+}
+section.code4.code4-section.code4-section-dark 
+    div.code4.code4-content
+        a:hover {
+            background: #FC0;
+            color: #352245;
+}
+section.code4.code4-section 
+    div.code4.code4-content.code4-content-special {
+        background-color: #FC0;
+        color: #352245;
+}
+section.code4.code4-section 
+    div.code4.code4-content.code4-content-special
+        button.code4.code4-button {
+        border: 1px solid #352245;
+        background-color: #352245;
+        color: #FC0;
+    }
+section.code4.code4-section 
+    div.code4.code4-content.code4-content-special
+        button.code4.code4-button:hover {
+        border: 1px solid #352245;
+        background-color: #FC0;
+        color: #352245;
+    }
+section.code4.code4-section 
+    div.code4.code4-content.code4-content-special
+        a {
+            color: #352245;
+    }
+section.code4.code4-section 
+    div.code4.code4-content.code4-content-special
+        a:hover {
+            background-color: #352245;
+            color: #FC0;
+    }
+
+/*@media (min-width: 768px) {*/
+/*    section.code4.code4-section {*/
+/*        margin: 3rem 0;*/
+/*        padding: 0 3rem;*/
+/*    }*/
+/*    section.code4.code4-section:first-of-type { margin-top: 0; }*/
+/*    section.code4.code4-section:last-of-type { margin-bottom: 1.5rem; }*/
+/*}*/
+
+/* Small section */
+/*section.code4.code4-section.code4-section-small {*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*}*/
+/*section.code4.code4-section.code4-section-small div.code4.code4-content {*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*}*/
+/*section.code4.code4-section.code4-section-small a {*/
+/*    color: black;*/
+/*    background: none;*/
+/*}*/
+/*section.code4.code4-section.code4-section-small p {*/
+/*    margin: 1rem;*/
+/*}*/
+
+/*section.code4.code4-section.code4-section-small-dark {*/
+/*    padding: 0;*/
+/*    background-color: #352245; */
+/*    color: #fc0;*/
+/*}*/
+/*section.code4.code4-section.code4-section-small-dark div.code4.code4-content {*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*}*/
+/*section.code4.code4-section.code4-section-small-dark p {*/
+/*    margin: 1rem;*/
+/*}*/
+
+/* Dark section */
+/*section.code4.code4-section.code4-section-dark {*/
+/*    background-color: #352245; */
+/*    color: #fc0;*/
+/*}*/
+
+/* Normal content */
+/*section.code4.code4-section div.code4.code4-content {*/
+/*    max-width: 40rem;*/
+/*    padding: 0 3rem;*/
+/*}*/
+
+/* Full width content */
+/*section.code4.code4-section div.code4.code4-content-full {*/
+/*    width: 100%;*/
+/*}*/
+
+/* Highlighted content */
+/*section.code4.code4-section div.code4.code4-content.code4-content-alt {*/
+/*    background-color: #fc0;*/
+/*    color: #352245;*/
+/*}*/
+/*section.code4.code4-section div.code4.code4-content.code4-content-alt a {*/
+/*    background-color: #fc0;*/
+/*    color: #352245;*/
+/*    text-decoration: underline;*/
+/*    white-space: nowrap;*/
+/*}*/
+/*section.code4.code4-section div.code4.code4-content.code4-content-alt a:hover {*/
+    
+/*    color: #fc0;*/
+/*    background-color: #352245;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/* Footer content */
+/*section.code4.code4-section div.code4.code4-content.code4-content-footer {*/
+/*    text-align: center;*/
+/*    font-size: 1.2rem;*/
+/*}*/
+/*section.code4.code4-section div.code4.code4-content.code4-content-footer p {*/
+/*    font-family: 'Titillium Web', sans-serif;*/
+/*    font-size: 75%;*/
+/*}*/
+
+/* Code4 buttons */
+/*button.code4.code4-button {*/
+/*    background-color: #352245;*/
+/*    color: #FC0;*/
+/*    border: 1px solid #FC0;*/
+    
+/*    cursor: pointer;*/
+/*}*/
+/*button.code4.code4-button:hover {*/
+/*    color: #352245;*/
+/*    background-color: #FC0;*/
+/*    border: 1px solid #352245;*/
+/*}*/
+/*div.code4.code4-content-alt button.code4.code4-button {*/
+/*    color: #352245;*/
+/*    background-color: #FC0;*/
+/*    border: 1px solid #352245;*/
+/*}*/
+/*div.code4.code4-content-alt button.code4.code4-button:hover {*/
+/*    background-color: #352245;*/
+/*    color: #FC0;*/
+/*}*/
 
 /* Special cases */
 #theMapContainer {
     width: 100%;
+    margin: 3rem 0;
 }
 #theMap {
     height: 27rem;
@@ -183,6 +288,35 @@ div.code4.code4-content-alt button.code4.code4-button:hover {
     display: inline-block;
     font-weight: bold;
 }
-#theDonateButton:hover {
-    background-color: #5DCD66;
+#theLocations ol {
+    list-style: none;
+    padding: 0;
+    column-count: 2;
+    column-gap: 1px;
+    column-rule: 1px solid white;
 }
+#theLocations li {
+    background-color: #352245;
+    color: #FFF;
+    display: inline-block;
+    width: 100%;
+    height: 10rem;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+    padding: 1em;
+}
+#theLocations ol li h1 {
+    text-align: left;
+    text-transform: none !important;
+}
+#theLocations ol li {
+    font-size: 75%;
+}
+#theLocations li:hover {
+    color: #000;
+    background-color: #FC0;
+    cursor: pointer;
+}
+/*#theDonateButton:hover {*/
+/*    background-color: #5DCD66;*/
+/*}*/
