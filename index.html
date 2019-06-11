@@ -3,7 +3,7 @@
 <html lang="ro">
 
 <head>
-	<meta name="generator" content="Hugo 0.55.0-DEV" />
+	<meta name="generator" content="Hugo 0.40.1" />
     <meta charset="utf-8">
     <title>Vot Diaspora</title>
     <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0" />
@@ -33,8 +33,10 @@
                  code4-section-normal  
                  code4-section-dark '>
     <div class='code4 code4-content '><figure class="code4-center-text">
-    <img src="logo.png"
-         alt="Vot Diaspora Logo"/> 
+    
+        <img src="logo.png" alt="Vot Diaspora Logo" />
+    
+    
 </figure>
 
 <h1 id="vot-diaspora">Vot Diaspora</h1>
@@ -117,11 +119,14 @@
 <section class='code4 code4-section 
                  code4-section-normal  
                  code4-section-dark '>
-    <div class='code4 code4-content  code4-content-footer '><p><center>© 2019 <a href="https://code4.ro/">Code for Romania</a><br/>Organizație neguvernamentală independentă, neafiliată politic și apolitică.</center>
+    <div class='code4 code4-content  code4-content-footer '><p><center>© 2019 <a href="https://code4.ro/">Code for Romania</a><br/>Organizație neguvernamentală independentă, neafiliată politic și apolitică.</center></p>
+
 <figure class="code4-center-text">
-    <img src="code4-symbol-yellow.png"
-         alt="Code for Romania Logo" height="32"/>
-</figure></p>
+    
+        <img src="code4-symbol-yellow.png" alt="Code for Romania Logo" height="32" />
+    
+    
+</figure>
 </div>
 </section>
 </p>
@@ -140,34 +145,40 @@
         
 
         function getEarthDistance(lat1, lon1, lat2, lon2) {
-            var R = 6371e3; 
-            var φ1 = toRadians(lat1);
-            var φ2 = toRadians(lat2);
+            const R = 6371e3; 
 
-            var Δφ = toRadians(lat2-lat1);
-            var Δλ = toRadians(lon2-lon1);
+            const φ1 = toRadians(lat1);
+            const φ2 = toRadians(lat2);
 
-            var a = Math.sin(Δφ/2) * Math.sin(Δφ/2) +
-                    Math.cos(φ1) * Math.cos(φ2) *
-                    Math.sin(Δλ/2) * Math.sin(Δλ/2);
-            var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-            var d = R * c;
-            return d;
+            const Δφ = toRadians(lat2 - lat1);
+            const Δλ = toRadians(lon2 - lon1);
+
+            
+            const h = Math.pow(Math.sin(Δφ / 2), 2) +
+                      Math.cos(φ1) * Math.cos(φ2) * 
+                      Math.pow(Math.sin(Δλ/2), 2);
+
+            
+            const d = 2 * R * Math.atan2(Math.sqrt(h), Math.sqrt(1 - h));
+            
+            return d
         }
+
         
         
-        for (let p of document.getElementsByTagName('p')){
+        for (const p of document.getElementsByTagName('p')){
             if (p.innerHTML.replace(/\s/g, '').length === 0){
                 p.style.display = 'none';
             }
         }
 
-        var fullScreenControl = L.Control.extend({
+        
+        const fullScreenControl = L.Control.extend({
             options: {
                 position: 'topleft'
             },
             onAdd: function (map) {
-                var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-custom');
+                const container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-custom');
                 container.style.backgroundColor = 'white';
                 container.style.width = '30px';
                 container.style.height = '30px';
@@ -206,7 +217,7 @@
                 locations = out.locations;
                 for (const location of locations) {
                     const messageHtml =
-                        '<b>' + location.name + '</b><br>' + location.address;
+                        '<b onclick="openInNative(' + location.coordinates[0] + ', ' + location.coordinates[1] + ')">' + location.name + '</b><br>' + location.address;
                     const marker = L.marker(location.coordinates, {
                         'title': location.name,
                         'icon': votDiasporaMarker
@@ -223,11 +234,12 @@
 
             
             navigator.geolocation.getCurrentPosition(function(position) {
-                
-                console.log(position);
 
-                let myLat = position.coords.latitude;
-                let myLon = position.coords.longitude;
+                
+                
+
+                let myLat = 51.505;
+                let myLon = -0.09;
 
                 
                 locations = locations.sort(function(l1, l2) {
@@ -237,28 +249,46 @@
                     let lon2 = l2.coordinates[1];
                     let d1 = getEarthDistance(myLat, myLon, lat1, lon1);
                     let d2 = getEarthDistance(myLat, myLon, lat2, lon2);
-                    return d1 > d2;
+                    return d1 - d2;
                 });
-                
+
                 const theLocations = document.getElementById('theLocations');
                 let ht = '<ol>';
                 let closestMarkers = [];
                 for (let i = 0; i < 6; ++i) {
                     closestMarkers.push(L.marker(locations[i].coordinates));
-                    ht += '<li onclick="goToLocation(' + i + ')"><h1>' + locations[i].name + '</h1><p>' + locations[i].address + ', ' + locations[i].country + '</p></li>';
+                    ht += '<li onclick="goToLocation(' + i + ')"><h1>' + 
+                          locations[i].name + 
+                          '</h1><p>' + 
+                          locations[i].address + ', ' + 
+                          locations[i].country + '</p></li>';
                 }
                 ht += '</ol>';
                 theLocations.innerHTML = ht;
-                
+
                 var group = new L.featureGroup(closestMarkers);
-                map.fitBounds(group.getBounds(), {
-                    'duration': 0
-                });
+                
+                
+                
+                map.setView([myLat, myLon], 8);
             });
         });
-        
+
         function goToLocation(index) {
             map.setView(locations[index].coordinates, 10);
+        }
+
+        function openInNative(lat, lon) {
+            console.log('but why ' + [lat, lon]);
+            if ((navigator.platform.indexOf("iPhone") != -1) ||
+                (navigator.platform.indexOf("iPad")   != -1) ||
+                (navigator.platform.indexOf("iPod")   != -1) || true) {
+                console.log('maps://maps.google.com/maps?daddr=' + lat + ',' + lon + '&amp;ll=');
+                
+            }
+            else {
+                window.open("https://maps.google.com/maps?daddr=' + lat + ',' + lon + '&amp;ll=");
+            }
         }
 
         let theMap = document.getElementById('theMap');
