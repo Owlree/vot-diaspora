@@ -1,0 +1,298 @@
+{
+    "places":[
+        {
+            "Coordinates":[
+                34.54584,
+                69.23227
+            ],
+            "Country":"Afghanistan",
+            "GoogleURL":"https://goo.gl/maps/oofzCcDipPDToqRC9",
+            "Loclist":"Kabul",
+            "Name":"Green Village",
+            "Number":1,
+            "PlusCode":"G6WM+MJ Kabul, Afghanistan",
+            "Street":"Jalalabad Road"
+        },
+        {
+            "AppleURL":"https://maps.apple.com/?address=Kabul,%20%D8%A7%D9%81%D8%BA%D8%A7%D9%86%D8%B3%D8%AA%D8%A7%D9%86&auid=12504435004193769973&ll=34.561522,69.210187 ",
+            "Coordinates":[
+                34.570729,
+                69.21584
+            ],
+            "Country":"Afghanistan",
+            "GoogleURL":"https://goo.gl/maps/5VCBwTeyKGSkzBDi8",
+            "Loclist":"Kabul",
+            "Name":"Hamid Karzai International Airport",
+            "Notes":"bază militară NATO",
+            "Number":2,
+            "Phone":"+93202300016",
+            "PlusCode":"H666+92 Kabul, Afghanistan",
+            "StNo":"1",
+            "Street":"Great Massoud Avenue",
+            "Website":"http://hamidkarzaiairport.com/"
+        },
+        {
+            "AppleURL":"https://maps.apple.com/?address=Kandahar%20International%20Airport,%20Kandahar,%20Afghanistan&auid=5053275812592132784&ll=31.502230,65.850710",
+            "Coordinates":[
+                31.628871,
+                65.737175
+            ],
+            "Country":"Afghanistan",
+            "GoogleURL":"https://goo.gl/maps/N7KgmmA3P7yLry2F8",
+            "Loclist":"Kandahar",
+            "Name":"Kandahar Airfield (KAF)",
+            "Notes":"bază militară NATO",
+            "Number":3,
+            "Phone":"+93703007296",
+            "PlusCode":"GV22+W7 Khvoshab, Afghanistan",
+            "Street":"Airport Road",
+            "Website":"http://www.kandaharinternationalairport.com/"
+        },
+        {
+            "AppleURL":"https://maps.apple.com/?address=117%20Justice%20Mahomed%20Street,%20Pretoria,%20GP,%200181,%20South%20Africa&auid=2379087753388876598&ll=-25.767060,28.234620",
+            "Coordinates":[
+                -25.767059,
+                28.234627
+            ],
+            "Country":"Africa de Sud",
+            "GoogleURL":"https://goo.gl/maps/eHKQkAmpHmMjUswW9",
+            "Loclist":"Brooklyn, Pretoria",
+            "Name":"Ambasada României în Republica Africa de Sud",
+            "Number":4,
+            "Phone":"+27124606941",
+            "PlusCode":"66MM+5R Pretoria, South Africa",
+            "Postcode":"0181",
+            "StNo":"877",
+            "Street":"Justice Mahomed St",
+            "Website":"https://pretoria.mae.ro/"
+        },
+        {
+            "AppleURL":"https://maps.apple.com/?address=53%20Herschel%20Road\\,%20Southern%20Suburbs\\,%20WC\\,%207708\\,%20South%20Africa&auid=1111729331254364514&ll=-33.991500\\,18.461360",
+            "Coordinates":[
+                -33.99151,
+                18.461623
+            ],
+            "Country":"Africa de Sud",
+            "GoogleURL":"https://goo.gl/maps/CJymBYNCBKRxFHGv5",
+            "Loclist":"Kenilworth, Cape Town",
+            "Name":"Consulatul General al României la Cape Town",
+            "Number":5,
+            "Phone":"+27217611781",
+            "PlusCode":"2F56+9G Kenilworth, Southern Suburbs, Cape Town, South Africa",
+            "Postcode":"7708",
+            "StNo":"24",
+            "Street":"Highwick Dr",
+            "Website":"https://capetown.mae.ro/"
+        },
+        {
+            "Coordinates":[
+                41.315014,
+                19.835769
+            ],
+            "Country":"Albania",
+            "Loclist":"Tirana",
+            "Name":"Ambasada României în Republica Albania",
+            "Number":6,
+            "Phone":"+35542303134",
+            "PlusCode":"8R7P+R8 Tirana, Albania",
+            "StNo":"15",
+            "Street":"Rruga Pandeli Vangjeli\n",
+            "Website":"https://tirana.mae.ro"
+        },
+        {
+            "Coordinates":[
+                36.745824,
+                3.038152
+            ],
+            "Country":"Algeria",
+            "GoogleURL":"https://goo.gl/maps/EsMcpD84pe5ubxXU9",
+            "LocalName":"Ambassade de Roumanie",
+            "Loclist":"Hydra",
+            "Name":"Ambasada României în Republica Algeriană Democratică și Populară",
+            "Number":7,
+            "Phone":"+21323485587",
+            "PlusCode":"P2WQ+67 Algiers, Algeria",
+            "Postcode":"16035",
+            "StNo":"24",
+            "Street":"Rue Abri Arezki",
+            "Website":"https://alger.mae.ro/"
+        },
+        {
+            "Coordinates":[
+                -8.828362,
+                13.236122
+            ],
+            "Country":"Angola",
+            "GoogleURL":"https://goo.gl/maps/eMd5p7Cx5CbAUvds7",
+            "LocalName":"Embaixada da Romênia",
+            "Loclist":"Luanda",
+            "Name":"Ambasada României în Republica Angola",
+            "Number":8,
+            "Phone":"+244222321076",
+            "PlusCode":"56CP+JG Luanda, Angola",
+            "Street":"Rau Ramalho Ortigao",
+            "Website":"https://luanda.mae.ro/"
+        },
+        {
+            "AppleURL":"https://maps.apple.com/?address=Ameen%20Al%20Raihany%20Alley%202717,%20Riyadh,%20Riyadh%2012273,%20Saudi%20Arabia&auid=4734480546829549215&ll=24.742145,46.665783",
+            "Coordinates":[
+                24.742237,
+                46.665579
+            ],
+            "Country":"Arabia Saudită",
+            "GoogleURL":"https://goo.gl/maps/HLVBAe2QBLgAyaFe7",
+            "LocalName":"سفارة رومانيا",
+            "Loclist":"Riyadh",
+            "Name":"Ambasada României în Regatul Arabiei Saudite",
+            "Notes":"Villa no. 8",
+            "Number":9,
+            "Phone":"+966112630456",
+            "PlusCode":"PMR8+V8 King Fahd, Riyadh Saudi Arabia",
+            "Street":"Amin Al Rehany",
+            "Website":"https://riyadh.mae.ro/"
+        },
+        {
+            "AppleURL":"https://maps.apple.com/?address=Calle%20Suipacha%201390,%20C1011%20Buenos%20Aires,%20Autonomous%20City%20of%20Buenos%20Aires,%20Argentina&auid=9297824246768659300&ll=-34.591575,-58.381242",
+            "Coordinates":[
+                -34.591484,
+                -58.380916
+            ],
+            "Country":"Argentina",
+            "GoogleURL":"https://goo.gl/maps/Hzo9cGyJPA2zyhBv8",
+            "LocalName":"Embajada de Rumania",
+            "Loclist":"Buenos Aires",
+            "Name":"Ambasada României în Republica Argentina",
+            "Number":10,
+            "Phone":"+541143228656",
+            "PlusCode":"CJ59+7J Buenos Aires, Argentina",
+            "StNo":"962–970",
+            "Street":"Calle Arroyo ",
+            "Website":"https://buenosaires.mae.ro/"
+        },
+        {
+            "Coordinates":[
+                40.196208,
+                44.485391
+            ],
+            "Country":"Armenia",
+            "GoogleURL":"https://goo.gl/maps/PBXhwpME956DTtW38",
+            "LocalName":"Ռումինիայի դեսպանատուն",
+            "Loclist":"Arabkir, Yerevan",
+            "Name":"Ambasada României în Republica Armenia",
+            "Number":11,
+            "Phone":"+37410275332",
+            "PlusCode":"5FWP+XJ Yerevan, Armenia",
+            "Postcode":"0028",
+            "StNo":"15",
+            "Street":"Barbusse St",
+            "Website":"https://erevan.mae.ro/"
+        },
+        {
+            "AppleURL":"https://maps.apple.com/?address=448%20St%20Kilda%20Road,%20Melbourne%20VIC%203004,%20Australia&ll=-37.838524,144.975504",
+            "Coordinates":[
+                -37.838249,
+                144.975597
+            ],
+            "Country":"Australia",
+            "GoogleURL":"https://goo.gl/maps/6WrvnNxvDzNFaiuZ6",
+            "Loclist":"Melbourne ",
+            "Name":"Biroul Consular Melbourne al Ambasadei României",
+            "Number":12,
+            "Postcode":" VIC 3004",
+            "StNo":"448",
+            "Street":"St Kilda Rd"
+        },
+        {
+            "AppleURL":"https://maps.apple.com/?address=4%20Dalman%20Crescent,%20O'Malley%20ACT%202606,%20Australia&auid=13290136396760450171&ll=-35.350124,149.108627",
+            "Coordinates":[
+                -35.350296,
+                149.10872
+            ],
+            "Country":"Australia",
+            "GoogleURL":"https://goo.gl/maps/KR8pcTzqTCBvMiUe9",
+            "LocalName":"Embassy of Romania",
+            "Loclist":"O'Malley",
+            "Name":"Ambasada României în Australia",
+            "Number":13,
+            "Phone":"+61262862343",
+            "PlusCode":"J4X5+VF Canberra, Australian Capital Territory, Australia",
+            "Postcode":"ACT 2606",
+            "StNo":"4",
+            "Street":"Dalman Cres",
+            "Website":"https://canberra.mae.ro/"
+        },
+        {
+            "AppleURL":"https://maps.apple.com/?address=32%20Rosa%20Street,%20Goodwood%20SA%205034,%20Australia&auid=4350323953941386244&ll=-34.950848,138.590530",
+            "Coordinates":[
+                -34.950576,
+                138.590489
+            ],
+            "Country":"Australia",
+            "GoogleURL":"https://goo.gl/maps/BiRrEzKg7bohytSz7",
+            "Loclist":"Goodwood, Adelaide",
+            "Name":"Goodwood Community Services Inc",
+            "Number":14,
+            "Phone":"+61882727148",
+            "PlusCode":"2HXR+M6 Goodwood, South Australia, Australia",
+            "Postcode":"SA 5034",
+            "StNo":"32–34",
+            "Street":"Rosa St",
+            "Website":"http://www.goodwoodcs.org.au/"
+        },
+        {
+            "AppleURL":"https://maps.apple.com/?address=8%20Balga%20Avenue,%20Balga%20WA%206061,%20Australia&auid=8236730506571696593&ll=-31.855755,115.838777",
+            "Coordinates":[
+                -31.855998,
+                115.8389
+            ],
+            "Country":"Australia",
+            "GoogleURL":"https://goo.gl/maps/8UNWpG82AXpoNv9M8",
+            "LocalName":"Romanian Pentecostal Church Perth",
+            "Loclist":"Balga",
+            "Name":"Biserica Penticostală Perth ",
+            "Number":15,
+            "Phone":"+61893453888",
+            "PlusCode":"4RVQ+FH Balga, Western Australia, Australia",
+            "Postcode":"WA 6061",
+            "StNo":"8",
+            "Street":"Balga Ave",
+            "Website":"http://www.bisericaperth.com/."
+        },
+        {
+            "AppleURL":"https://maps.apple.com/?address=84%20Elizabeth%20Bay%20Road,%20Elizabeth%20Bay%20NSW%202011,%20Australia&auid=17249064050938982734&ll=-33.872120,151.229330",
+            "Coordinates":[
+                -33.864472,
+                151.20582
+            ],
+            "Country":"Australia",
+            "GoogleURL":"https://goo.gl/maps/jD43Gw8zsLpkyrbq8",
+            "LocalName":"Consulate General of Romania in Sydney",
+            "Loclist":"Sydney",
+            "Name":"Consulatul General al României la Sydney",
+            "Number":16,
+            "Phone":"+61292993764",
+            "PlusCode":"46J4+79 Sydney, New South Wales, Australia",
+            "Postcode":"NSW 2000",
+            "StNo":"83 ",
+            "Street":"York St",
+            "Website":"https://sydney.mae.ro/"
+        },
+        {
+            "AppleURL":"https://maps.apple.com/?address=4%20Ponderosa%20Street,%20Hillcrest%20QLD%204118,%20Australia&auid=4551955010243732364&ll=-27.665423,153.029771",
+            "Coordinates":[
+                -27.665126,
+                153.029824
+            ],
+            "Country":"Australia",
+            "GoogleURL":"https://goo.gl/maps/G3bW21pjnFU6t7Uh8",
+            "Loclist":"Hillcrest, Brisbane",
+            "Name":"Sediul asociației Româno-Australiană UNIREA",
+            "Number":17,
+            "Phone":"+61411787933",
+            "PlusCode":"82MH+RW Hillcrest, Queensland, Australia",
+            "StNo":"4",
+            "Street":"Ponderosa Street",
+            "Website":"http://unirea.org.au/"
+        }
+    ]
+}
