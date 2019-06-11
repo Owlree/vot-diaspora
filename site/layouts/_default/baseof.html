@@ -98,7 +98,7 @@
                 locations = out.locations;
                 for (const location of locations) {
                     const messageHtml =
-                        '<b>' + location.name + '</b><br>' + location.address;
+                        '<b onclick="openInNative(' + location.coordinates[0] + ', ' + location.coordinates[1] + ')">' + location.name + '</b><br>' + location.address;
                     const marker = L.marker(location.coordinates, {
                         'title': location.name,
                         'icon': votDiasporaMarker
@@ -151,6 +151,19 @@
         
         function goToLocation(index) {
             map.setView(locations[index].coordinates, 10);
+        }
+        
+        function openInNative(lat, lon) {
+            console.log('but why ' + [lat, lon]);
+            if ((navigator.platform.indexOf("iPhone") != -1) || 
+                (navigator.platform.indexOf("iPad")   != -1) || 
+                (navigator.platform.indexOf("iPod")   != -1) || true) {
+                console.log('maps://maps.google.com/maps?daddr=' + lat + ',' + lon + '&amp;ll=');
+                // window.open('maps://maps.google.com/maps?daddr=' + lat + ',' + lon + '&amp;ll=');
+            }
+            else {
+                window.open("https://maps.google.com/maps?daddr=' + lat + ',' + lon + '&amp;ll=");
+            }
         }
 
         let theMap = document.getElementById('theMap');
