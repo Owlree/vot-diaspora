@@ -89,7 +89,7 @@
             }
         });
 
-        var map = L.map('theMap').setView([51.505, -0.09], 8);
+        var map = L.map('theMap').setView([31.502574, 65.851282], 8);
         map.addControl(new fullScreenControl());
 
         L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.svg?lang=ro', {
@@ -106,27 +106,25 @@
         });
 
         let locations = [];
-        let markers = [];
 
         // Get the JSON with locations
         fetch('data2.json')
             .then(res => res.json())
             .then((out) => {
-                console.log(out);
-                locations = out.locations;
+                locations = out.places;
                 for (const location of locations) {
-                    let coordinates = location.Coordinates.split(',');
+                    let coordinates = location.Coordinates;
                     coordinates[0] = parseFloat(coordinates[0]);
                     coordinates[1] = parseFloat(coordinates[1]);
-                    let street = location['Street Address'];
-                    if (location['St #'].length > 0) {
-                        street = location['St #'] + ' ' + street;
+                    let street = location['Street'];
+                    if (location['StNo'] && location['StNo'].length > 0) {
+                        street = location['StNo'] + ' ' + street;
                     }
                     const messageHtml =
-                        '<h1 style="margin:0"><a href="' + location['Google Link'] + '">' + location.Name + '</a></h1>' +
-                        '<h2 style="margin:0">Secția de vot nr. ' + location.Number + '</h2>' +
-                        '<p style="margin:0">' + street + '</p>' +
-                        '<p style="margin:0">' + location.Phone + '</p>' +
+                        '<h1 style="margin:0">Secția de votare nr. ' + location.Number + '</h1><hr>' +
+                        '<h2 style="margin:0">' + location.Name + '</h2>' +
+                        '<p style="margin:0"><a href="' + getNativeURL(location.Number) + '">' + street + '</a></p>' +
+                        '<p style="margin:0">Telefon <a href="tel:' + location.Phone + '">' + location.Phone + '</a></p>' +
                         '<p style="margin:0"><a href="' + location.Website + '">' + location.Website + '</a></p>'
                     const marker = L.marker(coordinates, {
                         'title': location.Name,
@@ -134,7 +132,7 @@
                     }).bindPopup(messageHtml, {
                         offset: [0, -34]
                     });
-                    markers.push(marker);
+                    location.Marker = marker;
                     marker.addTo(map);
                 }
             }).catch(err => console.error(err));
@@ -153,10 +151,10 @@
 
                 // Sort locations by distance to user
                 locations = locations.sort(function(l1, l2) {
-                    let lat1 = l1.coordinates[0];
-                    let lon1 = l1.coordinates[1];
-                    let lat2 = l2.coordinates[0];
-                    let lon2 = l2.coordinates[1];
+                    let lat1 = l1.Coordinates[0];
+                    let lon1 = l1.Coordinates[1];
+                    let lat2 = l2.Coordinates[0];
+                    let lon2 = l2.Coordinates[1];
                     let d1 = getEarthDistance(myLat, myLon, lat1, lon1);
                     let d2 = getEarthDistance(myLat, myLon, lat2, lon2);
                     return d1 - d2;
@@ -166,39 +164,42 @@
                 let ht = '<ol>';
                 let closestMarkers = [];
                 for (let i = 0; i < 6; ++i) {
-                    closestMarkers.push(L.marker(locations[i].coordinates));
-                    ht += '<li onclick="goToLocation(' + i + ')"><h1>' + 
-                          locations[i].name + 
-                          '</h1><p>' + 
-                          locations[i].address + ', ' + 
-                          locations[i].country + '</p></li>';
+                    closestMarkers.push(locations[i].Marker);
+                    ht += '<li onclick="goToLocation(' + i + ')"><h1>' + locations[i].Name + '</h1>';
                 }
                 ht += '</ol>';
                 theLocations.innerHTML = ht;
 
                 var group = new L.featureGroup(closestMarkers);
-                // map.fitBounds(group.getBounds(), {
-                //     'duration': 0
-                // });
-                map.setView([myLat, myLon], 8);
+                map.fitBounds(group.getBounds(), {
+                    'duration': 0
+                });
             });
         });
 
         function goToLocation(index) {
-            map.setView(locations[index].coordinates, 10);
+            map.setView(locations[index].Coordinates, 10);
+            locations[index].Marker.openPopup();
         }
 
-        function openInNative(lat, lon) {
-            console.log('but why ' + [lat, lon]);
+        function getNativeURL(id) {
+            let location = null;
+            for (l of locations) {
+                if (l.Number == id) {
+                    location = l;
+                    break;
+                }
+            }
+            if (!location) return;
             if ((navigator.platform.indexOf("iPhone") != -1) ||
                 (navigator.platform.indexOf("iPad")   != -1) ||
-                (navigator.platform.indexOf("iPod")   != -1) || true) {
-                console.log('maps://maps.google.com/maps?daddr=' + lat + ',' + lon + '&amp;ll=');
-                // window.open('maps://maps.google.com/maps?daddr=' + lat + ',' + lon + '&amp;ll=');
+                (navigator.platform.indexOf("iPod")   != -1) ||
+                (navigator.platform.indexOf("Mac")    != -1)) {
+                if (location.AppleURL) {
+                    return location.AppleURL;
+                }
             }
-            else {
-                window.open("https://maps.google.com/maps?daddr=' + lat + ',' + lon + '&amp;ll=");
-            }
+            return location.GoogleURL;
         }
 
         let theMap = document.getElementById('theMap');
