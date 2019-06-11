@@ -1,0 +1,3730 @@
+{
+    "locations":[
+        {
+            "address":"Str. Grigore Ureche nr. 2, Chișinău",
+            "name":"Secțiile de votare Nr. 245 și 246",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                47.022021,
+                28.853491
+            ]
+        },
+        {
+            "address":"Via Venezia N. 50, CP.  74121, Taranto",
+            "name":"Secția de votare Nr. 168",
+            "country":"Italia",
+            "coordinates":[
+                40.464762,
+                17.271573
+            ]
+        },
+        {
+            "address":"Real Monasterio de San Augustín, C/ Madrid 24, 09002 Burgos",
+            "name":"Secția de votare Nr. 377",
+            "country":"Spania",
+            "coordinates":[
+                42.334487,
+                -3.699846
+            ]
+        },
+        {
+            "address":"Scuola Media Fausto Gullo, via Popilia snc.,CP. 87100 , Cosenza",
+            "name":"Secția de votare Nr. 169",
+            "country":"Italia",
+            "coordinates":[
+                39.304004,
+                16.256472
+            ]
+        },
+        {
+            "address":"110 W Liberty st., Plymouth, MI 48170",
+            "name":"Secția de votare Nr. 392",
+            "country":"SUA",
+            "coordinates":[
+                42.379586,
+                -83.46103
+            ]
+        },
+        {
+            "address":"6420 Marmaduke Ave, St. Louis, MO 63130",
+            "name":"Secția de votare Nr. 395",
+            "country":"SUA",
+            "coordinates":[
+                38.610349,
+                -90.29682
+            ]
+        },
+        {
+            "address":"Località San Graziano, viale Papa Giovanni XXIII, 8 (sala conferinte), Valeggio sul Mincio",
+            "name":"Secția de votare Nr. 164",
+            "country":"Italia",
+            "coordinates":[
+                45.354069,
+                10.73756
+            ]
+        },
+        {
+            "address":"Via Terraglio, 140 (sala conferinte), Treviso",
+            "name":"Secția de votare Nr. 160",
+            "country":"Italia",
+            "coordinates":[
+                45.6479,
+                12.241035
+            ]
+        },
+        {
+            "address":"Piazza Dei Caduti N. 19, 01100 Viterbo",
+            "name":"Secția de votare Nr. 155",
+            "country":"Italia",
+            "coordinates":[
+                42.4188,
+                12.10438
+            ]
+        },
+        {
+            "address":"Piazza della Motta, 4/c (sediu primarie), Pordenone",
+            "name":"Secția de votare Nr. 159",
+            "country":"Italia",
+            "coordinates":[
+                45.956162,
+                12.661785
+            ]
+        },
+        {
+            "address":"Piazza San Giovanni Paolo II, N. 1 05100, Terni",
+            "name":"Secția de votare Nr. 154",
+            "country":"Italia",
+            "coordinates":[
+                42.571747,
+                12.670526
+            ]
+        },
+        {
+            "address":"Via Rio Sparto, 80, 65129 Pescara  - Centro Polivalente Mons. Gustavo Britti",
+            "name":"Secția de votare Nr. 153",
+            "country":"Italia",
+            "coordinates":[
+                42.448136,
+                14.213856
+            ]
+        },
+        {
+            "address":"Via A. Diaz, N. 150, 06128 Perugia ",
+            "name":"Secția de votare Nr. 152",
+            "country":"Italia",
+            "coordinates":[
+                43.10034,
+                12.37187
+            ]
+        },
+        {
+            "address":"14871 Bancroft Avenue, San Leandro, CA 94578",
+            "name":"Secția de votare Nr. 398",
+            "country":"SUA",
+            "coordinates":[
+                37.708474,
+                -122.1307
+            ]
+        },
+        {
+            "address":"Via Dante, N.1, 07026 Olbia ",
+            "name":"Secția de votare Nr. 151",
+            "country":"Italia",
+            "coordinates":[
+                40.923228,
+                9.504924
+            ]
+        },
+        {
+            "address":"Viale della Repubblica nr.16B, CP.73100, Lecce",
+            "name":"Secția de votare Nr. 167",
+            "country":"Italia",
+            "coordinates":[
+                40.357578,
+                18.154742
+            ]
+        },
+        {
+            "address":"Avda. Akra Leuke s/n, et. 1, CP 12598 Peñíscola",
+            "name":"Secția de votare Nr. 382",
+            "country":"Spania",
+            "coordinates":[
+                40.359366,
+                0.36541
+            ]
+        },
+        {
+            "address":"Via Yvon De Begnac, 0005,  Ladispoli",
+            "name":"Secția de votare Nr. 149",
+            "country":"Italia",
+            "coordinates":[
+                41.955963,
+                12.071557
+            ]
+        },
+        {
+            "address":"2026 Scott Street, Hollywood, FL 33020",
+            "name":"Secția de votare Nr. 405",
+            "country":"SUA",
+            "coordinates":[
+                26.029635,
+                -80.14836
+            ]
+        },
+        {
+            "address":"Via Ugo la Malfa Nr.8,  CP. 71122, Foggia",
+            "name":"Secția de votare Nr. 166",
+            "country":"Italia",
+            "coordinates":[
+                41.463623,
+                15.529626
+            ]
+        },
+        {
+            "address":"The Junction, Community Advice and Drop-In Centre, 28 Hexthorpe Road, Doncaster DN4 0BG",
+            "name":"Secția de votare Nr. 314",
+            "country":"Marea Britanie",
+            "coordinates":[
+                53.518675,
+                -1.144926
+            ]
+        },
+        {
+            "address":"Via Giovanni Verga, nr. 4 (lângă Biserica Spirito Santo), Vittoria",
+            "name":"Secția de votare Nr. 190",
+            "country":"Italia",
+            "coordinates":[
+                36.957599,
+                14.540195
+            ]
+        },
+        {
+            "address":"Palazzo San Giacomo, Piazza Municipio, 80133 Napoli",
+            "name":"Secția de votare Nr. 150",
+            "country":"Italia",
+            "coordinates":[
+                40.840294,
+                14.250408
+            ]
+        },
+        {
+            "address":"Viale Libano n. 40, 00144 Roma",
+            "name":"Secțiile de votare Nr. 145 și 146",
+            "country":"Italia",
+            "coordinates":[
+                41.822419,
+                12.463977
+            ]
+        },
+        {
+            "address":"Borgartún 24, 105 Reykjavik (consulat onorific)",
+            "name":"Secția de votare Nr. 143",
+            "country":"Islanda",
+            "coordinates":[
+                64.145786,
+                -21.9019
+            ]
+        },
+        {
+            "address":"Ardilaun Hotel, Taylors Hill, Galway",
+            "name":"Secția de votare Nr. 137",
+            "country":"Irlanda",
+            "coordinates":[
+                53.267628,
+                -9.08087
+            ]
+        },
+        {
+            "address":"Str. Nordau, nr. 10",
+            "name":"Secția de votare Nr. 142",
+            "country":"Israel",
+            "coordinates":[
+                32.80863,
+                34.99905
+            ]
+        },
+        {
+            "address":"str. Shivtei Israel, nr. 46",
+            "name":"Secția de votare Nr. 141",
+            "country":"Israel",
+            "coordinates":[
+                31.784162,
+                35.224844
+            ]
+        },
+        {
+            "address":"945 N Edgewood Ave, Wood Dale, IL 60191",
+            "name":"Secția de votare Nr. 390",
+            "country":"SUA",
+            "coordinates":[
+                41.981394,
+                -87.96326
+            ]
+        },
+        {
+            "address":"Edificio Paraninfo, avenida de los Rectores, Nr.3, CP.30100, Murcia",
+            "name":"Secția de votare Nr. 364",
+            "country":"Spania",
+            "coordinates":[
+                38.014998,
+                -1.161896
+            ]
+        },
+        {
+            "address":"Casa de la Juventud, Avda. de los Vientos, s/n, 38670 Adeje",
+            "name":"Secția de votare Nr. 354",
+            "country":"Spania",
+            "coordinates":[
+                28.118435,
+                -16.73319
+            ]
+        },
+        {
+            "address":"VfB 05 Knielingen, Frauenhäusleweg 1a, 76187 Karlsruhe",
+            "name":"Secția de votare Nr. 104",
+            "country":"Germania",
+            "coordinates":[
+                49.03774,
+                8.329673
+            ]
+        },
+        {
+            "address":"Refektorium Galerie Sankt Klara, Kapuzinergasse 11, Regensburg 93047",
+            "name":"Secția de votare Nr. 112",
+            "country":"Germania",
+            "coordinates":[
+                49.018938,
+                12.105953
+            ]
+        },
+        {
+            "address":"Barbarastr. 44, 97074 Würzburg (  Parohia ortodoxă română \"Sf.Ap. Andrei\")",
+            "name":"Secția de votare Nr. 111",
+            "country":"Germania",
+            "coordinates":[
+                49.79575,
+                9.958108
+            ]
+        },
+        {
+            "address":"Fürther Straße 166-168, 90429 Nürnberg ( Mitropolia Ortodoxă Română a Germaniei, Europei Centrale și de Nord )  ",
+            "name":"Secția de votare Nr. 109 și 110",
+            "country":"Germania",
+            "coordinates":[
+                49.456457,
+                11.039436
+            ]
+        },
+        {
+            "address":"Uhlandstraße 7, 79102 Freiburg im Breisgau (Biblioteca Română din Freiburg)",
+            "name":"Secția de votare Nr. 106",
+            "country":"Germania",
+            "coordinates":[
+                47.989167,
+                7.851468
+            ]
+        },
+        {
+            "address":"Kepler-Gymnasium, Karl-Schefold-Straße 16, 89073 Ulm",
+            "name":"Secția de votare Nr. 105",
+            "country":"Germania",
+            "coordinates":[
+                48.402976,
+                9.99229
+            ]
+        },
+        {
+            "address":"Consulat onorific, Leipzig, Markgrafenstrasse 2, 04109",
+            "name":"Secția de votare Nr. 118",
+            "country":"Germania",
+            "coordinates":[
+                51.33679,
+                12.37409
+            ]
+        },
+        {
+            "address":"Calle Duques de Nájera, 19, 26002 Logroño, La Rioja",
+            "name":"Secțiile de votare Nr. 372 și 373",
+            "country":"Spania",
+            "coordinates":[
+                42.458524,
+                -2.454024
+            ]
+        },
+        {
+            "address":"Paseo Maritimo, 11, 07014 Palma de Mallorca",
+            "name":"Secția de votare Nr. 341",
+            "country":"Spania",
+            "coordinates":[
+                39.569501,
+                2.637091
+            ]
+        },
+        {
+            "address":"The Greek Orthodox Parish of St Nektarios, 19 Wycliffe Road, London, SW11 5QR",
+            "name":"Secția de votare Nr. 299",
+            "country":"Marea Britanie",
+            "coordinates":[
+                51.469267,
+                -0.152956
+            ]
+        },
+        {
+            "address":"Plaça Miquel Santaló i Pavor, 1, 17002 Girona",
+            "name":"Secția de votare Nr. 339",
+            "country":"Spania",
+            "coordinates":[
+                41.978689,
+                2.821266
+            ]
+        },
+        {
+            "address":"C/ General Chinchilla, nr. 4 31002 Pamplona",
+            "name":"Secția de votare Nr. 374",
+            "country":"Spania",
+            "coordinates":[
+                42.814987,
+                -1.647715
+            ]
+        },
+        {
+            "address":"Mimosaplein 1, 5643 CJ, Eindhoven",
+            "name":"Secția de votare Nr. 280",
+            "country":"Netherlands",
+            "coordinates":[
+                51.421718,
+                5.496505
+            ]
+        },
+        {
+            "address":"Edificio Veralles, Calle Galicia, bajo 1, CP 18600, Motril",
+            "name":"Secția de votare Nr. 363",
+            "country":"Spania",
+            "coordinates":[
+                36.750026,
+                -3.508871
+            ]
+        },
+        {
+            "address":"Av. de la Albufera, nr. 319 28031, Madrid",
+            "name":"Secțiile de votare Nr. 343 și 344",
+            "country":"Spania",
+            "coordinates":[
+                40.384174,
+                -3.631874
+            ]
+        },
+        {
+            "address":"Junta Municipal del Distrito II Avda. Reyes Católicos, nr. 9 28802 Alcalá de Henares",
+            "name":"Secția de votare Nr. 347",
+            "country":"Spania",
+            "coordinates":[
+                40.477395,
+                -3.373564
+            ]
+        },
+        {
+            "address":"Paseo de la Estación 2, 28850 Torrejón de Ardoz",
+            "name":"Secția de votare Nr. 348",
+            "country":"Spania",
+            "coordinates":[
+                40.455144,
+                -3.479194
+            ]
+        },
+        {
+            "address":"Centro Multifuncional \"La Rambla\", Avda. de los Principes de España 20, 28823 Coslada",
+            "name":"Secția de votare Nr. 346",
+            "country":"Spania",
+            "coordinates":[
+                40.425698,
+                -3.547186
+            ]
+        },
+        {
+            "address":"Centro de Participación Ciudadana C/ San Antonio, no. 2 28934 Móstoles",
+            "name":"Secția de votare Nr. 350",
+            "country":"Spania",
+            "coordinates":[
+                40.322948,
+                -3.862807
+            ]
+        },
+        {
+            "address":"Centro Cívico \"La Serna\", Avda. de las Comarcas 2, 28941 Fuenlabrada",
+            "name":"Secția de votare Nr. 351",
+            "country":"Spania",
+            "coordinates":[
+                40.297036,
+                -3.794823
+            ]
+        },
+        {
+            "address":"Hotel Sercotel AB Arganda, Avda. de Madrid 47, 28500 Arganda del Rey",
+            "name":"Secția de votare Nr. 349",
+            "country":"Spania",
+            "coordinates":[
+                40.306662,
+                -3.468061
+            ]
+        },
+        {
+            "address":"Plaza Constitución 1, 16400 Tarancón, provincia Cuenca",
+            "name":"Secția de votare Nr. 357",
+            "country":"Spania",
+            "coordinates":[
+                40.011652,
+                -3.004293
+            ]
+        },
+        {
+            "address":"Langley College, Station Road, Langley, SL3 8BY ",
+            "name":"Secția de votare Nr. 301",
+            "country":"Marea Britanie",
+            "coordinates":[
+                51.505676,
+                -0.545499
+            ]
+        },
+        {
+            "address":"Centro Social C/ Alcalde Conangla nr 7, 02006 Albacete",
+            "name":"Secția de votare Nr. 360",
+            "country":"Spania",
+            "coordinates":[
+                38.9925,
+                -1.847459
+            ]
+        },
+        {
+            "address":"Calle Pedro Almodovar s/n  16003 Cuenca, provincia Cuenca",
+            "name":"Secția de votare Nr. 356",
+            "country":"Spania",
+            "coordinates":[
+                40.078265,
+                -2.149981
+            ]
+        },
+        {
+            "address":"Antigua Estación de Ferrocarril de Tomelloso, Calle Estación 90, 13700 Tomelloso, provincia Ciudad Real",
+            "name":"Secția de votare Nr. 358",
+            "country":"Spania",
+            "coordinates":[
+                39.148083,
+                -3.02818
+            ]
+        },
+        {
+            "address":"Centro Social Municipal, Avda. Venezuela 7, 19005 Guadalajara",
+            "name":"Secția de votare Nr. 352",
+            "country":"Spania",
+            "coordinates":[
+                40.632702,
+                -3.153113
+            ]
+        },
+        {
+            "address":"Avinguda Blondel 22, 25002, Lleida",
+            "name":"Secția de votare Nr. 338",
+            "country":"Spania",
+            "coordinates":[
+                41.613948,
+                0.625994
+            ]
+        },
+        {
+            "address":"Avenida Roma 8, Tarragona, 43005",
+            "name":"Secția de votare Nr. 340",
+            "country":"Spania",
+            "coordinates":[
+                41.118284,
+                1.242445
+            ]
+        },
+        {
+            "address":"Gran Vía Carlos III, 94 Torre Oeste, Entresuelo, 08028 Barcelona",
+            "name":"Secția de votare Nr. 337",
+            "country":"Spania",
+            "coordinates":[
+                41.386212,
+                2.127725
+            ]
+        },
+        {
+            "address":"Carrer de Francesc Tàrrega, nr.7, 46009 València",
+            "name":"Secția de votare Nr. 383",
+            "country":"Spania",
+            "coordinates":[
+                39.489177,
+                -0.384998
+            ]
+        },
+        {
+            "address":"Calle Labradores, nr. 6, 03002 Alicante",
+            "name":"Secția de votare Nr. 379",
+            "country":"Spania",
+            "coordinates":[
+                38.345719,
+                -0.483185
+            ]
+        },
+        {
+            "address":"Plaza Rei en Jaume, nr. 6, 46701 Gandia",
+            "name":"Secția de votare Nr. 384",
+            "country":"Spania",
+            "coordinates":[
+                38.96599,
+                -0.181783
+            ]
+        },
+        {
+            "address":"Convento Esprito Santo, Cerca do Convento, Sala 14, Praça da Republica, 8100 Loulé ",
+            "name":"Secția de votare Nr. 292",
+            "country":"Portugalia",
+            "coordinates":[
+                37.139265,
+                -8.023106
+            ]
+        },
+        {
+            "address":"Calle Victor Palomo, nr.1, CP.04740, Roquetas de Mar",
+            "name":"Secția de votare Nr. 362",
+            "country":"Spania",
+            "coordinates":[
+                36.766831,
+                -2.609024
+            ]
+        },
+        {
+            "address":"Centro Ciudadano La Virreina Etaj 2 Camino de la Virreina nr.7, 29011 Malaga",
+            "name":"Secția de votare Nr. 368",
+            "country":"Spania",
+            "coordinates":[
+                36.740959,
+                -4.426599
+            ]
+        },
+        {
+            "address":"Centro Cívico de Palomarejos, Plaza de Aquisgrán, s/n, 45005 Toledo",
+            "name":"Secția de votare Nr. 359",
+            "country":"Spania",
+            "coordinates":[
+                39.872643,
+                -4.033219
+            ]
+        },
+        {
+            "address":"Parque Ramon y Cajal, 06200 Almendralejo (Badajoz)",
+            "name":"Secția de votare Nr. 369",
+            "country":"Spania",
+            "coordinates":[
+                38.680252,
+                -6.413938
+            ]
+        },
+        {
+            "address":"Plaza Velarde, 5, 39001 Santander, Cantabria",
+            "name":"Secția de votare Nr. 378",
+            "country":"Spania",
+            "coordinates":[
+                43.462459,
+                -3.805883
+            ]
+        },
+        {
+            "address":"Plaza de Toros, 21810 Palos de la Frontera, Huelva",
+            "name":"Secția de votare Nr. 367",
+            "country":"Spania",
+            "coordinates":[
+                37.224512,
+                -6.896869
+            ]
+        },
+        {
+            "address":"Barking Enterprise Centres, Conference Room,  Ground Floor, 50 Cambridge Road, Barking, Essex, IG11 8FG",
+            "name":"Secția de votare Nr. 300",
+            "country":"Marea Britanie",
+            "coordinates":[
+                51.539562,
+                0.078141
+            ]
+        },
+        {
+            "address":"Ctra. De Somio, 652, 33203 Gijón, Asturias",
+            "name":"Secția de votare Nr. 375",
+            "country":"Spania",
+            "coordinates":[
+                43.541724,
+                -5.636032
+            ]
+        },
+        {
+            "address":"664 Dickens Road, Lilburn, Georgia 30047",
+            "name":"Secția de votare Nr. 408",
+            "country":"SUA",
+            "coordinates":[
+                33.893116,
+                -84.164379
+            ]
+        },
+        {
+            "address":"Pazo de Raxoi, s/n, 15701 Santiago de Compostela ",
+            "name":"Secția de votare Nr. 376",
+            "country":"Spania",
+            "coordinates":[
+                42.880263,
+                -8.54614
+            ]
+        },
+        {
+            "address":"3256 Warren Rd, Cleveland, OH 44111 - Centru Cultural Românesc",
+            "name":"Secția de votare Nr. 416",
+            "country":"SUA",
+            "coordinates":[
+                41.46471,
+                -81.8003
+            ]
+        },
+        {
+            "address":"9520 Faires Farm Road, Charlotte, NC 28213",
+            "name":"Secția de votare Nr. 415",
+            "country":"SUA",
+            "coordinates":[
+                35.29564,
+                -80.7212
+            ]
+        },
+        {
+            "address":"Av. L'Aigüera, s/n, 03501 Benidorm",
+            "name":"Secția de votare Nr. 380",
+            "country":"Spania",
+            "coordinates":[
+                38.541578,
+                -0.130426
+            ]
+        },
+        {
+            "address":"Ouderkerkerlaan 30, 1112 BE Diemen",
+            "name":"Secția de votare Nr. 279",
+            "country":"Netherlands",
+            "coordinates":[
+                52.336986,
+                4.960172
+            ]
+        },
+        {
+            "address":"2312 Dorrington drive, Dallas, Texas, 75228, Ferguson Rd Baptist Church",
+            "name":"Secția de votare Nr. 407",
+            "country":"SUA",
+            "coordinates":[
+                32.805887,
+                -96.70829
+            ]
+        },
+        {
+            "address":"318 Canino Road, Houston, TX 77076",
+            "name":"Secția de votare Nr. 406",
+            "country":"SUA",
+            "coordinates":[
+                29.874762,
+                -95.3796
+            ]
+        },
+        {
+            "address":"5306 Walnut Avenue, Building A, Sacramento, CA 95841",
+            "name":"Secția de votare Nr. 397",
+            "country":"SUA",
+            "coordinates":[
+                38.6632,
+                -121.345
+            ]
+        },
+        {
+            "address":"Str. Ștefan cel Mare nr. 52, Carabetovca",
+            "name":"Secția de votare Nr. 270",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                46.415946,
+                28.909304
+            ]
+        },
+        {
+            "address":"1350 Red Rock Street, Las Vegas, NV 89146",
+            "name":"Secția de votare Nr. 399",
+            "country":"SUA",
+            "coordinates":[
+                36.15647,
+                -115.224
+            ]
+        },
+        {
+            "address":"Arizona State University - Downtown Phoenix Campus Mercado, 502 E Monroe Street Bldg. C, Room 145, Phoenix, AZ 85004 ",
+            "name":"Secția de votare Nr. 400",
+            "country":"SUA",
+            "coordinates":[
+                33.45283,
+                -112.069
+            ]
+        },
+        {
+            "address":"4180 Emigration Canyon Road, Salt Lake City, UT 84108",
+            "name":"Secția de votare Nr. 403",
+            "country":"SUA",
+            "coordinates":[
+                40.76381,
+                -111.779
+            ]
+        },
+        {
+            "address":"Fadingerstrasse 1a, 5020 Salzburg",
+            "name":"Secția de votare Nr. 25",
+            "country":"Austria",
+            "coordinates":[
+                47.8018,
+                13.067773
+            ]
+        },
+        {
+            "address":"20 Ponsonby Terrace (Ponsonby Community Center)",
+            "name":"Secția de votare Nr. 18",
+            "country":"Noua Zeelandă",
+            "coordinates":[
+                -36.850222,
+                174.74214
+            ]
+        },
+        {
+            "address":"Baza militară NATO, Kandahar Airfield(KAF), în vecinătatea orașului Kandahar, provincia Kandahar",
+            "name":"Secția de votare Nr. 3",
+            "country":"Afghanistan",
+            "coordinates":[
+                31.628871,
+                65.737175
+            ]
+        },
+        {
+            "address":"Baza militară NATO, Hamid Karzai International Airport (Hkia), Kabul",
+            "name":"Secția de votare Nr. 2",
+            "country":"Afghanistan",
+            "coordinates":[
+                34.570729,
+                69.21584
+            ]
+        },
+        {
+            "address":"Baza hotelieră militarizată Green Village, Jalalabad Road, Kabul",
+            "name":"Secția de votare Nr. 1",
+            "country":"Afghanistan",
+            "coordinates":[
+                34.54584,
+                69.23227
+            ]
+        },
+        {
+            "address":"Holiday Inn Express Boston, 69 Boston Street, Boston, MA 02125",
+            "name":"Secția de votare Nr. 411",
+            "country":"SUA",
+            "coordinates":[
+                42.327096,
+                -71.05959
+            ]
+        },
+        {
+            "address":"7280 N Caldwell Ave, Niles, IL 60714",
+            "name":"Secția de votare Nr. 389",
+            "country":"SUA",
+            "coordinates":[
+                42.01391,
+                -87.791
+            ]
+        },
+        {
+            "address":"Fairfield Inn & Suites, The Plainville Conference Room - Main Loby, 400 New Britain Ave, Plainville, CT 06062",
+            "name":"Secția de votare Nr. 412",
+            "country":"SUA",
+            "coordinates":[
+                41.671875,
+                -72.83672
+            ]
+        },
+        {
+            "address":"1907 Spruce Street, Philadelphia, PA 19103-5732",
+            "name":"Secția de votare Nr. 410",
+            "country":"SUA",
+            "coordinates":[
+                39.94823,
+                -75.1731
+            ]
+        },
+        {
+            "address":"6402 226th Street SW, Mountlake Terrace, WA 98043",
+            "name":"Secția de votare Nr. 402",
+            "country":"SUA",
+            "coordinates":[
+                47.79376,
+                -122.32
+            ]
+        },
+        {
+            "address":"5544 SE 128th Avenue, Portland, OR 97236",
+            "name":"Secția de votare Nr. 401",
+            "country":"SUA",
+            "coordinates":[
+                45.482656,
+                -122.5313
+            ]
+        },
+        {
+            "address":"Hauptstätterstrasse 70, 70178, Stuttgart",
+            "name":"Secțiile de votare Nr. 102 și 103",
+            "country":"Germania",
+            "coordinates":[
+                48.770029,
+                9.174567
+            ]
+        },
+        {
+            "address":"Maison de la citoyenneté 5, rue Paul Meriel   31000 Toulouse",
+            "name":"Secția de votare Nr. 88",
+            "country":"Franța",
+            "coordinates":[
+                43.604139,
+                1.447889
+            ]
+        },
+        {
+            "address":"5825 N Mozart Chicago, IL 60659",
+            "name":"Secția de votare Nr. 387",
+            "country":"SUA",
+            "coordinates":[
+                41.98726,
+                -87.7002
+            ]
+        },
+        {
+            "address":"Salle \"Gravaud\"-Maison des Familles 21, rue Jean Zay – 78190 Trappes-en Yvelines ",
+            "name":"Secția de votare Nr. 96",
+            "country":"Franța",
+            "coordinates":[
+                48.772155,
+                1.988255
+            ]
+        },
+        {
+            "address":"76, rue Victor Hugo, 93150, Le Blanc Mesnil - Spatiu pus la dispozitie de Primarie localitate",
+            "name":"Secția de votare Nr. 95",
+            "country":"Franța",
+            "coordinates":[
+                48.942677,
+                2.456279
+            ]
+        },
+        {
+            "address":"3938 W. Irwing Park Road., Chicago IL 60618",
+            "name":"Secția de votare Nr. 388",
+            "country":"SUA",
+            "coordinates":[
+                41.955722,
+                -87.72669
+            ]
+        },
+        {
+            "address":"Limerick Strand Hotel, Ennis Road, Limerick",
+            "name":"Secția de votare Nr. 138",
+            "country":"Irlanda",
+            "coordinates":[
+                52.666233,
+                -8.632046
+            ]
+        },
+        {
+            "address":"Str. Alexandru cel Bun nr. 5, Durlești",
+            "name":"Secția de votare Nr. 256",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                47.01862,
+                28.764586
+            ]
+        },
+        {
+            "address":"4, Rue Ibn Essaheb Abbad, Cité des Jardines, Tunis",
+            "name":"Secția de votare Nr. 423",
+            "country":"Tunisia",
+            "coordinates":[
+                36.825821,
+                10.180753
+            ]
+        },
+        {
+            "address":"Tredenborgsvägen 16, 29421, Sölvesborg",
+            "name":"Secția de votare Nr. 421",
+            "country":"Suedia",
+            "coordinates":[
+                56.039683,
+                14.577524
+            ]
+        },
+        {
+            "address":"Porslinsgatan 3, 211 32,  Malmö",
+            "name":"Secția de votare Nr. 420",
+            "country":"Suedia",
+            "coordinates":[
+                55.607393,
+                13.015928
+            ]
+        },
+        {
+            "address":"Campanile Paris sud-Porte d'Orléans 73, Avenue Aristide Briand 94110 Arcueil",
+            "name":"Secția de votare Nr. 93",
+            "country":"Franța",
+            "coordinates":[
+                48.805567,
+                2.325833
+            ]
+        },
+        {
+            "address":"Hotel IBIS Gare St Jean, salon MEDOC, 68-70 rue de Tauzia, 33800 Bordeaux",
+            "name":"Secția de votare Nr. 97",
+            "country":"Franța",
+            "coordinates":[
+                44.828053,
+                -0.556598
+            ]
+        },
+        {
+            "address":"Chambre de Commerce et de l'Industrie Lille - Boulevard de Leeds 59000 Lille ",
+            "name":"Secția de votare Nr. 98",
+            "country":"Franța",
+            "coordinates":[
+                50.640374,
+                3.075365
+            ]
+        },
+        {
+            "address":"3030 West River Parkway, Minneapolis MN 55406",
+            "name":"Secția de votare Nr. 394",
+            "country":"SUA",
+            "coordinates":[
+                44.947016,
+                -93.20462
+            ]
+        },
+        {
+            "address":"4 Ponderosa Street, Hillcrest, Brisbane, Queensland 4118 (Sediu Asociatie Unirea Brisbane Club House), Brisbaine",
+            "name":"Secția de votare Nr. 17",
+            "country":"Australia",
+            "coordinates":[
+                -27.665126,
+                153.029824
+            ]
+        },
+        {
+            "address":"32-34 Rosa Street, Goodwood South Australia, Adelaide",
+            "name":"Secția de votare Nr. 14",
+            "country":"Australia",
+            "coordinates":[
+                -34.950576,
+                138.590489
+            ]
+        },
+        {
+            "address":"8 Balga Avenue, Balga, WA 6061, Perth",
+            "name":"Secția de votare Nr. 15",
+            "country":"Australia",
+            "coordinates":[
+                -31.855998,
+                115.8389
+            ]
+        },
+        {
+            "address":"Elite Park Avenue Hotel Gothenburg, Kungsportsavenyen 36, 411 36 Göteborg",
+            "name":"Secția de votare Nr. 419",
+            "country":"Suedia",
+            "coordinates":[
+                57.698538,
+                11.978579
+            ]
+        },
+        {
+            "address":"123, Rue Saint-Dominique, 75007",
+            "name":"Secțiile de votare Nr. 91 și 92",
+            "country":"Franța",
+            "coordinates":[
+                48.858638,
+                2.30291
+            ]
+        },
+        {
+            "address":"L'Auberge du Cheval Noir 2, Route de Noisy, 93500 Pantin",
+            "name":"Secția de votare Nr. 94",
+            "country":"Franța",
+            "coordinates":[
+                48.895605,
+                2.426194
+            ]
+        },
+        {
+            "address":"7, Avenue Auber, 06000 Nice",
+            "name":"Secția de votare Nr. 87",
+            "country":"Franța",
+            "coordinates":[
+                43.699723,
+                7.261156
+            ]
+        },
+        {
+            "address":"3, Rue de l Exposition",
+            "name":"Secția de votare Nr. 89",
+            "country":"Franța",
+            "coordinates":[
+                48.858115,
+                2.30275
+            ]
+        },
+        {
+            "address":"Chemin de la Perriere nr. 6, 1223 Cologny, Geneva ",
+            "name":"Secția de votare Nr. 71",
+            "country":"Elveția",
+            "coordinates":[
+                46.227186,
+                6.186535
+            ]
+        },
+        {
+            "address":"Hadsundvej 184, 9000 Aalborg",
+            "name":"Secția de votare Nr. 65",
+            "country":"Danemarca",
+            "coordinates":[
+                57.024735,
+                9.960061
+            ]
+        },
+        {
+            "address":"Yliopistonkatu 19b, 20100, Turku",
+            "name":"Secția de votare Nr. 82",
+            "country":"Finlanda",
+            "coordinates":[
+                60.452288,
+                22.266046
+            ]
+        },
+        {
+            "address":"Sala consiliu Magnetita, Hotel Atacama Suites, Colipi 794, Copiapo, Region de Atacama",
+            "name":"Secția de votare Nr. 54",
+            "country":"China",
+            "coordinates":[
+                -26.902501,
+                -70.3705
+            ]
+        },
+        {
+            "address":"Hermodsvej 5A, 8230 Åbyhøj, Aarhus",
+            "name":"Secția de votare Nr. 64",
+            "country":"Danemarca",
+            "coordinates":[
+                56.153844,
+                10.174455
+            ]
+        },
+        {
+            "address":"Attikon Theatre, Evagora Pallikaridi, Paphos, Cipru",
+            "name":"Secția de votare Nr. 59",
+            "country":"Cipru",
+            "coordinates":[
+                34.776906,
+                32.422445
+            ]
+        },
+        {
+            "address":"Stará radnice - Freskový sál, Radnická  8, 602 00 Brno",
+            "name":"Secția de votare Nr. 49",
+            "country":"Rep. Cehă",
+            "coordinates":[
+                49.193232,
+                16.608389
+            ]
+        },
+        {
+            "address":"Town Hall, 23 Arch. Kyprianos, Limassol",
+            "name":"Secția de votare Nr. 60",
+            "country":"Cipru",
+            "coordinates":[
+                34.67501,
+                33.044152
+            ]
+        },
+        {
+            "address":"University College Cork- Electrical Engineering Building, Electric Engineering Room L2, College Road, Cork",
+            "name":"Secția de votare Nr. 136",
+            "country":"Irlanda",
+            "coordinates":[
+                51.892199,
+                -8.493172
+            ]
+        },
+        {
+            "address":"Str. Maria Cebotari nr. 53, Chișinău",
+            "name":"Secțiile de votare Nr. 254 și 255",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                47.028758,
+                28.829475
+            ]
+        },
+        {
+            "address":"Mulhuddart Community Centre - Church Road, Mulhuddart, Dublin 15 ",
+            "name":"Secția de votare Nr. 135",
+            "country":"Irlanda",
+            "coordinates":[
+                53.405333,
+                -6.394038
+            ]
+        },
+        {
+            "address":"Desguinlei 94, 2018 Antwerp (Hotel Ramada Plaza Antwerp)",
+            "name":"Secția de votare Nr. 37",
+            "country":"Belgia",
+            "coordinates":[
+                51.194928,
+                4.406369
+            ]
+        },
+        {
+            "address":"Mont Saint-Martin 9-11, B-4000 Liege (Hotel Les Comtes de Mean), Liege",
+            "name":"Secția de votare Nr. 36",
+            "country":"Belgia",
+            "coordinates":[
+                50.645213,
+                5.567756
+            ]
+        },
+        {
+            "address":"Str.Schipchenski Prohod nr.1",
+            "name":"Secția de votare Nr. 41",
+            "country":"Bulgaria",
+            "coordinates":[
+                42.685171,
+                23.351932
+            ]
+        },
+        {
+            "address":"Calle Alférez Quintana Suárez nr. 18, 35200 Telde, Las Palmas",
+            "name":"Secția de votare Nr. 353",
+            "country":"Spania",
+            "coordinates":[
+                27.995534,
+                -15.41494
+            ]
+        },
+        {
+            "address":"Piazza Chanoux nr. 8, Sala Hotel des Etats din Primarie, 11100 Aosta                                ",
+            "name":"Secția de votare Nr. 219",
+            "country":"Italia",
+            "coordinates":[
+                45.737223,
+                7.319537
+            ]
+        },
+        {
+            "address":"Via Wagner 38 D, Ex Circoscrizione Euro Pista, 15121 Alessandria ",
+            "name":"Secția de votare Nr. 209",
+            "country":"Italia",
+            "coordinates":[
+                44.905436,
+                8.616495
+            ]
+        },
+        {
+            "address":"Piazza Roma nr. 8 - Birou al Primăriei Asti",
+            "name":"Secția de votare Nr. 210",
+            "country":"Italia",
+            "coordinates":[
+                44.899467,
+                8.201584
+            ]
+        },
+        {
+            "address":"Via Monte San Gabriele, nr. 50/C, Novara",
+            "name":"Secția de votare Nr. 211",
+            "country":"Italia",
+            "coordinates":[
+                45.428563,
+                8.619126
+            ]
+        },
+        {
+            "address":"Piazzale Flaim Mario, Verbania ",
+            "name":"Secția de votare Nr. 212",
+            "country":"Italia",
+            "coordinates":[
+                45.932864,
+                8.57322
+            ]
+        },
+        {
+            "address":"Via Leutrum, nr.7, Cuneo",
+            "name":"Secția de votare Nr. 214",
+            "country":"Italia",
+            "coordinates":[
+                44.395554,
+                7.551992
+            ]
+        },
+        {
+            "address":"Scuola Media “Luigi La Vista” Via. Enrico Toti Nr.1 CP.85100, Potenza",
+            "name":"Secția de votare Nr. 173",
+            "country":"Italia",
+            "coordinates":[
+                40.632503,
+                15.808586
+            ]
+        },
+        {
+            "address":"Scuola Media Giovanni Pascoli, Corso Cavallotti nr. 92",
+            "name":"Secția de votare Nr. 217",
+            "country":"Italia",
+            "coordinates":[
+                43.821578,
+                7.788439
+            ]
+        },
+        {
+            "address":"Centro Civico Nord, Largo Vivaldi, 19122 La Spezia, Fossitermi",
+            "name":"Secția de votare Nr. 218",
+            "country":"Italia",
+            "coordinates":[
+                44.10245,
+                9.824083
+            ]
+        },
+        {
+            "address":"Via Achille Giovanni Cagna nr. 8, Vercelli ",
+            "name":"Secția de votare Nr. 213",
+            "country":"Italia",
+            "coordinates":[
+                45.323957,
+                8.424517
+            ]
+        },
+        {
+            "address":"Viale Della Pace, 89, 36100 Vicenza",
+            "name":"Secția de votare Nr. 162",
+            "country":"Italia",
+            "coordinates":[
+                45.54314,
+                11.5704
+            ]
+        },
+        {
+            "address":"Via Monte Santo nr. 1, Parma",
+            "name":"Secția de votare Nr. 178",
+            "country":"Italia",
+            "coordinates":[
+                44.798179,
+                10.32105
+            ]
+        },
+        {
+            "address":"Piazza Medaglie d'Oro n°4 - 48122, Ravenna ",
+            "name":"Secția de votare Nr. 179",
+            "country":"Italia",
+            "coordinates":[
+                44.418579,
+                12.222819
+            ]
+        },
+        {
+            "address":"Via XXIII Settembre n.124, Rimini",
+            "name":"Secția de votare Nr. 180",
+            "country":"Italia",
+            "coordinates":[
+                44.068819,
+                12.549901
+            ]
+        },
+        {
+            "address":"Via Veneto, 164  (sediu primarie), Udine",
+            "name":"Secția de votare Nr. 158",
+            "country":"Italia",
+            "coordinates":[
+                46.030877,
+                13.253072
+            ]
+        },
+        {
+            "address":"Circoscrizione Sud (parter) - Via delle Badie, n. 130, Prato",
+            "name":"Secția de votare Nr. 182",
+            "country":"Italia",
+            "coordinates":[
+                43.859581,
+                11.093367
+            ]
+        },
+        {
+            "address":"Via Guasti, 12/c (sediu primarie) Padova",
+            "name":"Secția de votare Nr. 161",
+            "country":"Italia",
+            "coordinates":[
+                45.382642,
+                11.879201
+            ]
+        },
+        {
+            "address":"Via Brunelleschi, 12 Verona",
+            "name":"Secția de votare Nr. 163",
+            "country":"Italia",
+            "coordinates":[
+                45.432876,
+                10.971133
+            ]
+        },
+        {
+            "address":"“Terzo Spazio” ex Scuola CEP Nord Via Eugenio Cirese Snc. CP.86100, Campobasso",
+            "name":"Secția de votare Nr. 174",
+            "country":"Italia",
+            "coordinates":[
+                41.569709,
+                14.676439
+            ]
+        },
+        {
+            "address":"Via Villa Glori n.13 - 25126  Brescia (BS)",
+            "name":"Secția de votare Nr. 193",
+            "country":"Italia",
+            "coordinates":[
+                45.543176,
+                10.193058
+            ]
+        },
+        {
+            "address":"Largo Guglielmo Rontgen 3/4, 24128 Bergamo (Bg)",
+            "name":"Secția de votare Nr. 195",
+            "country":"Italia",
+            "coordinates":[
+                45.69078,
+                9.6433
+            ]
+        },
+        {
+            "address":"Via Achille Grandi 21, 22100 Como (Co)",
+            "name":"Secția de votare Nr. 201",
+            "country":"Italia",
+            "coordinates":[
+                45.80047,
+                9.085691
+            ]
+        },
+        {
+            "address":"Via del Vecchio Passeggio 1, Cremona",
+            "name":"Secția de votare Nr. 197",
+            "country":"Italia",
+            "coordinates":[
+                45.140526,
+                10.024309
+            ]
+        },
+        {
+            "address":"Via Viterbo nr.  80, Modena",
+            "name":"Secția de votare Nr. 187",
+            "country":"Italia",
+            "coordinates":[
+                44.622921,
+                10.937524
+            ]
+        },
+        {
+            "address":"Via Cairoli 4, Varese",
+            "name":"Secția de votare Nr. 202",
+            "country":"Italia",
+            "coordinates":[
+                45.821458,
+                8.833548
+            ]
+        },
+        {
+            "address":"Via Gabriele D'Annunzio 35, 20900 Monza (Mb)",
+            "name":"Secția de votare Nr. 196",
+            "country":"Italia",
+            "coordinates":[
+                45.56343,
+                9.264708
+            ]
+        },
+        {
+            "address":"Corso Giuseppe Garibaldi 69, 27100 Pavia (Pv)",
+            "name":"Secția de votare Nr. 194",
+            "country":"Italia",
+            "coordinates":[
+                45.181298,
+                9.163929
+            ]
+        },
+        {
+            "address":"Via Renato Lunelli 4, 38121 Trento (Tn)",
+            "name":"Secția de votare Nr. 198",
+            "country":"Italia",
+            "coordinates":[
+                46.09282,
+                11.12033
+            ]
+        },
+        {
+            "address":"Ancona, Via Scrima, Nr. 19 (Circumscripția 2 Locală)",
+            "name":"Secția de votare Nr. 181",
+            "country":"Italia",
+            "coordinates":[
+                43.603547,
+                13.50598
+            ]
+        },
+        {
+            "address":"Piazza San Domenico nr. 5, Arezzo",
+            "name":"Secția de votare Nr. 183",
+            "country":"Italia",
+            "coordinates":[
+                43.469136,
+                11.881936
+            ]
+        },
+        {
+            "address":"Piazza Giulio Cesare, nr. 52, Palermo",
+            "name":"Secția de votare Nr. 189",
+            "country":"Italia",
+            "coordinates":[
+                38.110642,
+                13.366078
+            ]
+        },
+        {
+            "address":"Grosseto, „Sala Esagonale”,Via Gozzi, Nr. 24",
+            "name":"Secția de votare Nr. 184",
+            "country":"Italia",
+            "coordinates":[
+                42.774856,
+                11.101166
+            ]
+        },
+        {
+            "address":"Scuola Ipsia G.Ferraris Via Conti di Loritello, Nr.17, 88100, Catanzaro",
+            "name":"Secția de votare Nr. 172",
+            "country":"Italia",
+            "coordinates":[
+                38.880665,
+                16.605888
+            ]
+        },
+        {
+            "address":"str. Taverna nr. 39, Piacenza",
+            "name":"Secția de votare Nr. 177",
+            "country":"Italia",
+            "coordinates":[
+                45.054129,
+                9.685115
+            ]
+        },
+        {
+            "address":"Scuola Media “Vittorio Alfieri”  Via Cutro Nr. 102. CP.88900, Crotone",
+            "name":"Secția de votare Nr. 171",
+            "country":"Italia",
+            "coordinates":[
+                39.080649,
+                17.123566
+            ]
+        },
+        {
+            "address":"Via Accademia, nr.6 (Via Vittorio Emanuele nr. 19), parter, Alba",
+            "name":"Secția de votare Nr. 215",
+            "country":"Malta",
+            "coordinates":[
+                44.699331,
+                8.03498
+            ]
+        },
+        {
+            "address":"Str. Ștefan Vodă nr. 1, Cantemir",
+            "name":"Secția de votare Nr. 266",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                46.27882,
+                28.19687
+            ]
+        },
+        {
+            "address":"Str. Ion Popușoi nr. 2, Cimișlia",
+            "name":"Secția de votare Nr. 267",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                46.52023,
+                28.78384
+            ]
+        },
+        {
+            "address":"Venture Place, Sir Thomas St, Liverpool L1 6BW",
+            "name":"Secția de votare Nr. 312",
+            "country":"Marea Britanie",
+            "coordinates":[
+                53.407297,
+                -2.985117
+            ]
+        },
+        {
+            "address":"Str. Ștefan cel Mare nr. 67, Leova",
+            "name":"Secția de votare Nr. 269",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                46.47935,
+                28.25317
+            ]
+        },
+        {
+            "address":"UiA campus Kristiansand, 25f Universitetsveien 2630 Kristiansand ",
+            "name":"Secția de votare Nr. 275",
+            "country":"Norvegia",
+            "coordinates":[
+                58.16377,
+                8.002097
+            ]
+        },
+        {
+            "address":"Str. Azem Jashanica nr.44-46, cartier Arberia, Pristina,  Kosovo, R. Serbia",
+            "name":"Secția de votare Nr. 330",
+            "country":"Serbia",
+            "coordinates":[
+                42.669567,
+                21.154026
+            ]
+        },
+        {
+            "address":"Strada Rajska nr.1, 31-124, Cracovia",
+            "name":"Secția de votare Nr. 286",
+            "country":"Polonia",
+            "coordinates":[
+                50.064822,
+                19.929619
+            ]
+        },
+        {
+            "address":"Patra, Filopoimenos 24, et.3, cod postal 26221,  (Sala de Consiliu a Baroului din Patra)",
+            "name":"Secția de votare Nr. 129",
+            "country":"Grecia",
+            "coordinates":[
+                38.245277,
+                21.732444
+            ]
+        },
+        {
+            "address":"Nøstegaten 32, 5010 Bergen",
+            "name":"Secția de votare Nr. 273",
+            "country":"Norvegia",
+            "coordinates":[
+                60.391841,
+                5.314601
+            ]
+        },
+        {
+            "address":"Eidet Kulturhall, Vatneeidet, 6265 Vatne",
+            "name":"Secția de votare Nr. 274",
+            "country":"Norvegia",
+            "coordinates":[
+                62.547164,
+                6.597879
+            ]
+        },
+        {
+            "address":"Piața Powstańców Warszawy, nr. 1, cod poștal 50-153, Wrocław",
+            "name":"Secția de votare Nr. 287",
+            "country":"Polonia",
+            "coordinates":[
+                51.109901,
+                17.049499
+            ]
+        },
+        {
+            "address":"Praça General Humberto Delgado,4049-001 Porto- intrarea prin Praça da Trinidade - (Primaria Municipala)",
+            "name":"Secția de votare Nr. 290",
+            "country":"Portugalia",
+            "coordinates":[
+                41.150864,
+                -8.610846
+            ]
+        },
+        {
+            "address":"The Brite Centre, Braunstone Ave, Leicester, LE3 1LE",
+            "name":"Secția de votare Nr. 310",
+            "country":"Marea Britanie",
+            "coordinates":[
+                52.623171,
+                -1.164452
+            ]
+        },
+        {
+            "address":"Rua Amílcar Cabral, n.º 4 / 6, 2900-219 Setúbal ",
+            "name":"Secția de votare Nr. 291",
+            "country":"Portugalia",
+            "coordinates":[
+                38.531456,
+                -8.888154
+            ]
+        },
+        {
+            "address":"Renfield Centre, 260 Bath St, Glasgow, G2 4JP                      ",
+            "name":"Secția de votare Nr. 318",
+            "country":"Marea Britanie",
+            "coordinates":[
+                55.865216,
+                -4.266879
+            ]
+        },
+        {
+            "address":"St Cuthbert's Centre, Hayling Avenue, Portsmouth PO3 6GA",
+            "name":"Secția de votare Nr. 303",
+            "country":"Marea Britanie",
+            "coordinates":[
+                50.806446,
+                -1.061484
+            ]
+        },
+        {
+            "address":"Str. Chișinăului nr. 9, Orhei",
+            "name":"Secția de votare Nr. 260",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                47.370283,
+                28.819099
+            ]
+        },
+        {
+            "address":"Str. Independentei nr 74, Soroca",
+            "name":"Secția de votare Nr. 238",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                48.15543,
+                28.287006
+            ]
+        },
+        {
+            "address":"Str. Aurel David 70, Bardar",
+            "name":"Secția de votare Nr. 263",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                46.903849,
+                28.672454
+            ]
+        },
+        {
+            "address":"Str. Ciprian Porumbescu nr. 3, Telenești",
+            "name":"Secția de votare Nr. 243",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                47.501519,
+                28.358822
+            ]
+        },
+        {
+            "address":"Str. Suvorov 7,Anenii Noi",
+            "name":"Secția de votare Nr. 262",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                46.881608,
+                29.23475
+            ]
+        },
+        {
+            "address":"Str. Păcii nr. 18, Căușeni",
+            "name":"Secția de votare Nr. 261",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                46.639877,
+                29.405408
+            ]
+        },
+        {
+            "address":"Hyson Green Youth Club, Terrace Street, Nottingham, NG7 6ER",
+            "name":"Secția de votare Nr. 311",
+            "country":"Marea Britanie",
+            "coordinates":[
+                52.96643,
+                -1.169333
+            ]
+        },
+        {
+            "address":"Str. Ion Vodă nr. 8, Nisporeni",
+            "name":"Secția de votare Nr. 259",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                47.079207,
+                28.18922
+            ]
+        },
+        {
+            "address":"Str. Alexandru cel Bun nr. 86, Ialoveni",
+            "name":"Secția de votare Nr. 258",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                46.946169,
+                28.775062
+            ]
+        },
+        {
+            "address":"Str. Mihalcea Hîncu nr. 132, Hîncești",
+            "name":"Secția de votare Nr. 257",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                46.826758,
+                28.592544
+            ]
+        },
+        {
+            "address":"str. Alexandru Lăpușneanu nr. 1",
+            "name":"Secția de votare Nr. 241",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                47.574546,
+                27.713693
+            ]
+        },
+        {
+            "address":"Str. Sperantei nr. 1, Florești",
+            "name":"Secția de votare Nr. 242",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                47.890076,
+                28.303214
+            ]
+        },
+        {
+            "address":"Bd Independenței nr. 15, Drochia",
+            "name":"Secția de votare Nr. 239",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                48.031986,
+                27.815359
+            ]
+        },
+        {
+            "address":"Str. Independenței nr. 24, Giurgiulești",
+            "name":"Secția de votare Nr. 268",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                45.478813,
+                28.199393
+            ]
+        },
+        {
+            "address":"Str. Mihai Eminescu nr. 19, Călărași",
+            "name":"Secția de votare Nr. 264",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                47.250144,
+                28.314257
+            ]
+        },
+        {
+            "address":"Str. Mihail Kogălniceanu nr. 67/3",
+            "name":"Secțiile de votare Nr. 252 și 253",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                47.018911,
+                28.82426
+            ]
+        },
+        {
+            "address":"Gaono g., nr. 6, Vilnius",
+            "name":"Secția de votare Nr. 228",
+            "country":"Lithuania",
+            "coordinates":[
+                54.680629,
+                25.28655
+            ]
+        },
+        {
+            "address":"Str. Vlaicu Pârcălab nr. 48, Chișinău",
+            "name":"Secția de votare Nr. 249",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                47.021666,
+                28.833978
+            ]
+        },
+        {
+            "address":"344 Kensington High Street, W14 8 NS",
+            "name":"Secția de votare Nr. 295",
+            "country":"Marea Britanie",
+            "coordinates":[
+                51.49727,
+                -0.20491
+            ]
+        },
+        {
+            "address":"Holiday Inn Peterborough West, Thorpe Wood, Peterborough, Cambridgeshire, PE3 6SG",
+            "name":"Secția de votare Nr. 309",
+            "country":"Marea Britanie",
+            "coordinates":[
+                52.564638,
+                -0.287187
+            ]
+        },
+        {
+            "address":"\"My Romania Community\" Newman Catholic College Harlesden Road,Willesden, NW10 3RN",
+            "name":"Secția de votare Nr. 296",
+            "country":"Marea Britanie",
+            "coordinates":[
+                51.53809,
+                -0.23926
+            ]
+        },
+        {
+            "address":"University of Essex, Wivenhoe Park, Colchester CO4 3SQ",
+            "name":"Secția de votare Nr. 306",
+            "country":"Marea Britanie",
+            "coordinates":[
+                51.877507,
+                0.947314
+            ]
+        },
+        {
+            "address":"Suzanne Sparrow School, 72-74 North Road East Plymouth Devon PL4 6AL",
+            "name":"Secția de votare Nr. 302",
+            "country":"Marea Britanie",
+            "coordinates":[
+                50.377628,
+                -4.139039
+            ]
+        },
+        {
+            "address":"Centrul Civic al Consiliului Local din Harrow (Civil Centre, Station Road, HA1 2XY Harrow)",
+            "name":"Secția de votare Nr. 298",
+            "country":"Marea Britanie",
+            "coordinates":[
+                51.589252,
+                -0.334177
+            ]
+        },
+        {
+            "address":"University of Bedfordshire University Square, Luton LU1 3JU",
+            "name":"Secția de votare Nr. 305",
+            "country":"Marea Britanie",
+            "coordinates":[
+                51.877925,
+                -0.409311
+            ]
+        },
+        {
+            "address":"Aberdeen City Council, Town House, Broad Street, Aberdeen, AB10 1FY    ",
+            "name":"Secția de votare Nr. 320",
+            "country":"Marea Britanie",
+            "coordinates":[
+                57.148198,
+                -2.094764
+            ]
+        },
+        {
+            "address":"Llanishen High School, Heol Hir, Llanishen, Cardiff, CF14 5YL",
+            "name":"Secția de votare Nr. 317",
+            "country":"Marea Britanie",
+            "coordinates":[
+                51.531975,
+                -3.188012
+            ]
+        },
+        {
+            "address":"Umbrela Fair , Racecourse Pavilion, Kettering Rd, Northampton NN1 4LG",
+            "name":"Secția de votare Nr. 307",
+            "country":"Marea Britanie",
+            "coordinates":[
+                52.247785,
+                -0.882677
+            ]
+        },
+        {
+            "address":"Sediul Consiliului Local (Civic Centre, Newcastle upon Tyne, NE1 8QH) ",
+            "name":"Secția de votare Nr. 316",
+            "country":"Marea Britanie",
+            "coordinates":[
+                54.97825,
+                -1.61778
+            ]
+        },
+        {
+            "address":"Sediul Primăriei (Leeds Civic Hall, Calverley Street, West Yorkshire, LS1 1UR) ",
+            "name":"Secția de votare Nr. 315",
+            "country":"Marea Britanie",
+            "coordinates":[
+                53.80076,
+                -1.54908
+            ]
+        },
+        {
+            "address":"Caritas Welcome Centre, 17 Val Plaisant, St Helier, Jersey",
+            "name":"Secția de votare Nr. 322",
+            "country":"Marea Britanie",
+            "coordinates":[
+                49.1885,
+                -2.1054
+            ]
+        },
+        {
+            "address":"Magnet Centre, Park Approach, Birmingham B23 7SJ",
+            "name":"Secția de votare Nr. 308",
+            "country":"Marea Britanie",
+            "coordinates":[
+                52.514791,
+                -1.866654
+            ]
+        },
+        {
+            "address":"1 Stranmillis Embankment, Belfast, BT7 1GB ",
+            "name":"Secția de votare Nr. 321",
+            "country":"Marea Britanie",
+            "coordinates":[
+                54.58353,
+                -5.92256
+            ]
+        },
+        {
+            "address":"Weißenwolffstraße 17a, 4020 Linz",
+            "name":"Secția de votare Nr. 26",
+            "country":"Austria",
+            "coordinates":[
+                48.304816,
+                14.30303
+            ]
+        },
+        {
+            "address":"Kirchsteig 8, 6020 Innsbruck",
+            "name":"Secția de votare Nr. 27",
+            "country":"Austria",
+            "coordinates":[
+                47.258643,
+                11.429133
+            ]
+        },
+        {
+            "address":"Rue Montoyer 12, 1000 Bruxelles",
+            "name":"Secțiile de votare Nr. 30 și 31",
+            "country":"Belgia",
+            "coordinates":[
+                50.841789,
+                4.368899
+            ]
+        },
+        {
+            "address":"Boulevard du Regent 47-48, 1000 Bruxelles",
+            "name":"Secțiile de votare Nr. 34 și 35",
+            "country":"Belgia",
+            "coordinates":[
+                50.847655,
+                4.368868
+            ]
+        },
+        {
+            "address":"Pavillon Rotary, Parc Rotary St. Anselme, Dippe, New Brunswick, E1A 0K2 (Salle foyer, Consulat Onorific). Dieppe/Moncton",
+            "name":"Secția de votare Nr. 43",
+            "country":"Canada",
+            "coordinates":[
+                46.070926,
+                -64.72002
+            ]
+        },
+        {
+            "address":"1015-73rd Avenue SW, Calgary, Alberta, T2V 0R9 (CKE Community Hall Consulat Onorific), Calgary",
+            "name":"Secția de votare Nr. 44",
+            "country":"Canada",
+            "coordinates":[
+                50.987794,
+                -114.0849
+            ]
+        },
+        {
+            "address":"3F- Odense GOPS Skibhusvej 52 B, etaj 2, 5100 Odense C",
+            "name":"Secția de votare Nr. 66",
+            "country":"Danemarca",
+            "coordinates":[
+                55.404832,
+                10.392511
+            ]
+        },
+        {
+            "address":"Byskellet 33, 6950 Ringkøbing",
+            "name":"Secția de votare Nr. 67",
+            "country":"Danemarca",
+            "coordinates":[
+                56.089784,
+                8.258757
+            ]
+        },
+        {
+            "address":"Vissingsgade 31, etajul 1, sala 1,  7100 Vejle (Foreningernes Hus Vejle)",
+            "name":"Secția de votare Nr. 68",
+            "country":"Danemarca",
+            "coordinates":[
+                55.709855,
+                9.537034
+            ]
+        },
+        {
+            "address":"Lysvang 29A, 6400 Sønderborg",
+            "name":"Secția de votare Nr. 69",
+            "country":"Danemarca",
+            "coordinates":[
+                54.91898,
+                9.788658
+            ]
+        },
+        {
+            "address":"Businesscenter Swiss Star, Grubenstrasse .5, 8620 Wezikon, Zurich",
+            "name":"Secția de votare Nr. 73",
+            "country":"Elveția",
+            "coordinates":[
+                47.314419,
+                8.796869
+            ]
+        },
+        {
+            "address":"Stellwerk Basel / Vogesenplatz 1, 4056 Basel",
+            "name":"Secția de votare Nr. 74",
+            "country":"Elveția",
+            "coordinates":[
+                47.570541,
+                7.572562
+            ]
+        },
+        {
+            "address":"Cultural Centre Laikku, Keskustori 4,33100 ",
+            "name":"Secția de votare Nr. 81",
+            "country":"Finlanda",
+            "coordinates":[
+                61.499147,
+                23.76194
+            ]
+        },
+        {
+            "address":"Nygatan 12, 22100 (Sala de conferinte Hotel Savoy), Mariehamn",
+            "name":"Secția de votare Nr. 83",
+            "country":"Finlanda",
+            "coordinates":[
+                60.100248,
+                19.938769
+            ]
+        },
+        {
+            "address":"Salle Mairie de Doulon, 35 boulevard Louis Millet, Nantes -Spatiu oferit de Primarie localitate",
+            "name":"Secția de votare Nr. 99",
+            "country":"Franța",
+            "coordinates":[
+                47.227683,
+                -1.518877
+            ]
+        },
+        {
+            "address":"Le Triangle Congres Boulevard de Yougoslavie Bp 90160 35201 Rennes Cedex 2",
+            "name":"Secția de votare Nr. 100",
+            "country":"Franța",
+            "coordinates":[
+                48.088864,
+                -1.659472
+            ]
+        },
+        {
+            "address":"Auf der Schanz 28, 85049 Ingolstadt",
+            "name":"Secția de votare Nr. 113",
+            "country":"Germania",
+            "coordinates":[
+                48.768299,
+                11.41844
+            ]
+        },
+        {
+            "address":"Don Bosco Platz nr. 3, Augsburg 86161",
+            "name":"Secția de votare Nr. 114",
+            "country":"Germania",
+            "coordinates":[
+                48.357505,
+                10.925869
+            ]
+        },
+        {
+            "address":"Elisabeth-Breuer-Straße 48, 51065 Köln (Parohia românească)",
+            "name":"Secția de votare Nr. 122",
+            "country":"Germania",
+            "coordinates":[
+                50.961739,
+                7.01256
+            ]
+        },
+        {
+            "address":"Am Schönenkamp 1, 40599 Düsseldorf",
+            "name":"Secția de votare Nr. 123",
+            "country":"Germania",
+            "coordinates":[
+                51.189136,
+                6.862675
+            ]
+        },
+        {
+            "address":"Backstrasse 12A, 63069 Offenbach am Main (Parohia românească)",
+            "name":"Secția de votare Nr. 124",
+            "country":"Germania",
+            "coordinates":[
+                50.089139,
+                8.746653
+            ]
+        },
+        {
+            "address":"Hernerstrasse 97, 44791 Bochum",
+            "name":"Secția de votare Nr. 125",
+            "country":"Germania",
+            "coordinates":[
+                51.491557,
+                7.2131
+            ]
+        },
+        {
+            "address":" Michaelisstraße 42, 20459 Hamburg ( accesul se face prin Michaelishof)",
+            "name":"Secția de votare Nr. 117",
+            "country":"Germania",
+            "coordinates":[
+                53.549623,
+                9.981366
+            ]
+        },
+        {
+            "address":"Hauptstraße 41, 38446 Wolfsburg",
+            "name":"Secția de votare Nr. 119",
+            "country":"Germania",
+            "coordinates":[
+                52.421532,
+                10.839141
+            ]
+        },
+        {
+            "address":"Poros Hrisopighi, portul Heraklion, cod poștal 71307, Creta",
+            "name":"Secția de votare Nr. 130",
+            "country":"Grecia",
+            "coordinates":[
+                35.340063,
+                25.145529
+            ]
+        },
+        {
+            "address":"Bdul Shaul Hamelech nr. 8, Tel Aviv",
+            "name":"Secția de votare Nr. 140",
+            "country":"Israel",
+            "coordinates":[
+                32.075412,
+                34.78399
+            ]
+        },
+        {
+            "address":"Str Octavian Cirimpei nr 30, Edinet",
+            "name":"Secția de votare Nr. 240",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                48.174039,
+                27.29196
+            ]
+        },
+        {
+            "address":"Str. București nr. 64, Chișinău",
+            "name":"Secțiile de votare Nr. 250 și 251",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                47.020136,
+                28.83076
+            ]
+        },
+        {
+            "address":"Via Tolomei nr 5, Siena",
+            "name":"Secția de votare Nr. 185",
+            "country":"Italia",
+            "coordinates":[
+                43.336892,
+                11.300944
+            ]
+        },
+        {
+            "address":"Largo Francesco Petrarca 3, Pisa",
+            "name":"Secția de votare Nr. 186",
+            "country":"Italia",
+            "coordinates":[
+                43.720136,
+                10.415484
+            ]
+        },
+        {
+            "address":"Centro civico Ravagnese, Via Ravagnese Superiore snc. CP.89131, Reggio Calabria",
+            "name":"Secția de votare Nr. 170",
+            "country":"Italia",
+            "coordinates":[
+                38.07412,
+                15.656848
+            ]
+        },
+        {
+            "address":"Viale Europa 31, Mantova",
+            "name":"Secția de votare Nr. 199",
+            "country":"Italia",
+            "coordinates":[
+                45.150543,
+                10.765156
+            ]
+        },
+        {
+            "address":"Via Paolo Gorini 21 - 26900  Lodi (LO)",
+            "name":"Secția de votare Nr. 200",
+            "country":"Italia",
+            "coordinates":[
+                45.311498,
+                9.507443
+            ]
+        },
+        {
+            "address":"Centro Polifunzionale \"Don Pier Giorgio Ferrero\",Via Santa Maria, 27 bis,  Moncalieri",
+            "name":"Secția de votare Nr. 206",
+            "country":"Italia",
+            "coordinates":[
+                44.993982,
+                7.665547
+            ]
+        },
+        {
+            "address":"Via Palazzo di Città nr. 10, 10023 Chieri",
+            "name":"Secția de votare Nr. 207",
+            "country":"Italia",
+            "coordinates":[
+                45.012895,
+                7.821717
+            ]
+        },
+        {
+            "address":"c/Miguel Rodriguez s/n Edificio Casa de la Cultura Paseo Grande 21440 Lepe",
+            "name":"Secția de votare Nr. 366",
+            "country":"Spania",
+            "coordinates":[
+                37.279339,
+                -7.232925
+            ]
+        },
+        {
+            "address":"Tigne Palace, Office M4, Mezzanine Floor, Tigne Street, Sliema SLM3173, Malta",
+            "name":"Secția de votare Nr. 232",
+            "country":"Malta",
+            "coordinates":[
+                35.911109,
+                14.502906
+            ]
+        },
+        {
+            "address":"Via Cardinal Fietta nr.5, etaj 1, Ivrea",
+            "name":"Secția de votare Nr. 208",
+            "country":"Italia",
+            "coordinates":[
+                45.469712,
+                7.882284
+            ]
+        },
+        {
+            "address":"500 Grand Avenue, etaj 2 Englewood, NJ 07631",
+            "name":"Secția de votare Nr. 413",
+            "country":"SUA",
+            "coordinates":[
+                40.877858,
+                -73.98284
+            ]
+        },
+        {
+            "address":"Old Town Hall Stratford, 29 The Broadway, London E15 4BQ ",
+            "name":"Secția de votare Nr. 297",
+            "country":"Marea Britanie",
+            "coordinates":[
+                51.540665,
+                0.00168
+            ]
+        },
+        {
+            "address":"9 Cooper St, Manchester, M2 2FW  ",
+            "name":"Secția de votare Nr. 313",
+            "country":"Romania",
+            "coordinates":[
+                53.479297,
+                -2.242471
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Africa de Sud, 877, Justice Mohamed Street, Brooklyn 0181, P.O. Box 11295, Hatfield 0028",
+            "name":"Secția de votare Nr. 4",
+            "country":"Africa De Sud",
+            "coordinates":[
+                -25.767059,
+                28.234627
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Albania, Strada Pandeli Evangjeli 15, Tirana",
+            "name":"Secția de votare Nr. 6",
+            "country":"Albania",
+            "coordinates":[
+                41.315014,
+                19.835769
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Algeriană Democratică și Populară, 24, Rue Abri Arezki, Hydra, 16035",
+            "name":"Secția de votare Nr. 7",
+            "country":"Algeria",
+            "coordinates":[
+                36.745824,
+                3.038152
+            ]
+        },
+        {
+            "address":"Ambasada României în Statele Unite ale Americii, 1607 23rd Street, NW Washington, D.C. 20008",
+            "name":"Secția de votare Nr. 414",
+            "country":"SUA",
+            "coordinates":[
+                38.911582,
+                -77.050406
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Angola, Rua Ramalho Ortigão, Nº30, Alvalade, Luanda",
+            "name":"Secția de votare Nr. 8",
+            "country":"Angola",
+            "coordinates":[
+                -8.828362,
+                13.236122
+            ]
+        },
+        {
+            "address":"Ambasada României în Regatul Arabiei Saudite, King Fahad Quarter, Amin Al Rehany Street, Villa no.8, Riad - 11693",
+            "name":"Secția de votare Nr. 9",
+            "country":"Arabia Saudită",
+            "coordinates":[
+                24.742237,
+                46.665579
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Argentina, Calle Arroyo 962-970, Buenos Aires - C 1007AAD, CABA",
+            "name":"Secția de votare Nr. 10",
+            "country":"Argentina",
+            "coordinates":[
+                -34.591484,
+                -58.380916
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Armenia, Str. Barbusse nr.15, cartierul Arabkir, Erevan",
+            "name":"Secția de votare Nr. 11",
+            "country":"Armenia",
+            "coordinates":[
+                40.196208,
+                44.485391
+            ]
+        },
+        {
+            "address":"Ambasada României în Australia, 4 Dalman Crescent, O'Malley, A.C.T. 2606, Canberra",
+            "name":"Secția de votare Nr. 13",
+            "country":"Australia",
+            "coordinates":[
+                -35.350296,
+                149.10872
+            ]
+        },
+        {
+            "address":"Ambasada României în Austria, Prinz Eugen Strasse 60, 1040 Viena\r\n",
+            "name":"Secțiile de votare Nr. 20 și 21",
+            "country":"Austria",
+            "coordinates":[
+                48.19077,
+                16.37961
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Azerbaidjan, Blv. Hasan Aliev, nr. 125 A (Narimanov) Baku",
+            "name":"Secția de votare Nr. 28",
+            "country":"Azerbaidjan",
+            "coordinates":[
+                40.403999,
+                49.855064
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Belarus, Kaliningradskii pereulok, 12, 220012, Minsk\r\n",
+            "name":"Secția de votare Nr. 29",
+            "country":"Belarus",
+            "coordinates":[
+                53.927148,
+                27.599053
+            ]
+        },
+        {
+            "address":"Ambasada României în Regatul Belgiei, 105, Rue Gabrielle, 1180 Bruxelles, Belgia\r\n",
+            "name":"Secțiile de votare Nr. 33",
+            "country":"Belgia",
+            "coordinates":[
+                50.812687,
+                4.359895
+            ]
+        },
+        {
+            "address":"Ambasada României în Bosnia și Herțegovina, Str. Cobanija, nr. 28, Sarajevo 71.000\r\n",
+            "name":"Secția de votare Nr. 38",
+            "country":"Bosnia și Herțegovina",
+            "coordinates":[
+                43.853663,
+                18.421377
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Federativă a Braziliei, SEN 6 - Asa Norte, Avenida das Nacoes, Quadra 801, Lote 06, Brasilia DF, CEP: 70.800-9177",
+            "name":"Secția de votare Nr. 39",
+            "country":"Brazilia",
+            "coordinates":[
+                -15.78739,
+                -47.866058
+            ]
+        },
+        {
+            "address":"Ambasada României în Canada, 655 Rideau Street, Ottawa, Ontario, K1N 6A3",
+            "name":"Secția de votare Nr. 42",
+            "country":"Canada",
+            "coordinates":[
+                45.433929,
+                -75.673681
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Cehă, Nerudova 5, Mala Strana, 118 00, Praga 1",
+            "name":"Secția de votare Nr. 48",
+            "country":"Rep. Cehă",
+            "coordinates":[
+                50.088423,
+                14.400922
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Chile, Calle Benjamin, no. 2955, Las Condes, Santiago de Chile",
+            "name":"Secția de votare Nr. 53",
+            "country":"Chile",
+            "coordinates":[
+                -33.412634,
+                -70.600808
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Populară Chineză, Ritan Est, nr. 2, districtul Chaoyang, Beijing, 100600 - Intrarea de sud",
+            "name":"Secția de votare Nr. 55",
+            "country":"China",
+            "coordinates":[
+                39.915925,
+                116.44716
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Cipru, Strada Pireos nr. 27, Strovolos, cod 2023, Nicosia, P.O. Box: 22210",
+            "name":"Secția de votare Nr. 58",
+            "country":"Cipru",
+            "coordinates":[
+                35.145516,
+                33.352322
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Columbia, Carrera 7a, Nr 92A-58, Chico, Bogota",
+            "name":"Secția de votare Nr. 50",
+            "country":"Columbia",
+            "coordinates":[
+                4.67182,
+                -74.043203
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Populară Democrată Coreeană, Pyongyang City, Taedong District, Munhungdong",
+            "name":"Secția de votare Nr. 51",
+            "country":"Coreea De Nord",
+            "coordinates":[
+                39.02899,
+                125.788457
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Coreea, 50 Jangmun-ro, Yongsan-gu, Seoul, 140-809, Republica Coreea",
+            "name":"Secția de votare Nr. 52",
+            "country":"Coreea De Sud",
+            "coordinates":[
+                37.527049,
+                126.995232
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Croația, Mlinarska nr.43, 10000 Zagreb\r\n",
+            "name":"Secția de votare Nr. 61",
+            "country":"Croația",
+            "coordinates":[
+                45.827851,
+                15.977575
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Cuba, Avenida 5ta A, nr. 4407, Miramar, La Habana",
+            "name":"Secția de votare Nr. 62",
+            "country":"Cuba",
+            "coordinates":[
+                23.113777,
+                -82.430797
+            ]
+        },
+        {
+            "address":"Ambasada României în Regatul Danemarcei, Strandagervej 27, 2900 Hellerup, Copenhaga",
+            "name":"Secția de votare Nr. 63",
+            "country":"Danemarca",
+            "coordinates":[
+                55.724452,
+                12.57172
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Arabă Egipt, 6, El-Kamel Mohamed Street, Zamalek, Cairo",
+            "name":"Secția de votare Nr. 70",
+            "country":"Egipt",
+            "coordinates":[
+                30.058856,
+                31.219151
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Elenă, 7, Strada Emmanouil Benaki 7, Paleo Psyhiko, 15452 Atena",
+            "name":"Secția de votare Nr. 127",
+            "country":"Grecia",
+            "coordinates":[
+                38.015282,
+                23.779372
+            ]
+        },
+        {
+            "address":"Ambasada României în Confederația Elvețiană, Kirchenfeldstrasse 78, 3005 Berna",
+            "name":"Secția de votare Nr. 72",
+            "country":"Elveția",
+            "coordinates":[
+                46.940169,
+                7.456495
+            ]
+        },
+        {
+            "address":"Ambasada României în Emiratele Arabe Unite, 2nd Str, No.9, W(14/1) plot No.13 at Al Rodha Area, P.O.Box 70416, Abu Dhabi",
+            "name":"Secția de votare Nr. 75",
+            "country":"Emiratele Arabe Unite",
+            "coordinates":[
+                24.458777,
+                54.370635
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Federală Democratică Etiopia, Woreda 17, Kebele 19, Houses No. 09 – 10, P.O. Box: 2478, Addis Ababa, Ethiopia",
+            "name":"Secția de votare Nr. 78",
+            "country":"Etiopia",
+            "coordinates":[
+                8.995688,
+                38.777575
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Filipine, Strada Legazpi nr.150, G.C. Corporate Plaza, etaj 6, Legazpi Village, Makati City, CP 1229",
+            "name":"Secția de votare Nr. 79",
+            "country":"Filipine",
+            "coordinates":[
+                14.55651,
+                121.01647
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Finlanda, Stenbäckinkatu 24, 00250 Helsinki",
+            "name":"Secția de votare Nr. 80",
+            "country":"Finlanda",
+            "coordinates":[
+                60.186537,
+                24.909943
+            ]
+        },
+        {
+            "address":"Ambasada României în Georgia, Strada Lvovi nr. 7, cartier Saburtalo, Tbilisi",
+            "name":"Secția de votare Nr. 101",
+            "country":"Georgia",
+            "coordinates":[
+                41.732466,
+                44.766312
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Federală Germania, Dorotheenstr. 62-66, 10117 Berlin",
+            "name":"Secțiile de votare Nr. 115 și 116",
+            "country":"Germania",
+            "coordinates":[
+                52.51865,
+                13.386476
+            ]
+        },
+        {
+            "address":"Ambasada României în India, D – 6/6, Vasant Vihar, New Delhi – 110057",
+            "name":"Secția de votare Nr. 132",
+            "country":"India",
+            "coordinates":[
+                28.563096,
+                77.152832
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Indonezia, 42A, Jl. Teuku Cik Ditiro, Menteng, Jakarta Pusat 10310",
+            "name":"Secția de votare Nr. 133",
+            "country":"Indonezia",
+            "coordinates":[
+                -6.198168,
+                106.837001
+            ]
+        },
+        {
+            "address":"Ambasada României în Regatul Hașemit al Iordaniei, 35, Al-Madeenah Al-Munawarah St., PO BOX 2869, Amman, 11181",
+            "name":"Secția de votare Nr. 131",
+            "country":"Iordania",
+            "coordinates":[
+                31.964285,
+                35.864578
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Irak, Arassat Al-Hindia Street, Hay Babel Mahalla 929, Zuqaq 31, Nr. 452/A, Baghdad, P.O.Box 2571",
+            "name":"Secția de votare Nr. 220",
+            "country":"Irak",
+            "coordinates":[
+                33.17369,
+                44.25198
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Islamică Iran, 89 Shahid Meshki (Fakhrabad), Ave. Baharestan, Teheran",
+            "name":"Secția de votare Nr. 222",
+            "country":"Iran",
+            "coordinates":[
+                35.695208,
+                51.440402
+            ]
+        },
+        {
+            "address":"Ambasada României în Irlanda, 26 Waterloo Road, Ballsbridge, Dublin 4",
+            "name":"Secția de votare Nr. 134",
+            "country":"Irlanda",
+            "coordinates":[
+                53.331078,
+                -6.244
+            ]
+        },
+        {
+            "address":"Ambasada României în Israel, Str. Adam Hacohen, Nr. 24, Tel Aviv 64585",
+            "name":"Secția de votare Nr. 139",
+            "country":"Israel",
+            "coordinates":[
+                32.085965,
+                34.777737
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Italiană, Via Nicolo Tartaglia, 36, 00197 Roma",
+            "name":"Secția de votare Nr. 144",
+            "country":"Italia",
+            "coordinates":[
+                41.924269,
+                12.488191
+            ]
+        },
+        {
+            "address":"Ambasada României în Japonia, 106-0031 Tokyo-to, Minato-ku, Nishi-Azabu, 3-16-19",
+            "name":"Secția de votare Nr. 223",
+            "country":"Japonia",
+            "coordinates":[
+                35.657933,
+                139.724443
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Kazakhstan, Str. Saraișâk (ул. Сарайшык) nr. 28, Nur-Sultan",
+            "name":"Secția de votare Nr. 224",
+            "country":"Kazakhstan",
+            "coordinates":[
+                51.16052,
+                71.47036
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Kenya, Eliud Mathu Street 1119, Runda, Nairobi P.O. Box 63240-00619, Nairobi, Kenya",
+            "name":"Secția de votare Nr. 225",
+            "country":"Kenya",
+            "coordinates":[
+                -1.21126,
+                36.815954
+            ]
+        },
+        {
+            "address":"Ambasada României în Kuwait, Kaifan, Block 4, Mina Street, House no. 34, P.O. BOX Kaifan 13574 cod 35152, State of Kuwait",
+            "name":"Secția de votare Nr. 226",
+            "country":"Kuwait",
+            "coordinates":[
+                29.334897,
+                47.964109
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Libaneză, Route du Palais Présidentiel, Baabda, Rue 68, no. 30, sect. 3, B.P. 40227",
+            "name":"Secția de votare Nr. 227",
+            "country":"Liban",
+            "coordinates":[
+                33.844048,
+                35.538518
+            ]
+        },
+        {
+            "address":"Ambasada României în Marele Ducat al Luxemburgului, 2 rue de Pulvermühl, L-2356, Luxembourg",
+            "name":"Secția de votare Nr. 229",
+            "country":"Luxemburg",
+            "coordinates":[
+                49.605,
+                6.124185
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Macedonia de Nord, Rajko Zinzifov nr. 42, Skopje",
+            "name":"Secția de votare Nr. 230",
+            "country":"Macedonia De Nord",
+            "coordinates":[
+                41.997662,
+                21.41857
+            ]
+        },
+        {
+            "address":"Ambasada României în Malaysia, 114 Jalan Damai off Jalan Ampang, Kuala Lumpur 55000, Malaysia",
+            "name":"Secția de votare Nr. 231",
+            "country":"Malaysia",
+            "coordinates":[
+                3.163334,
+                101.730549
+            ]
+        },
+        {
+            "address":"Ambasada României în Regatul Maroc, 10, Rue d'Ouezzane, Quartier Hassan, Rabat",
+            "name":"Secția de votare Nr. 233",
+            "country":"Maroc",
+            "coordinates":[
+                34.021632,
+                -6.821899
+            ]
+        },
+        {
+            "address":"Ambasada României în Statele Unite Mexicane, Calle Sofocles no. 311, Colonia Polanco, Delegacion Miguel Hidalgo 11560",
+            "name":"Secția de votare Nr. 234",
+            "country":"Mexic",
+            "coordinates":[
+                19.434444,
+                -99.205007
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Moldova, Str. București 66/1, Chișinău, cod 277012",
+            "name":"Secția de votare Nr. 244",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                47.0208286,
+                28.8295197
+            ]
+        },
+        {
+            "address":"Ambasada României în Muntenegru, Strada Prve Proleterske, nr. 5, 81000",
+            "name":"Secția de votare Nr. 271",
+            "country":"Muntenegru",
+            "coordinates":[
+                42.447971,
+                19.280695
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Federală Nigeria, No.76, Plot 498, Nelson Mandela Street, Asokoro, Abuja, FCT",
+            "name":"Secția de votare Nr. 276",
+            "country":"Nigeria",
+            "coordinates":[
+                9.037997,
+                7.52651
+            ]
+        },
+        {
+            "address":"Ambasada României în Regatul Norvegiei, Oscars Gate 51, 0244 Oslo, Norway",
+            "name":"Secția de votare Nr. 272",
+            "country":"Norvegia",
+            "coordinates":[
+                59.919796,
+                10.722308
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Islamică Pakistan, Casa nr. 5-A, Strada Nr. 30, Sector F-7/1, Islamabad 44000",
+            "name":"Secția de votare Nr. 282",
+            "country":"Pakistan",
+            "coordinates":[
+                33.721698,
+                73.090324
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Peru, Avenida Jorge Basadre no.690, San Isidro, Lima 27",
+            "name":"Secția de votare Nr. 284",
+            "country":"Peru",
+            "coordinates":[
+                -12.094759,
+                -77.039126
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Polonă, Ul. Fr.Chopina 10, 00-559 Warszawa",
+            "name":"Secția de votare Nr. 285",
+            "country":"Polonia",
+            "coordinates":[
+                52.222884,
+                21.021856
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Portugheză, Rua de São Caetano 5 (Lapa), 1200-828 Lisabona",
+            "name":"Secția de votare Nr. 288",
+            "country":"Portugalia",
+            "coordinates":[
+                38.709227,
+                -9.16359
+            ]
+        },
+        {
+            "address":"Ambasada României în Statul Qatar, Str. 953, nr.102, zona 65, Dafna Area, Doha, P.O.Box 22511",
+            "name":"Secția de votare Nr. 293",
+            "country":"Qatar",
+            "coordinates":[
+                25.331892,
+                51.508213
+            ]
+        },
+        {
+            "address":"Ambasada României în Federația Rusă, Mosfilmovskaia Ulița, Dom 64, Moskva",
+            "name":"Secția de votare Nr. 323",
+            "country":"Federația Rusă",
+            "coordinates":[
+                55.714783,
+                37.512088
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Senegal, Point E, Rue A x 9A (Rue A Prolongée), Dakar, Sénégal, B.P. 3212",
+            "name":"Secția de votare Nr. 326",
+            "country":"Senegal",
+            "coordinates":[
+                14.702612,
+                -17.46231
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Serbia, Uzicka nr. 10, Dedinje, Belgrad, cod 11000",
+            "name":"Secția de votare Nr. 328",
+            "country":"Serbia",
+            "coordinates":[
+                44.78686,
+                20.447961
+            ]
+        },
+        {
+            "address":"Ambasada României în Singapore, 1 Claymore Drive, #08-10, Singapore 229594",
+            "name":"Secția de votare Nr. 331",
+            "country":"Singapore",
+            "coordinates":[
+                1.307367,
+                103.829368
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Arabă Siriană, 8, Rue Ibrahim Hanano, P.O. Box 4454, Damascus",
+            "name":"Secția de votare Nr. 332",
+            "country":"Siria",
+            "coordinates":[
+                33.520961,
+                36.2732
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Slovacă, Zrínskeho 13, 811 03, Bratislava",
+            "name":"Secția de votare Nr. 334",
+            "country":"Slovacia",
+            "coordinates":[
+                48.148805,
+                17.096609
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Slovenia, Smrekarjeva 33a, 1107 Ljubljana",
+            "name":"Secția de votare Nr. 333",
+            "country":"Slovenia",
+            "coordinates":[
+                46.072218,
+                14.49366
+            ]
+        },
+        {
+            "address":"Ambasada României în Spania, Avenida de Alfonso XIII nr.157, Madrid 28016",
+            "name":"Secția de votare Nr. 342",
+            "country":"Spania",
+            "coordinates":[
+                40.46019,
+                -3.678382
+            ]
+        },
+        {
+            "address":"Ambasada României în Sri Lanka, 25/1, Horton Place, Colombo 7",
+            "name":"Secția de votare Nr. 385",
+            "country":"Sri Lanka",
+            "coordinates":[
+                6.9115,
+                79.870978
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Sudan, Kafouri Area - Kassala Road, Plot 172/173 Khartoum North, P.O. Box 1494",
+            "name":"Secția de votare Nr. 417",
+            "country":"Sudan",
+            "coordinates":[
+                15.657007,
+                32.548585
+            ]
+        },
+        {
+            "address":"Ambasada României în Suedia, Östermalmsgatan 36, 114 26, Stockholm",
+            "name":"Secția de votare Nr. 418",
+            "country":"Suedia",
+            "coordinates":[
+                59.342874,
+                18.072274
+            ]
+        },
+        {
+            "address":"Ambasada României în Regatul Thailandei, 3388/41 Sirinrat Office Building, 12th Floor, Rama IV Road, Khlong Toei, Bangkok 10110",
+            "name":"Secția de votare Nr. 422",
+            "country":"Thailanda",
+            "coordinates":[
+                13.716985,
+                100.570645
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Turcia, Bükres Sokak No.4, Çankaya, 06680, Ankara",
+            "name":"Secția de votare Nr. 427",
+            "country":"Turcia",
+            "coordinates":[
+                39.897555,
+                32.860552
+            ]
+        },
+        {
+            "address":"Ambasada României în Turkmenistan, Str. Myati Kosayew, nr. 122, Ashgabat",
+            "name":"Secția de votare Nr. 428",
+            "country":"Turkmenistan",
+            "coordinates":[
+                37.952015,
+                58.349031
+            ]
+        },
+        {
+            "address":"Ambasada României în Regatul Ţărilor de Jos, Catsheuvel 55,  2517 KA, Haga",
+            "name":"Secțiile de votare Nr. 277 și 278",
+            "country":"Olanda",
+            "coordinates":[
+                52.091186,
+                4.281173
+            ]
+        },
+        {
+            "address":"Ambasada României în Ucraina, Mihaila Kotsiubinskogo 8, 01030 - Kiev, raion Shevcenko",
+            "name":"Secția de votare Nr. 429",
+            "country":"Ucraina",
+            "coordinates":[
+                50.446609,
+                30.50311
+            ]
+        },
+        {
+            "address":"Ambasada României în Ungaria, 1146 Budapest, Thököly út 72",
+            "name":"Secția de votare Nr. 434",
+            "country":"Ungaria",
+            "coordinates":[
+                47.507251,
+                19.093251
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Orientală a Uruguayului, Echevarriarza 3452, Montevideo",
+            "name":"Secția de votare Nr. 437",
+            "country":"Uruguay",
+            "coordinates":[
+                -34.9087,
+                -56.140274
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Uzbekistan, Str. Zanjirbog (fostă Rejametova) nr. 44 A, Tașkent",
+            "name":"Secția de votare Nr. 438",
+            "country":"Uzbekistan",
+            "coordinates":[
+                41.297007,
+                69.264501
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Venezuela, 4-a Avenida de Altamira, entre 8-a y 9-a Transversales, Quinta Guardatinajas, No. 49-19, Chacao",
+            "name":"Secția de votare Nr. 439",
+            "country":"Venezuela",
+            "coordinates":[
+                10.508045,
+                -66.842929
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Socialistă Vietnam, 5 Le Hong Phong Street, Hanoi",
+            "name":"Secția de votare Nr. 440",
+            "country":"Vietnam",
+            "coordinates":[
+                21.005982,
+                105.81653
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Zimbabwe, 105, Fourth Street/Cnr. Chinamano, Harare, Zimbabwe",
+            "name":"Secția de votare Nr. 441",
+            "country":"Zimbabwe",
+            "coordinates":[
+                -17.8169,
+                31.05159
+            ]
+        },
+        {
+            "address":"Oficiul de Reprezentare al României la Ramallah – Palestina, PRICO House Building, 2nd floor, Al-Masyoun, Ramallah",
+            "name":"Secția de votare Nr. 283",
+            "country":"Palestina",
+            "coordinates":[
+                31.912576,
+                35.221707
+            ]
+        },
+        {
+            "address":"Ambasada României în Republica Estonia, Rävala puiestee 5, 10143 Tallinn, Estonia ​",
+            "name":"Secția de votare Nr. 77",
+            "country":"Estonia",
+            "coordinates":[
+                59.4335,
+                24.7571
+            ]
+        },
+        {
+            "address":"Misiunea Permanentă a României pe lângă organizațiile internaționale de la Viena, Seilerstätte 17, St. 2/8-9, 1010 Viena\r\n",
+            "name":"Secția de votare Nr. 19",
+            "country":"Austria",
+            "coordinates":[
+                48.204112,
+                16.37392
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Cape Town, Helderberg House, 24 Highwick Drive, Kenilworth, 7700, Cape Town",
+            "name":"Secția de votare Nr. 5",
+            "country":"Africa De Sud",
+            "coordinates":[
+                -33.99151,
+                18.461623
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Sydney, Ground Floor/83 York Street, Sydney, NSW, 2000",
+            "name":"Secția de votare Nr. 16",
+            "country":"Australia",
+            "coordinates":[
+                -33.864472,
+                151.20582
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Rio de Janeiro, Rua Cosme Velho nr.526 - Bairro Cosme Velho, CEP 22241- 090, Rio de Janeiro",
+            "name":"Secția de votare Nr. 40",
+            "country":"Brazilia",
+            "coordinates":[
+                -22.94019,
+                -43.198655
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Montreal, 1010, rue Sherbrooke Ouest, bureau 610, etaj 6, H3A 2R7, Montreal, Québec",
+            "name":"Secțiile de votare Nr. 46",
+            "country":"Canada",
+            "coordinates":[
+                45.502198,
+                -73.575743
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Toronto, 789 Don Mills Rd, unit 501, Toronto, ON, M3C 1T9, Canada\r\n",
+            "name":"Secțiile de votare Nr. 47",
+            "country":"Canada",
+            "coordinates":[
+                43.7185609,
+                -79.337502
+            ]
+        },
+        {
+            "address":"Consulatul General al  României în R.A.S. Hong Kong, Office No. 3A, 21/F, 148 Electric Road, North Point",
+            "name":"Secția de votare Nr. 56",
+            "country":"China",
+            "coordinates":[
+                22.2866614,
+                114.1917384
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Shanghai, R502 Room, Honi International Plaza 199 Chengdu North Rd., Jing'An Shanghai 200040",
+            "name":"Secția de votare Nr. 57",
+            "country":"China",
+            "coordinates":[
+                31.20558,
+                121.403861
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Dubai, Street 12b, Villa no. 44, Community 332, Jumeirah 1, P.O. Box 333765, Dubai, UAE",
+            "name":"Secția de votare Nr. 76",
+            "country":"Emiratele Arabe Unite",
+            "coordinates":[
+                25.230382,
+                55.263999
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Lyon, 29, rue de Bonnel, 69003 Lyon, Franța",
+            "name":"Secția de votare Nr. 84",
+            "country":"Franța",
+            "coordinates":[
+                45.761977,
+                4.845964
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Marsilia, 157, bd. Michelet, 13009 Marseille – France",
+            "name":"Secția de votare Nr. 86",
+            "country":"Franța",
+            "coordinates":[
+                43.264619,
+                5.396646
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Strasbourg, 41, rue Schweighaeuser, 67000 Strasbourg",
+            "name":"Secția de votare Nr. 85",
+            "country":"Franța",
+            "coordinates":[
+                48.58927,
+                7.773727
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Bonn, Legionsweg 14, 53117 Bonn",
+            "name":"Secțiile de votare Nr. 120 și 121",
+            "country":"Germania",
+            "coordinates":[
+                50.750794,
+                7.101234
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Munchen, Richard-Strauss-Strasse 149, 81679 Munchen",
+            "name":"Secțiile de votare Nr. 107 și 108",
+            "country":"Germania",
+            "coordinates":[
+                48.152032,
+                11.614628
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Salonic, Str. Theagenous Charisi 78, Salonic, cod postal 546 39",
+            "name":"Secția de votare Nr. 128",
+            "country":"Grecia",
+            "coordinates":[
+                40.61515,
+                22.96335
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Bologna, Via Guelfa, 9, Scala A, Int. 3, 40138 Bologna",
+            "name":"Secțiile de votare Nr. 175 și 176",
+            "country":"Italia",
+            "coordinates":[
+                44.491076,
+                11.387319
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Milano, Via Gignese, 2, 20148 Milano",
+            "name":"Secțiile de votare Nr. 191 și 192",
+            "country":"Italia",
+            "coordinates":[
+                45.478151,
+                9.140341
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Torino, Via Ancona no. 7 Torino – 10152",
+            "name":"Secțiile de votare Nr. 203, 204 și 205",
+            "country":"Italia",
+            "coordinates":[
+                45.079134,
+                7.690676
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Trieste, Via Udine nr. 11, Trieste",
+            "name":"Secția de votare Nr. 156",
+            "country":"Italia",
+            "coordinates":[
+                45.657566,
+                13.774045
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Rostov pe Don, Ulita Sedmaia Linia, nr. 18/39, Rostov Na Donu",
+            "name":"Secția de votare Nr. 325",
+            "country":"Federația Rusă",
+            "coordinates":[
+                47.22751,
+                39.755133
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Sankt Petersburg, Str. Garohovaia nr. 4, Sankt Petersburg, cod. 191186",
+            "name":"Secția de votare Nr. 324",
+            "country":"Federația Rusă",
+            "coordinates":[
+                59.93608,
+                30.3111
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Cahul, Strada B.P. Hașdeu nr. 11, Cahul",
+            "name":"Secția de votare Nr. 265",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                45.903017,
+                28.196064
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Vârșeț, Trg Zelene Pijace 3/A Vârșeț 26300",
+            "name":"Secția de votare Nr. 327",
+            "country":"Serbia",
+            "coordinates":[
+                45.123853,
+                21.297469
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Bilbao, Plaza Circular, nr. 4, planta 1, 48001",
+            "name":"Secțiile de votare Nr. 370 și 371",
+            "country":"Spania",
+            "coordinates":[
+                43.26158,
+                -2.92697
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Sevilla, Avenida Manuel Siurot Nr. 30, 41013 Sevilla",
+            "name":"Secția de votare Nr. 365",
+            "country":"Spania",
+            "coordinates":[
+                37.3630451,
+                -5.9828783
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Chicago – Illinois, 737 N. Michigan Avenue, Suite 2300, Chicago, IL 60611 (intrarea se face la adresa 161 E. Chicago Ave)",
+            "name":"Secția de votare Nr. 386",
+            "country":"SUA",
+            "coordinates":[
+                41.896767,
+                -87.623777
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Los Angeles – California, 11766 Wilshire Blvd. Suite 200, Los Angeles, CA 90025",
+            "name":"Secția de votare Nr. 396",
+            "country":"SUA",
+            "coordinates":[
+                34.0479376,
+                -118.462009
+            ]
+        },
+        {
+            "address":"Consulatul General al României la New York, 200 East 38th Street, New York, NY 10016",
+            "name":"Secția de votare Nr. 409",
+            "country":"SUA",
+            "coordinates":[
+                40.748021,
+                -73.975947
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Istanbul, Yanarsu Sokak No.42, Narin Sitesi, Etiler/Beșiktaș",
+            "name":"Secția de votare Nr. 425",
+            "country":"Turcia",
+            "coordinates":[
+                41.086567,
+                29.035054
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Izmir, Strada 1479, nr. 9, Alsancak",
+            "name":"Secția de votare Nr. 424",
+            "country":"Turcia",
+            "coordinates":[
+                38.440313,
+                27.143376
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Cernăuți, Str. Skilna, nr. 16, 58000 Cernăuți, Ucraina",
+            "name":"Secția de votare Nr. 431",
+            "country":"Ucraina",
+            "coordinates":[
+                48.29298,
+                25.940702
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Odessa, Str. Bazarnaia, nr. 31, Odessa, Ucraina, 65011",
+            "name":"Secția de votare Nr. 430",
+            "country":"Ucraina",
+            "coordinates":[
+                46.473645,
+                30.747452
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Gyula, 5700 Gyula, Strada Munkácsy, nr.12",
+            "name":"Secția de votare Nr. 433",
+            "country":"Ungaria",
+            "coordinates":[
+                46.646243,
+                21.278522
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Szeged, Kelemen Lászlo utca 5, 6720, Szeged",
+            "name":"Secția de votare Nr. 436",
+            "country":"Ungaria",
+            "coordinates":[
+                46.250602,
+                20.147831
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Edinburgh, 7-9 North St. David Street, Edinburgh, EH2 1AW",
+            "name":"Secția de votare Nr. 319",
+            "country":"Marea Britanie",
+            "coordinates":[
+                55.955351,
+                -3.194608
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Vancouver , Suite 855, 555 Burrard Street, Vancouver, British Columbia V7X 1M8",
+            "name":"Secția de votare Nr. 45",
+            "country":"Canada",
+            "coordinates":[
+                49.286003,
+                -123.119187
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Bălți, Strada Sfântul Nicolae, nr. 51, 3100 Bălți",
+            "name":"Secțiile de votare Nr. 235 și 236",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                47.759266,
+                27.917995
+            ]
+        },
+        {
+            "address":"Biroul Consular al României la Ungheni (parte a C.G. Bălți) , Strada Mihai Eminescu, nr.35, Ungheni",
+            "name":"Secția de votare Nr. 237",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                47.208435,
+                27.800004
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Zaječar , Strada Kumanovska nr. 45, 19000 Zaječar, Serbia",
+            "name":"Secția de votare Nr. 329",
+            "country":"Serbia",
+            "coordinates":[
+                43.897271,
+                22.27472
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Bari, via Bruno Zaccaro no.17-19 , CP. 70126   ",
+            "name":"Secția de votare Nr. 165",
+            "country":"Italia",
+            "coordinates":[
+                41.09066,
+                16.889059
+            ]
+        },
+        {
+            "address":"Consulatul General al României la Miami - Florida, 1101 Brickell Ave, suite N 600, Miami, FL 33131",
+            "name":"Secția de votare Nr. 404",
+            "country":"SUA",
+            "coordinates":[
+                25.764085,
+                -80.191105
+            ]
+        },
+        {
+            "address":"Consulatul României la Zaragoza, Calle Camino de Las Torres 24, 50008, Zaragoza",
+            "name":"Secțiile de votare Nr. 335 și 336",
+            "country":"Spania",
+            "coordinates":[
+                41.6455928,
+                -0.876194
+            ]
+        },
+        {
+            "address":"Consulatul României la Castellon de la Plana, Avenida de Valencia nr. 144 (esq. con Rambla de la Viuda) 12006 Castellon, Spania",
+            "name":"Secția de votare Nr. 381",
+            "country":"Spania",
+            "coordinates":[
+                39.9697412,
+                -0.057085
+            ]
+        },
+        {
+            "address":"Consulatul României la Almeria, Carretera Huércal de Almería, nr. 46, Almería, 04009",
+            "name":"Secția de votare Nr. 361",
+            "country":"Spania",
+            "coordinates":[
+                36.861515,
+                -2.444688
+            ]
+        },
+        {
+            "address":"Consulatul României la Catania, Via Misterbianco, nr. 1, Catania, CP 95.131",
+            "name":"Secția de votare Nr. 188",
+            "country":"Italia",
+            "coordinates":[
+                37.506383,
+                15.096187
+            ]
+        },
+        {
+            "address":"Consulatul României la Ciudad Real, Calle Mata nr.37, 13004",
+            "name":"Secția de votare Nr. 355",
+            "country":"Spania",
+            "coordinates":[
+                38.9859722,
+                -3.9210524
+            ]
+        },
+        {
+            "address":"Biroul Consular al României la Erbil (parte a Secției consulare a Ambasadei), Gulan Street, Ster Tower, Floor 7, unit 702, Erbil, Regiunea Kurdistan",
+            "name":"Secția de votare Nr. 221",
+            "country":"Irak",
+            "coordinates":[
+                36.2172222,
+                44.0049722
+            ]
+        },
+        {
+            "address":"Consulatul României la Solotvino, Sportivna nr. 112, 90575, Solotvino, Ucraina",
+            "name":"Secția de votare Nr. 432",
+            "country":"Ucraina",
+            "coordinates":[
+                47.952998,
+                23.888637
+            ]
+        },
+        {
+            "address":"Biroul consular  al României la Melbourne – Australia, 448 St. Kilda Road, Etaj 5, Birou 5.06, VIC 3004, Melbourne",
+            "name":"Secția de votare Nr. 12",
+            "country":"Australia",
+            "coordinates":[
+                -37.838249,
+                144.975597
+            ]
+        },
+        {
+            "address":"Consulatul Onorific al României la Graz, Mariatroster Strasse 211, 8044, Graz\r\n",
+            "name":"Secția de votare Nr. 23",
+            "country":"Austria",
+            "coordinates":[
+                47.099873,
+                15.475594
+            ]
+        },
+        {
+            "address":"Consulatul General Onorific al României la Genova, Via Casaregis, 50, etaj 4, 16129 Genova",
+            "name":"Secția de votare Nr. 216",
+            "country":"Italia",
+            "coordinates":[
+                44.404126,
+                8.952943
+            ]
+        },
+        {
+            "address":"Consulatul General Onorific al României la Detroit – Michigan, 777 Woodward Ave, Suite 300, Detroit, MI 48226",
+            "name":"Secția de votare Nr. 391",
+            "country":"SUA",
+            "coordinates":[
+                42.330504,
+                -83.055592
+            ]
+        },
+        {
+            "address":"Consulatul Onorific al României la Indianapolis – Indiana, 4761 Industrial Pkwy, Indianapolis, IN 46226",
+            "name":"Secția de votare Nr. 393",
+            "country":"SUA",
+            "coordinates":[
+                39.884895,
+                -86.262785
+            ]
+        },
+        {
+            "address":"Consulatul Onorific al României la Neustadt an der Weinstraße , Le Quartier Hornbach 19, 67433 Neustadt an der Weinstraße",
+            "name":"Secția de votare Nr. 126",
+            "country":"Germania",
+            "coordinates":[
+                49.34056,
+                8.166313
+            ]
+        },
+        {
+            "address":"Consulatul Onorific al României la Klagenfurt am Wörtersee, Bahnhofstraße 7, 9020 Klagenfurt am Wörtersee\r\n",
+            "name":"Secția de votare Nr. 24",
+            "country":"Austria",
+            "coordinates":[
+                46.624913,
+                14.310789
+            ]
+        },
+        {
+            "address":"Consulatul Onorific al României la Bristol, 1 Redland Park, Bristol BS6 6SA",
+            "name":"Secția de votare Nr. 304",
+            "country":"Marea Britanie",
+            "coordinates":[
+                51.467857,
+                -2.612475
+            ]
+        },
+        {
+            "address":"107 Rue Gabrielle 1180 Bruxelles",
+            "name":"Institutul Cultural Român la Bruxelles",
+            "country":"Belgia",
+            "coordinates":[
+                50.812313,
+                4.359947
+            ]
+        },
+        {
+            "address":"Institutul Cultural Român la Budapesta, 1146 Budapest, Izso utca 5",
+            "name":"Secția de votare Nr. 435",
+            "country":"Ungaria",
+            "coordinates":[
+                47.507994,
+                19.092519
+            ]
+        },
+        {
+            "address":"Institutul Cultural Român \"Dimitrie Cantemir\", Siraselviler Cad., 55, Taksim, Beyoglu, 34433, Istanbul",
+            "name":"Secția de votare Nr. 426",
+            "country":"Turcia",
+            "coordinates":[
+                41.035447,
+                28.984772
+            ]
+        },
+        {
+            "address":"Institutul Cultural Român – Lisabona, Rua do Barão no. 8-10, 1100-072 Lisboa",
+            "name":"Secția de votare Nr. 289",
+            "country":"Portugalia",
+            "coordinates":[
+                38.710029,
+                -9.130787
+            ]
+        },
+        {
+            "address":"Institutul Cultural Român la Londra, 1 Belgrave Square, SW1 X8PH, Londra, UK",
+            "name":"Secția de votare Nr. 294",
+            "country":"Marea Britanie",
+            "coordinates":[
+                51.50033,
+                -0.15401
+            ]
+        },
+        {
+            "address":"Institutul Cultural Român - Madrid, Plaza de la Lealtad, 3, entreplanta dcha. 28014 Madrid",
+            "name":"Secția de votare Nr. 345",
+            "country":"Spania",
+            "coordinates":[
+                40.414191,
+                -3.710274
+            ]
+        },
+        {
+            "address":"Institutul Cultural Român – Paris, 1, Rue de l’Exposition 75007, Paris",
+            "name":"Secția de votare Nr. 90",
+            "country":"Franța",
+            "coordinates":[
+                48.858122,
+                2.302748
+            ]
+        },
+        {
+            "address":"Accademia di Romania la Roma, Valle Giulia, Piazza José de San Martin 1, 00197 Roma",
+            "name":"Secțiile de votare Nr. 147 și 148",
+            "country":"Italia",
+            "coordinates":[
+                41.916889,
+                12.479513
+            ]
+        },
+        {
+            "address":"Institutul Român de Cultură și Cercetare Umanistică – Veneția, Palazzo Correr (Campo Santa Fosca) Cannaregio 2214, 30121 Venezia",
+            "name":"Secția de votare Nr. 157",
+            "country":"Italia",
+            "coordinates":[
+                45.443032,
+                12.331855
+            ]
+        },
+        {
+            "address":"Institutul Cultural Român la Viena, Argentinierstraβe 39, 1040 Viena\r\n",
+            "name":"Secția de votare Nr. 22",
+            "country":"Austria",
+            "coordinates":[
+                48.191829,
+                16.374968
+            ]
+        },
+        {
+            "address":"Institutul Cultural Român \"Mihai Eminescu\" – Chișinău, Strada Vlaicu Pârcălab, nr. 39, Chișinău",
+            "name":"Secția de votare Nr. 248",
+            "country":"Rep. Moldova",
+            "coordinates":[
+                47.0201594,
+                28.831467
+            ]
+        }
+    ]
+}

@@ -49,11 +49,14 @@ section.code4.code4-section div.code4.code4-content button {
 }
 
 /* Anchors */
-a {
+section.code4.code4-section
+    div.code4.code4-content a {
     text-decoration: underline;
     white-space: nowrap;
 }
-a:hover {
+section.code4.code4-section
+    div.code4.code4-content
+        a:hover {
     text-decoration: none;
 }
 /* Add external URL symbol to hrefs */
@@ -320,3 +323,7 @@ section.code4.code4-section
 /*#theDonateButton:hover {*/
 /*    background-color: #5DCD66;*/
 /*}*/
+
+.leaflet-popup-content h1 {
+    margin: 0 !important;
+}
