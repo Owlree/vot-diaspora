@@ -155,12 +155,12 @@
 
             
             const h = Math.pow(Math.sin(Δφ / 2), 2) +
-                      Math.cos(φ1) * Math.cos(φ2) * 
+                      Math.cos(φ1) * Math.cos(φ2) *
                       Math.pow(Math.sin(Δλ/2), 2);
 
             
             const d = 2 * R * Math.atan2(Math.sqrt(h), Math.sqrt(1 - h));
-            
+
             return d
         }
 
@@ -172,36 +172,30 @@
             }
         }
 
+        const initialZoomLevel = 3;
+        var map = L.map('theMap').setView(
+            [48.355045, 16.230324],
+            initialZoomLevel);
+
         
-        const fullScreenControl = L.Control.extend({
-            options: {
-                position: 'topleft'
-            },
-            onAdd: function (map) {
-                const container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-custom');
-                container.style.backgroundColor = 'white';
-                container.style.width = '30px';
-                container.style.height = '30px';
-                container.innerHTML = '<a class="code4 code4-leaflet-control-fullScreen" href="#" title="Fullscreen" role="button" aria-label="Fullscreen">F</a>'
-                container.onclick = function(e) {
-                    e.preventDefault();
-                    map.toggleFullscreen();
-                }
-                return container;
-            }
-        });
+        
+        const mapAttribution =
+            '<a href="https://www.openstreetmap.org/copyright">' +
+                'OpenStreetMap'                                  +
+            '</a>'                                               +
+            ' | '                                                +
+            '<a href="https://www.mae.ro/sites/default/files/file/anul_2019/2019_pdf/2019.04.25_lista_sectiilor_de_votare_din_strainatate_la_alegerile_pentru_parlamentul_european_din_2019.pdf">' +
+                'Sursa datelor MAE'                              +
+            '</a>';
 
-        var map = L.map('theMap').setView([31.502574, 65.851282], 8);
-        map.addControl(new fullScreenControl());
-
-        L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.svg?lang=ro', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: mapAttribution,
             fullScreenControl: true,
             zoomControl: false
         }).addTo(map);
 
         
-        var votDiasporaMarker = L.icon({
+        var markerIcon = L.icon({
             iconUrl: 'marker.png',
             iconSize: [20, 39],
             iconAnchor: [10, 39]
@@ -226,7 +220,7 @@
                         '<h1 style="margin:0">Secția de votare nr. ' + location.Number + '</h1><hr>' +
                         '<h2 style="margin:0">' + location.Name + '</h2>' +
                         '<p style="margin:0"><a href="' + getNativeURL(location.Number) + '">' + street + '</a></p>';
-                    
+
                     if (location.Phone) {
                         messageHtml += '<p style="margin:0">Telefon <a href="tel:' + location.Phone + '">' + location.Phone + '</a></p>';
                     }
@@ -235,9 +229,9 @@
                     }
                     const marker = L.marker(coordinates, {
                         'title': location.Name,
-                        'icon': votDiasporaMarker
+                        'icon': GetIconForZoomLevel(initialZoomLevel)
                     }).bindPopup(messageHtml, {
-                        offset: [0, -34]
+                        offset: [0, 0]
                     });
                     location.Marker = marker;
                     marker.addTo(map);
@@ -310,8 +304,30 @@
         }
 
         let theMap = document.getElementById('theMap');
-        let scrollY = 0;
-        let isFullScreen = false;
+
+        let i = 0;
+
+        function GetIconForZoomLevel(zoomLevel) {
+            console.log(zoomLevel);
+            if (zoomLevel > 7) {
+                return markerIcon;
+            } else {
+                return L.divIcon({
+                    className: 'code4-map-circle-icon',
+                    iconSize: L.point(2 * zoomLevel, 2 * zoomLevel)
+                });
+            }
+        }
+
+        function UpdateMarkers() {
+            map.eachLayer(function (layer) {
+                if (layer instanceof L.Marker) {
+                    return layer.setIcon(GetIconForZoomLevel(map.getZoom()));
+                }
+            });
+        }
+        UpdateMarkers(); 
+        map.on('zoomend', UpdateMarkers);
      </script>
 
 </body>

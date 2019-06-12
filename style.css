@@ -327,3 +327,10 @@ section.code4.code4-section
 .leaflet-popup-content h1 {
     margin: 0 !important;
 }
+
+.code4-map-circle-icon {
+    background-color: #FC0;
+    border: 1px solid #352245;
+    border-radius: 100px;
+    box-sizing: border-box;
+}
