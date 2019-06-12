@@ -120,12 +120,17 @@
                     if (location['StNo'] && location['StNo'].length > 0) {
                         street = location['StNo'] + ' ' + street;
                     }
-                    const messageHtml =
+                    let messageHtml =
                         '<h1 style="margin:0">Secția de votare nr. ' + location.Number + '</h1><hr>' +
                         '<h2 style="margin:0">' + location.Name + '</h2>' +
-                        '<p style="margin:0"><a href="' + getNativeURL(location.Number) + '">' + street + '</a></p>' +
-                        '<p style="margin:0">Telefon <a href="tel:' + location.Phone + '">' + location.Phone + '</a></p>' +
-                        '<p style="margin:0"><a href="' + location.Website + '">' + location.Website + '</a></p>'
+                        '<p style="margin:0"><a href="' + getNativeURL(location.Number) + '">' + street + '</a></p>';
+                    
+                    if (location.Phone) {
+                        messageHtml += '<p style="margin:0">Telefon <a href="tel:' + location.Phone + '">' + location.Phone + '</a></p>';
+                    }
+                    if (location.Website) {
+                        messageHtml += '<p style="margin:0"><a href="' + location.Website + '">' + location.Website + '</a></p>'
+                    }
                     const marker = L.marker(coordinates, {
                         'title': location.Name,
                         'icon': votDiasporaMarker
