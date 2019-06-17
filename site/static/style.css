@@ -90,18 +90,10 @@ section.code4.code4-section.code4-section-normal {
     padding-bottom: 3rem;
 }
 
-section.code4.code4-section.code4-section-map {
-    padding-bottom: 0;
-}
-
 @media (min-width: 768px) {
     section.code4.code4-section.code4-section-normal {
         padding-left: 3rem;
         padding-right: 3rem;
-    }
-    
-    section.code4.code4-section.code4-section-map {
-        padding-bottom: 3rem;
     }
 }
 
@@ -114,6 +106,18 @@ button.code4.code4-button {
 button.code4.code4-button-square {
     width: 3em;
     height: 3em;
+}
+
+section.code4.code4-section.code4-section-small
+    div.code4.code4-content p {
+        font-size: 4vw;
+}
+
+@media (min-width: 400px) {
+    section.code4.code4-section.code4-section-small
+        div.code4.code4-content p {
+            font-size: 1em;
+    }
 }
 
 /* Coloring */
@@ -183,21 +187,20 @@ section.code4.code4-section
             color: #FC0;
 }
 
-/* Special cases */
+/* IDs used for special cases */
 #theMapContainer {
     width: 100%;
-    margin-top: 3rem;
+    margin: 3rem;
 }
 
-@media (min-width: 768px) {
-    #theMapContainer {
-         margin-bottom: 3rem;   
-    }
+@media (max-width: 768px) {
+    /* We do this because on small screens we want the map to connect with
+     * the section below it. */
+    #theMapContainer { margin-bottom: 0; }
+    section.code4.code4-section.code4-section-map { padding-bottom: 0; }
 }
 
-#theMap {
-    height: 27rem;
-}
+#theMap { height: 27rem; }
 #theDonateButton {
     background-color: #3eb14d;
     color: white;
@@ -212,6 +215,7 @@ section.code4.code4-section
     column-count: 2;
     column-gap: 1px;
     column-rule: 1px solid white;
+    font-size: 80%;
 }
 #theLocations li {
     background-color: #352245;
@@ -241,11 +245,33 @@ section.code4.code4-section
 
 .leaflet-popup-content h1 {
     margin: 0 !important;
+    font-size: 80%;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    box-shadow: none;
+}
+
+.leaflet-popup-content-wrapper {
+    border-radius: 0;
+    /*background-color: #FC0;*/
+    color: #352245;
+    border: 5px solid #352245;
+}
+
+.leaflet-popup-tip {
+    background-color: #352245;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    border-bottom: 1px solid #352245;
 }
 
 .code4-map-circle-icon {
     background-color: #FC0;
-    border: 1px solid #352245;
+    /*border: 1px solid #352245;*/
     border-radius: 100px;
     box-sizing: border-box;
 }

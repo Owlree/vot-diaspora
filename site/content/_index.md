@@ -4,6 +4,7 @@ title: Prima pagină
 {{% section small light %}}
 o aplicație [dezvoltată](https://github.com/code4romania/vot-diaspora) de <img src='code4-black.svg' style='vertical-align: middle; margin-top: -3px;' class='code4-text-height'/>
 {{% /section %}}
+
 {{% section normal dark %}}
 {{< figure src="logo.png" alt="Vot Diaspora Logo" class="code4-center-text">}}
 # Vot Diaspora
@@ -17,12 +18,13 @@ Folosește harta de mai jos pentru a vedea care este cea mai apropiată secție 
 Surse:
 
 1. Situl oficial MAE, secțiunea privind exercitarea dreptului de vot https://www.mae.ro/node/48110
-
 {{% /section %}}
+
 {{% section-map normal light %}}
 # Unde pot vota? {{% button locate %}} Localizează-mă {{% /button %}}
-Caută orașul în care locuiești pentru a afla care sunt cele mai apropiate secții de votare.
+Introdu locația dorită în câmpul de mai jos sau apasă pe butonul de localizare pentru a căuta o secție de votare.
 {{% /section-map %}}
+
 {{% section normal dark %}}
 # Înființarea unei secții
 Cea mai apropiată secție de vot e totuși prea departe de orașul sau satul unde locuiești?
@@ -44,6 +46,7 @@ _Vot Diaspora_ este un proiect dezvoltat pro-bono de o echipă de voluntari [Cod
 
 <center><a id='theDonateButton' href='https://code4.ro/ro/doneaza/'>Donează</a></center>
 {{% /section %}}
+
 {{% section normal dark footer %}}
 <center>© 2019 [Code for Romania](https://code4.ro/)<br/>Organizație neguvernamentală independentă, neafiliată politic și apolitică.</center>
 {{< figure src="code4-symbol-yellow.png" alt="Code for Romania Logo" class="code4-center-text" height="32">}}

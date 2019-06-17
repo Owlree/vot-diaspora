@@ -64,7 +64,7 @@
         }
 
         // Remove all paragraphs that only contain spaces (there is a bug in
-        // Hugo that adds a bunch of these).
+        // Hugo that adds some of these).
         for (const p of document.getElementsByTagName('p')) {
             if (p.innerHTML.replace(/\s/g, '').length === 0){
                 p.style.display = 'none';
@@ -130,7 +130,7 @@
                         'title': location.Name,
                         'icon': GetIconForZoomLevel(initialZoomLevel)
                     }).bindPopup(messageHtml, {
-                        offset: [0, 0]
+                        offset: [0, -34]
                     });
                     location.Marker = marker;
                     marker.addTo(map);
