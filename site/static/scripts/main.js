@@ -1,11 +1,20 @@
 import * as MathHelpers from './math-helpers.js';
+import * as HTMLComponents from './html-components.js';
 
 function goToLocation(index) {
     map.setView(locations[index].Coordinates, 10);
     locations[index].Marker.openPopup();
 }
 
-function getNativeURL(location) {
+/**
+ * Returns the appropiate maps URL based on the platform.
+ * 
+ * We use direct URLs instead of coordinates to have the user pointed directly 
+ * to, say, the 'Romanian Embassy in Washington', instead of just some 
+ * apparently random numbers.
+ */
+function GetNativeURLFromLocation(location) {
+    /* global navigator */
     if ((navigator.platform.indexOf("iPhone") != -1) ||
         (navigator.platform.indexOf("iPad")   != -1) ||
         (navigator.platform.indexOf("iPod")   != -1) ||
@@ -17,7 +26,17 @@ function getNativeURL(location) {
     return location.GoogleURL;
 }
 
+/**
+ * Returns a Leaflet icon based on a zoom level value.
+ * 
+ * We use this to make the marker a small dot when the user zoomed our far 
+ * enough.
+ * 
+ * @param {number} The zoom leve value to use
+ * @return {L.Icon} The icon to be used for our markers
+ */
 function GetIconForZoomLevel(zoomLevel) {
+    
     /* global L */
     if (zoomLevel > 8) {
         return L.icon({
@@ -33,6 +52,12 @@ function GetIconForZoomLevel(zoomLevel) {
     }
 }
 
+/**
+ * Refreshes all the markers in the map based on the zoom level.
+ * 
+ * @param {L.Map} The map to update.
+ * 
+ */
 function RefreshAllMarkersInMap(map) {
     map.eachLayer(function (layer) {
         if (layer instanceof L.Marker) {
@@ -83,43 +108,24 @@ function main() {
         .then(res => res.json())
         .then((out) => {
             locations = out.places;
+            let markers = [];
             for (const location of locations) {
                 let coordinates = location.Coordinates;
                 coordinates[0] = parseFloat(coordinates[0]);
                 coordinates[1] = parseFloat(coordinates[1]);
-                let street = location['Street'];
+                let address = location['Street'];
                 if (location['StNo'] && location['StNo'].length > 0) {
-                    street = location['StNo'] + ' ' + street;
+                    address = location['StNo'] + ' ' + address;
                 }
-                const nativeURL = getNativeURL(location);
-                let messageHtml =
-                    `<h1 style='margin:0'>`                       +
-                        `Secția de votare nr. ${location.Number}` +
-                    `</h1>`                                       +
-                    `<hr>`                                        +
-                    `<h2 style='margin:0'>`                       +
-                        `${location.Name}`                        +
-                    `</h2>`                                       +
-                    `<p style='margin:0'>`                        +
-                        `<a href='${nativeURL}'>${street}</a>`    +
-                    `</p>`;
-
-                if (location.Phone) {
-                    messageHtml += 
-                        `<p style='margin:0'>`                          +
-                            `Telefon <a href='tel: ${location.Phone}'>` +
-                                `${location.Phone}`                     +
-                            `</a>`                                      +
-                        `</p>`;
-                }
-                if (location.Website) {
-                    messageHtml += 
-                        `<p style='margin:0'>`               +
-                            `<a href='${location.Website}'>` + 
-                                `${location.Website}`        + 
-                            `</a>`                           +
-                        `</p>`
-                }
+                let messageHtml = HTMLComponents.GetPopupMessageHTML({
+                    id: location.Number,
+                    name: location.Name,
+                    url: GetNativeURLFromLocation(location),
+                    address: address,
+                    website: location.Website,
+                    phone: location.Phone
+                });
+                
                 const marker = L.marker(coordinates, {
                     'title': location.Name,
                     'icon': GetIconForZoomLevel(initialZoomLevel)
@@ -127,24 +133,23 @@ function main() {
                     offset: [0, -34]
                 });
                 location.Marker = marker;
-                marker.addTo(map);
+                markers.push(marker);
             }
+            L.layerGroup(markers).addTo(map);
+            console.log(locations);
         }).catch(err => console.error(err));
 
 
     let theLocateButton = document.getElementById('the-locate-button');
     theLocateButton.addEventListener('mouseup', function(e) {
 
-        // Get user's current geolocation
+        // Retrieve user's current geolocation
         navigator.geolocation.getCurrentPosition(function(position) {
 
-            // let myLat = position.coords.latitude;
-            // let myLon = position.coords.longitude;
+            let myLat = position.coords.latitude;
+            let myLon = position.coords.longitude;
 
-            let myLat = 51.505;
-            let myLon = -0.09;
-
-            // Sort locations by distance to user
+            // Sort locations by distance to user's location
             locations = locations.sort(function(l1, l2) {
                 const lat1 = l1.Coordinates[0];
                 const lon1 = l1.Coordinates[1];
