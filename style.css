@@ -71,6 +71,7 @@ section.code4.code4-section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 section.code4.code4-section.code4-section
@@ -84,9 +85,15 @@ section.code4.code4-section.code4-section
         padding: 3rem;
 }
 
+section.code4.code4-section.code4-section-normal {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
 @media (min-width: 768px) {
     section.code4.code4-section.code4-section-normal {
-        padding: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 }
 
@@ -99,6 +106,18 @@ button.code4.code4-button {
 button.code4.code4-button-square {
     width: 3em;
     height: 3em;
+}
+
+section.code4.code4-section.code4-section-small
+    div.code4.code4-content p {
+        font-size: 4vw;
+}
+
+@media (min-width: 400px) {
+    section.code4.code4-section.code4-section-small
+        div.code4.code4-content p {
+            font-size: 1em;
+    }
 }
 
 /* Coloring */
@@ -155,134 +174,33 @@ section.code4.code4-section
         border: 1px solid #352245;
         background-color: #FC0;
         color: #352245;
-    }
+}
 section.code4.code4-section 
     div.code4.code4-content.code4-content-special
         a {
             color: #352245;
-    }
+}
 section.code4.code4-section 
     div.code4.code4-content.code4-content-special
         a:hover {
             background-color: #352245;
             color: #FC0;
-    }
+}
 
-/*@media (min-width: 768px) {*/
-/*    section.code4.code4-section {*/
-/*        margin: 3rem 0;*/
-/*        padding: 0 3rem;*/
-/*    }*/
-/*    section.code4.code4-section:first-of-type { margin-top: 0; }*/
-/*    section.code4.code4-section:last-of-type { margin-bottom: 1.5rem; }*/
-/*}*/
-
-/* Small section */
-/*section.code4.code4-section.code4-section-small {*/
-/*    padding: 0;*/
-/*    margin: 0;*/
-/*}*/
-/*section.code4.code4-section.code4-section-small div.code4.code4-content {*/
-/*    padding: 0;*/
-/*    margin: 0;*/
-/*}*/
-/*section.code4.code4-section.code4-section-small a {*/
-/*    color: black;*/
-/*    background: none;*/
-/*}*/
-/*section.code4.code4-section.code4-section-small p {*/
-/*    margin: 1rem;*/
-/*}*/
-
-/*section.code4.code4-section.code4-section-small-dark {*/
-/*    padding: 0;*/
-/*    background-color: #352245; */
-/*    color: #fc0;*/
-/*}*/
-/*section.code4.code4-section.code4-section-small-dark div.code4.code4-content {*/
-/*    padding: 0;*/
-/*    margin: 0;*/
-/*}*/
-/*section.code4.code4-section.code4-section-small-dark p {*/
-/*    margin: 1rem;*/
-/*}*/
-
-/* Dark section */
-/*section.code4.code4-section.code4-section-dark {*/
-/*    background-color: #352245; */
-/*    color: #fc0;*/
-/*}*/
-
-/* Normal content */
-/*section.code4.code4-section div.code4.code4-content {*/
-/*    max-width: 40rem;*/
-/*    padding: 0 3rem;*/
-/*}*/
-
-/* Full width content */
-/*section.code4.code4-section div.code4.code4-content-full {*/
-/*    width: 100%;*/
-/*}*/
-
-/* Highlighted content */
-/*section.code4.code4-section div.code4.code4-content.code4-content-alt {*/
-/*    background-color: #fc0;*/
-/*    color: #352245;*/
-/*}*/
-/*section.code4.code4-section div.code4.code4-content.code4-content-alt a {*/
-/*    background-color: #fc0;*/
-/*    color: #352245;*/
-/*    text-decoration: underline;*/
-/*    white-space: nowrap;*/
-/*}*/
-/*section.code4.code4-section div.code4.code4-content.code4-content-alt a:hover {*/
-    
-/*    color: #fc0;*/
-/*    background-color: #352245;*/
-/*    text-decoration: none;*/
-/*}*/
-
-/* Footer content */
-/*section.code4.code4-section div.code4.code4-content.code4-content-footer {*/
-/*    text-align: center;*/
-/*    font-size: 1.2rem;*/
-/*}*/
-/*section.code4.code4-section div.code4.code4-content.code4-content-footer p {*/
-/*    font-family: 'Titillium Web', sans-serif;*/
-/*    font-size: 75%;*/
-/*}*/
-
-/* Code4 buttons */
-/*button.code4.code4-button {*/
-/*    background-color: #352245;*/
-/*    color: #FC0;*/
-/*    border: 1px solid #FC0;*/
-    
-/*    cursor: pointer;*/
-/*}*/
-/*button.code4.code4-button:hover {*/
-/*    color: #352245;*/
-/*    background-color: #FC0;*/
-/*    border: 1px solid #352245;*/
-/*}*/
-/*div.code4.code4-content-alt button.code4.code4-button {*/
-/*    color: #352245;*/
-/*    background-color: #FC0;*/
-/*    border: 1px solid #352245;*/
-/*}*/
-/*div.code4.code4-content-alt button.code4.code4-button:hover {*/
-/*    background-color: #352245;*/
-/*    color: #FC0;*/
-/*}*/
-
-/* Special cases */
+/* IDs used for special cases */
 #theMapContainer {
     width: 100%;
-    margin: 3rem 0;
+    margin: 3rem;
 }
-#theMap {
-    height: 27rem;
+
+@media (max-width: 768px) {
+    /* We do this because on small screens we want the map to connect with
+     * the section below it. */
+    #theMapContainer { margin-bottom: 0; }
+    section.code4.code4-section.code4-section-map { padding-bottom: 0; }
 }
+
+#theMap { height: 27rem; }
 #theDonateButton {
     background-color: #3eb14d;
     color: white;
@@ -297,6 +215,7 @@ section.code4.code4-section
     column-count: 2;
     column-gap: 1px;
     column-rule: 1px solid white;
+    font-size: 80%;
 }
 #theLocations li {
     background-color: #352245;
@@ -326,11 +245,33 @@ section.code4.code4-section
 
 .leaflet-popup-content h1 {
     margin: 0 !important;
+    font-size: 80%;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    box-shadow: none;
+}
+
+.leaflet-popup-content-wrapper {
+    border-radius: 0;
+    /*background-color: #FC0;*/
+    color: #352245;
+    border: 5px solid #352245;
+}
+
+.leaflet-popup-tip {
+    background-color: #352245;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    border-bottom: 1px solid #352245;
 }
 
 .code4-map-circle-icon {
     background-color: #FC0;
-    border: 1px solid #352245;
+    /*border: 1px solid #352245;*/
     border-radius: 100px;
     box-sizing: border-box;
 }

@@ -12,11 +12,12 @@
     <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     
-    <p>
+    
 
 
 <section class='code4 code4-section 
@@ -27,6 +28,7 @@
 </section>
 
 
+<p>
 
 
 <section class='code4 code4-section 
@@ -54,27 +56,30 @@
 </ol>
 </div>
 </section>
+</p>
+
+<p>
 
 
-
-
-<section class='code4 code4-section 
+<section class='code4 code4-section code4-section-map
                  code4-section-normal  
                  code4-section-light '>
     <div class='code4 code4-content '>
         <h1 id="unde-pot-vota-button-class-code4-code4-button-code4-button-locate-id-the-locate-button-localizează-mă-button">Unde pot vota? <button class='code4 code4-button code4-button-locate' id='the-locate-button'>Localizează-mă</button></h1>
 
-<p>Caută orașul în care locuiești pentru a afla care sunt cele mai apropiate secții de votare.</p>
+<p>Introdu locația dorită în câmpul de mai jos sau apasă pe butonul de localizare pentru a căuta o secție de votare.</p>
 
         <div id='theLocations'>
         </div>
     </div>
+    <input></input>
     <div id='theMapContainer'>
         <div id='theMap' class='votd-map'></div>
     </div>
 </section>
+</p>
 
-
+<p>
 
 
 <section class='code4 code4-section 
@@ -112,8 +117,9 @@
 <p><center><a id='theDonateButton' href='https://code4.ro/ro/doneaza/'>Donează</a></center></p>
 </div>
 </section>
+</p>
 
-
+<p>
 
 
 <section class='code4 code4-section 
@@ -166,7 +172,7 @@
 
         
         
-        for (const p of document.getElementsByTagName('p')){
+        for (const p of document.getElementsByTagName('p')) {
             if (p.innerHTML.replace(/\s/g, '').length === 0){
                 p.style.display = 'none';
             }
@@ -231,7 +237,7 @@
                         'title': location.Name,
                         'icon': GetIconForZoomLevel(initialZoomLevel)
                     }).bindPopup(messageHtml, {
-                        offset: [0, 0]
+                        offset: [0, -34]
                     });
                     location.Marker = marker;
                     marker.addTo(map);
