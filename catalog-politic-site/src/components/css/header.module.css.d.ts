@@ -1,9 +1,9 @@
 declare const styles: {
   readonly "header": string;
-  readonly "logo": string;
   readonly "menu": string;
   readonly "link": string;
-  readonly "special": string;
+  readonly "slidedIn": string;
+  readonly "hamburgerToggle": string;
 };
 export = styles;
 

@@ -38,6 +38,7 @@ function setupI18n() {
 
   // Listen on popstate for language changes
   window.addEventListener('popstate', (event) => {
+
     if (previousPathname.length > 0) {
       let split0 = previousPathname.split('/');
       let split1 = window.location.pathname.split('/');

@@ -2,13 +2,11 @@ import * as headerStyles from './css/header.module.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { graphql, useStaticQuery } from 'gatsby';
 import React, { useState } from 'react';
-import Logo from './logo';
 import cn from 'classnames';
 import genericStyles from '../css/generics.module.css';
 
 import { useTranslation } from 'react-i18next';
 
-import Link from './link';
 import LanguageButton from './languageButton';
 
 
@@ -48,18 +46,17 @@ const Header = function() {
   const { t } = useTranslation();
 
   // Hamburger button that toggles the menu on small screens
-  const hamburgerToggle = (
+  const GetSetMenuVisibleButton = (visible: boolean) => (
     <button
+      id={headerStyles.hamburgerToggle}
       className={`
         ${genericStyles.hideLarge}
         ${genericStyles.catpolButton}
       `}
-      onClick={
-        () => setMenuVisible(!menuVisible)
-      }
+      onClick={() => setMenuVisible(visible)}
     >
-      {!menuVisible && <FaBars/>}
-      {menuVisible && <FaTimes/>}
+      {visible && <FaBars/>}
+      {!visible && <FaTimes/>}
     </button>
   );
 
@@ -68,25 +65,24 @@ const Header = function() {
     <div
       className={cn(
         headerStyles.menu,
-        {[genericStyles.hideSmall]: !menuVisible}
+        {[headerStyles.slidedIn]: menuVisible}
       )}
     >
       <ol>
         {data.site.siteMetadata.menuLinks.map((value, index) => {
           return (
             <li key={index}>
-              <Link
+              <a
                 className={cn(
                   genericStyles.catpolButton,
                     { [genericStyles.catpolButtonSecondary]: value.special },
-                    headerStyles.link,
-                    { [headerStyles.special]: value.special }
+                    headerStyles.link
                 )}
-                to={value.path}
+                href={value.path}
                 onClick={() => setMenuVisible(false)}
               >
                 <span>{t(value.name)}</span>
-              </Link>
+              </a>
             </li>
           )
         })}
@@ -105,7 +101,7 @@ const Header = function() {
         })}
       </ol>
       <div>
-        {hamburgerToggle}
+        {GetSetMenuVisibleButton(false)}
       </div>
     </div>
   );
@@ -115,12 +111,7 @@ const Header = function() {
       <div className={genericStyles.catpolRow}>
         <div className={genericStyles.catpolCol12}>
           <nav className={headerStyles.header}>
-            <div className={headerStyles.logo}>
-              <Link to='/'>
-                <Logo/>
-              </Link>
-            </div>
-            {hamburgerToggle}
+            {GetSetMenuVisibleButton(true)}
             {buttons}
           </nav>
         </div>

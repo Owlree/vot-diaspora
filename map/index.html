@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harta Vot Diaspora</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+  <style>
+
+    body {
+      margin: 0;
+      font-family: 'Titillium Web', serif;
+      overflow: hidden;
+    }
+
+    #container {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #map {
+      height: 100vh;
+      width: 100vw;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    #search {
+      position: fixed;
+      left: 1vw;
+      top: 1vw;
+      z-index: 900;
+      background-color: #FC0;
+      width: 50vw;
+      max-width: 448px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #search-input-group {
+      display: flex;
+      width: 100%;
+      order: 1;
+      z-index: 100;
+    }
+
+    #search-input {
+      /* Typography */
+      font-size: 1em;
+
+      /* Sizing */
+      padding: .5em 1em;
+
+      /* Styling */
+      border: none;
+      background: none;
+      color: #352245;
+
+      /* Flex */
+      flex-grow: 1;
+    }
+
+    #search-input::placeholder {
+      color: #352245;
+      opacity: 0.2;
+    }
+
+    #suggestions {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.25);
+
+      max-height: 40vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      order: 2;
+      padding: 0;
+
+    }
+
+    #suggestions li {
+      color: #352245;
+      font-size: 1em;
+      padding: .4em 1em;
+      cursor: pointer;
+    }
+
+    #search-clear-btn {
+      /* Typography */
+      font-size: 1em;
+
+      /* Sizing */
+      padding: 0 1em;
+
+      /* Styling */
+      border: none;
+      background: none;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 3px;
+      color: #352245;
+      cursor: pointer;
+    }
+
+    @media (max-width: 1024px) {
+      #search {
+        width: 98vw;
+        max-width: unset;
+      }
+
+      #suggestions {
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    /* Only use hover on devices that support it */
+    @media not all and (hover: none) {
+      #suggestions li:hover {
+        background-color: #352245;
+        color: #FC0;
+      }
+
+      #search-clear-btn:hover {
+        background-color: #352245;
+        color: #FC0;
+      }
+    }
+
+    .code4-map-circle-icon {
+      background-color: #FC0;
+      border-radius: 100px;
+      box-sizing: border-box;
+
+      opacity: 1;
+      animation-name: fadeInOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 0.25s;
+    }
+
+    .code4-map-circle-icon-border-1 { border: 1px solid rgba(0, 0, 0, 0); }
+    .code4-map-circle-icon-border-2 { border: 1px solid rgba(0, 0, 0, .1); }
+    .code4-map-circle-icon-border-3 { border: 1px solid rgba(0, 0, 0, .2); }
+    .code4-map-circle-icon-border-4 { border: 1px solid rgba(0, 0, 0, .3); }
+    .code4-map-circle-icon-border-5 { border: 1px solid rgba(0, 0, 0, .4); }
+    .code4-map-circle-icon-border-6 { border: 1px solid rgba(0, 0, 0, .5); }
+    .code4-map-circle-icon-border-7 { border: 1px solid rgba(0, 0, 0, .6); }
+    .code4-map-circle-icon-border-8 { border: 1px solid rgba(0, 0, 0, .7); }
+
+    .code4-map-marker {
+      opacity: 1;
+      animation-name: fadeInOpacitySlide;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: .25s;
+    }
+
+    @keyframes fadeInOpacity {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeInOpacitySlide {
+        0% {
+            opacity: 0;
+
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id='container'>
+    <div id='map'></div>
+    <div id='search'>
+      <div id='search-input-group'>
+        <input id='search-input' autocomplete='off' type='text' placeholder='Caută secții de votare'></input>
+        <button id='search-clear-btn' hidden>X</button>
+      </div>
+      <ul id='suggestions' hidden></ul>
+    </div>
+  </div>
+  <script src='dist/index.js' charset='utf-8'></script>
+</body>
+
+</html>

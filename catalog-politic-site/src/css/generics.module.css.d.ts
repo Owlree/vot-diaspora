@@ -33,6 +33,8 @@ declare const styles: {
   readonly "hideSmall": string;
   readonly "hideLarge": string;
   readonly "catpolFlexCenter": string;
+  readonly "vdSection": string;
+  readonly "vdSectionLight": string;
 };
 export = styles;
 

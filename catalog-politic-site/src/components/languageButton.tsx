@@ -95,6 +95,7 @@ export default (
    */
   const changeLanguage = function(locale: string) {
     const newPathname = getNewPathname(locale, window.location.pathname);
+    console.log(newPathname);
     if (newPathname !== window.location.pathname) {
       window.history.pushState({}, 'English', newPathname);
       i18n.changeLanguage(locale);
@@ -102,7 +103,14 @@ export default (
   };
 
   return (
-    <button {...props} onClick={(e: React.MouseEvent<HTMLButtonElement>) => { changeLanguage(locale); onClick(e) }}>
+    <button
+      {...props}
+      onClick={
+        (e: React.MouseEvent<HTMLButtonElement>) => {
+          changeLanguage(locale); onClick(e);
+        }
+      }
+    >
       {children}
     </button>
   );

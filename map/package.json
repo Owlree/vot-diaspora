@@ -1,0 +1,17 @@
+{
+  "name": "vd-map",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/leaflet": "^1.5.2",
+    "leaflet": "^1.5.1",
+    "ts-loader": "^6.2.0",
+    "typescript": "^3.6.3"
+  }
+}

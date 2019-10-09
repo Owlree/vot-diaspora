@@ -1,14 +1,18 @@
 @import '../../css/variables.css';
 
-.header {
-  margin: 37px 0;
-  display: flex;
-  align-items: center;
+header {
+  background-color: var(--color-primary);
+  position: fixed;
+  width: 100%;
+  padding: 0.2em 0;
+  z-index: 100;
+  border-top: 2px solid var(--color-secondary);
 }
 
-.logo {
-  width: 100px;
-  margin-right: auto;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .menu ol {
@@ -24,9 +28,6 @@
   padding: 10px 20px;
   border-radius: 3px;
 
-  font-size: 16px;
-  font-weight: semibold;
-
   text-align: center;
 
   color: white;
@@ -36,13 +37,11 @@
 
 @media (max-width: 1023px) {
 
-  .link.special { margin: 10px; }
-
   .menu {
     /* Sizings */
     box-sizing: border-box;
-    padding: 37px 6vw;
-    max-width: 25rem;
+    padding: 0.2em 6vw;
+    max-width: 15em;
     width: 100%;
     height: 100vh;
 
@@ -53,43 +52,45 @@
 
     /* Styling */
     background-color: var(--color-primary);
-    box-shadow: -30px 0px 30px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: -15px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    border-top: 2px solid var(--color-secondary);
 
     /* Layout */
     display: flex;
     justify-content: flex-end;
+
+    /* Animations */
+    transform: translateX(100%);
+  }
+
+  /* Instead of hiding the menu, we keep it slided out */
+  .slided-in {
+    transform: none;
+    transition: transform .25s ease-in-out;
+  }
+
+  #hamburger-toggle {
+    border-radius: 1.5em;
+    background-color: var(--color-primary);
+    width: 3em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+  }
+
+  header {
+    background: none;
   }
 }
 
 @media (min-width: 1024px) {
-
-  .menu ol {
-    flex-direction: row;
-  }
-
-  .logo {
-    width: 140px;
-  }
-
-  li {
-    margin: 0 5px;
-  }
-
-  .special {
-    text-decoration: none;
-  }
+  .menu ol { flex-direction: row; }
+  li { margin: 0 5px; }
 }
-
 
 /* Only use hover on devices that support it */
 @media not all and (hover: none) {
-
-  .link:hover {
-    text-decoration: underline;
-  }
-
-  /* special has a button-like aspect, avoid text-decoration for consistency */
-  .special:hover {
-    text-decoration: none;
-  }
+  .link:hover { text-decoration: underline; }
 }

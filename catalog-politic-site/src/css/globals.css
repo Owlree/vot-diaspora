@@ -1,13 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600&display=swap');
 @import './variables.css';
 
 /* Typography */
-html { font-family: 'Titillium Web', sans-serif; }
+html { font-family: 'Titillium Web', sans-serif; font-size: 20px; }
 input, textarea, button { font-family: inherit; }
-      h1 { font-weight: semibold; font-size: 48px; line-height: 68px; }
-      h2 { font-weight: semibold; font-size: 39px; line-height: 55px; }
-.tagline { font-weight: semibold; font-size: 31px; line-height: 43px; }
-       p { font-weight: regular;  font-size: 16px; line-height: 24px; }
+      h1 { font-weight: 300;  font-size: 2.2em; }
+      h2 { font-weight: 600;  font-size: 1.9em; }
+      h3 { font-weight: 600;  font-size: 1.6em; }
+      h3 { font-weight: 600;  font-size: 1.5em; }
+   p, li { font-weight: 300;  font-size: 1em; }
+
+h3:after {
+    content:' ';
+    display: block;
+    border-bottom: 1px solid var(--color-primary);
+    opacity: .1;
+    width: 75%;
+}
+
+h1, h2 { text-transform: uppercase; text-align: center; }
 
 /* Layout */
 body { margin: 0; }
@@ -17,22 +28,9 @@ a { text-decoration: none; }
 
 /* Gradient background */
 .main-container {
-  background: radial-gradient(
-    100vw 100vh ellipse at 100vw 0,
-    var(--color-secondary) 0%,
-    var(--color-primary) 100%);
+  background-color: var(--color-primary);
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
-}
-@media (max-width: 1029px) {
-  .main-container {
-    background: radial-gradient(
-      200vw 200vh ellipse at 200vw 0,
-      var(--color-secondary) 0%,
-      var(--color-primary) 100%);
-    background-position: -40vw 0;
-    background-size: 200vw 200vh;
-  }
 }
 
 button {

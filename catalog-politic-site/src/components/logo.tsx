@@ -3,17 +3,17 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-export default () => {
+export default (props: any) => {
   const data = useStaticQuery(graphql `
     query {
       placeholderImage: file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 140) {
+          fluid(maxWidth: 255) {
             ...GatsbyImageSharpFluid_withWebp_noBase64
           }
         }
       }
     }
   `)
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img {...props} fluid={data.placeholderImage.childImageSharp.fluid}/>
 };

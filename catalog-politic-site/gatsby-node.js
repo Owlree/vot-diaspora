@@ -55,7 +55,7 @@ exports.onCreatePage = ({
     const addTrailingSlash = (s) => {
       if (s[s.length - 1] !== '/') return `${s}/`;
       return s;
-    }
+    };
 
     /**
      * Adds a locale prefix to a given path
@@ -87,8 +87,10 @@ exports.onCreatePage = ({
         }
       }
 
+      // Get the localized version of the path
       const localizedPath = addLocalePrefix(locale, page.path);
 
+      // Create the localized version of the page
       createPage({
         ...page,
 
@@ -103,7 +105,7 @@ exports.onCreatePage = ({
       });
 
       // Gatsby develop falls into an infinite loop if /404.html/page-data.json
-      // does not exist, thus we're recreating the page here (with default 
+      // does not exist, thus we're recreating the page here (with default
       // locale)
       if (page.path === '/404.html' && index === 0) {
         createPage({

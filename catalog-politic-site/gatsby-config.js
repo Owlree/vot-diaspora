@@ -6,25 +6,17 @@ module.exports = {
     author: `Code for Romania`,
     locales: ['ro', 'en'], // First locale is assumed to be the default
     menuLinks: [{
-      name: 'Politicians',
-      path: '/politicieni',
+      name: 'How to Vote',
+      path: '#cum-votezi',
       special: false
     }, {
-      name: 'Parties',
-      path: '/partide',
+      name: 'Map',
+      path: '#harta',
       special: false
     }, {
-      name: 'Data',
-      path: '/date',
+      name: 'About',
+      path: '#despre',
       special: false
-    }, {
-      name: 'Visualisations',
-      path: '/vizualizari',
-      special: false
-    }, {
-      name: 'Presidential election',
-      path: '/prezidentiale',
-      special: true
     }]
   },
   plugins: [
