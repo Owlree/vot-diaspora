@@ -1,5 +1,5 @@
-# Catalog Politic Web App
-This is the web app component of [Catalog Politic](https://code4.ro/ro/apps/catalog-politic/). You see the live version [here](http://catalogpolitic.ro/).
+# Vot Diaspora Web App
+This is the web app component of [Vot Politic](https://code4.ro/en/apps/vot-diaspora/). You see the live version [here](http://votdiaspora.ro/).
 
 ## Tech Stack
 
