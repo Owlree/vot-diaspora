@@ -1,5 +1,5 @@
 # Vot Diaspora Web App
-This is the web app component of [Vot Politic](https://code4.ro/en/apps/vot-diaspora/). You see the live version [here](http://votdiaspora.ro/).
+This is the web app component of [Vot Diaspora](https://code4.ro/en/apps/vot-diaspora/). You see the live version [here](http://votdiaspora.ro/).
 
 ## Tech Stack
 
