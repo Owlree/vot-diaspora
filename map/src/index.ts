@@ -1,214 +1,289 @@
 import * as L from 'leaflet';
-import { locations } from './locations';
+import { locations, Location, MakeHtml, MakeTitle, Search, GetClosest } from './locations';
+import * as Lflth from './lflth';
+import * as Webh from './webh';
+import * as Elements from './elements';
 
-/**
- * Converts a value from degrees to radians.
- *
- * @param {number} value in degrees
- * @return {number} same value converted to radians
- */
-function ToRadians(degrees: number) {
-    return degrees * Math.PI / 180;
-}
 
-/**
- * Computes the distance between two locations on a sphere using the
- * harvesine formula.
- *
- * https://en.wikipedia.org/wiki/Haversine_formula
- *
- * @param {[number, number]} [lat1, lng1] [latitude of the first location,
- *                           longitude of the first location]
- * @param {[number, number]} [lat2, lng2] [latitude of the second location,
- *                           longitude of the second location]
- * @return {number} Great circle distance between the two locations
- */
-function GetGreatCircleDistance(
-  [lat1, lng1]: [number, number], [lat2, lng2]: [number, number]) {
-  const φ1: number = ToRadians(lat1);
-  const φ2: number = ToRadians(lat2);
-
-  const Δφ: number = ToRadians(lat2 - lat1);
-  const Δλ: number = ToRadians(lng2 - lng1);
-
-  // Harvesine formula
-  const h:number = Math.pow(Math.sin(Δφ / 2), 2) +
-                   Math.cos(φ1) * Math.cos(φ2) *
-                   Math.pow(Math.sin(Δλ/2), 2);
-
-  // Solve for distance
-  const d: number = 2 * Math.atan2(Math.sqrt(h), Math.sqrt(1 - h));
-
-  return d;
-}
-
-/**
- * Moves the map to the given coordinates.
- *
- * Instantly teleports if the distance is too great, flies otherwise.
- *
- * @param {[]} latlng Coordinates of the new location
- * @param {number} zoom  The zoom to use for the new location
- */
-function FlyOrTeleportToCoordinates(
-  [lat, lng]: [number, number], zoom: number, threshold: number = 0.02) {
-  const center_coords: [number, number] =
-    [map.getCenter().lat, map.getCenter().lng];
-  const d = GetGreatCircleDistance(center_coords, [lat, lng]);
-  if (d < threshold) {
-    map.flyTo([lat, lng], zoom);
-  } else {
-    map.setView([lat, lng], zoom);
-  }
-}
-
-function GetIconForZoomLevel(zoomLevel: number) {
-
-    if (zoomLevel > 8) {
-        return L.icon({
-            iconUrl: 'marker.png',
-            iconSize: [20, 39],
-            iconAnchor: [10, 39],
-            className: 'code4-map-marker'
-        });
-    } else {
-        return L.divIcon({
-            className: `code4-map-circle-icon code4-map-circle-icon-border-${Math.floor(zoomLevel)}`,
-            iconSize: L.point(1.5 * zoomLevel, 1.5 * zoomLevel)
-        });;
-    }
-}
+const prefix: string = '/';
+const earthBounds: L.LatLngBounds = L.latLngBounds([-90, -180], [90, 180]);
+const tileServerUrl: string =
+  'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}@2x.png?lang=ro';
 
 /**
  * Refreshes all the markers in the map based on the zoom level.
  *
  * @param {L.Map} The map to update.
- *
  */
-function RefreshAllMarkersInMap(map: L.Map) {
-  map.eachLayer(function (layer: L.Layer) {
-    if (layer instanceof L.Marker) {
-      if (!layer.getPopup().isOpen()) {
-        return layer.setIcon(GetIconForZoomLevel(map.getZoom()));
+const RefreshAllMarkers = (() => {
+
+  let previousZoomFloor: number = -1;
+
+  const RefreshAllMarkers = (map: L.Map) => {
+
+    const zoom: number = map.getZoom();
+
+    // The floor of the zoom in the only meaningful change for us
+    if (previousZoomFloor === Math.floor(zoom)) { return; }
+
+    previousZoomFloor = Math.floor(zoom);
+
+    for (const key in markers) {
+      const marker: L.Marker = markers[key];
+      if (marker.getPopup().isOpen()) {
+        marker.setIcon(Lflth.GetCloseIcon());
+      } else {
+        marker.setIcon(Lflth.GetIconForZoomLevel(map.getZoom()));
       }
     }
-    return layer;
-  });
-}
+  }
 
-let markers: {[id: number]: L.Marker} = {};
-
-const tileServerUrl =
-    'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}@2x.png?lang=ro';
+  return RefreshAllMarkers;
+})();
 
 // Setup the Leaflet.js map
 const map = L.map('map', {
-  zoomSnap: 0
+  zoomSnap: 0,
+  attributionControl: false, // We add our own attribution
+  maxBounds: earthBounds
+});
+
+// Add a tile layers
+L.tileLayer(tileServerUrl, {
+  updateWhenZooming: false,
+  minZoom: 3
+}).addTo(map);
+
+// Do not allow the user to scroll ourside the bounds
+map.on('drag', function() {
+    map.panInsideBounds(earthBounds, { animate: false });
 });
 
 // Set initial center and zoom
 map.setView([48, 12], 5);
 
-// Remove the zoom control, as we don't want one
+// Remove the zoom control (we don't want it)
 map.removeControl(map.zoomControl);
 
-// Add a tile layers
-L.tileLayer(tileServerUrl, {
-  updateWhenZooming: false
-}).addTo(map);
+// Add a custom attribution control
+{
+  const attributionControl = new L.Control.Attribution({
+    position: 'topright'
+  });
+
+  attributionControl.addAttribution(
+    '<a href=\'https://code4.ro/\'>Code for Romania</a>');
+
+  map.addControl(attributionControl);
+}
+
+let geolocation: L.LatLngExpression | undefined = undefined;
 
 // Add all markers to the map
-for (const location of locations.markers) {
-  markers[location.id] = L.marker([location.lat, location.lng], {
-    'title': location.title,
-    'icon': GetIconForZoomLevel(14)
-  }).bindPopup(
-    `
-      <h2>${location.title}</h2>
-      <p>${location.adr}, ${location.country}</p>
-    `, {
-    offset: [0, -34]
+let markers: {[id: number]: L.Marker} = {};
+for (const location of locations) {
+  const id = location.id;
+  markers[id] = L.marker(location.latLng, {
+    'title': MakeTitle(location),
+    'icon': Lflth.GetIconForZoomLevel(14)
+  }).bindPopup(MakeHtml(location), {
+      offset: [0, -34]
   }).addTo(map).on('click', (e: L.LeafletEvent) => {
+
+    // Push a state linking to the selected marker
+    window.history.pushState(
+      {id: id}, '', `${prefix}?id=${id}`);
+
+    // Change the title of the doc to reflect the marker selection
+    document.title = `Harta Vot Diaspora—${MakeTitle(location)}`;
+
     // Zoom in on the marker if the the zoom is small enough
     if (map.getZoom() <= 8) {
+
+      // Prevent the popup from opening (will open it after zooming in)
       e.target.closePopup();
-      map.flyTo([location.lat, location.lng], 8.0000001);
-      const f = () => {
-        e.target.openPopup();
-        map.off('zoomend', f);
-      };
-      // Open popup when we're done zooming
+
+      // Zoom it to the location
+      map.flyTo(location.latLng, 8.0000001);
+
+      // Delay popup opening for when the zoom ends
+      const f = () => { e.target.openPopup(); map.off('zoomend', f); };
       map.on('zoomend', f);
+    } else {
+      e.target.openPopup();
     }
   }).on('popupclose', (e: L.LeafletEvent) => {
-    e.target.setIcon(GetIconForZoomLevel(map.getZoom()));
+
+    // On a marker which has its popup opened, we prevent it from using the
+    // circle view even when zoomed out. When the popup closes, we refresh the
+    // icon, so that it switches to the circle view if needed.
+    e.target.setIcon(Lflth.GetIconForZoomLevel(map.getZoom()));
   });
 }
 
-map.on('zoomend', () => {RefreshAllMarkersInMap(map)});
-RefreshAllMarkersInMap(map); // Update markers once
+// Move to a marker specified in the url parameters (if any)
+{
+  const urlVariables = Webh.GetUrlVars();
+  if ('id' in urlVariables) {
+    const id: number = parseInt(urlVariables.id);
+    if (id in markers) {
+      map.setView(markers[id].getLatLng(), 8.0000001, {
+        animate: false
+      });
+      markers[id].openPopup();
+    }
+  } else {
+    map.closePopup();
+  }
+}
 
-// Get references to the relevant HTML elements on page
-const searchInputElement: HTMLInputElement =
-  document.getElementById('search-input') as HTMLInputElement;
-const searchClearBtnElement: HTMLButtonElement =
-  document.getElementById('search-clear-btn') as HTMLButtonElement;
-const suggestionsElement: HTMLElement = document.getElementById('suggestions');
+// Update markers appearance based on zoom level
+{
+  map.on('zoomend', () => {RefreshAllMarkers(map)});
+  RefreshAllMarkers(map);
+}
 
-const { update } = new class {
-  value: string = searchInputElement.value;
-  update = () => {
-    const value = searchInputElement.value.toLowerCase();
 
-    // Do not update suggestions if value did not change
-    if (value === this.value) { return; }
-    this.value = value.toLowerCase();
+Elements.locateMeButton.addEventListener('click', (() => {
 
-    // Reset the suggestions
-    suggestionsElement.innerHTML = '';
-    suggestionsElement.hidden = true;
+  // We create a marker to indicate the user's position, we use this static
+  // reference to make sure there is at most one instance of this marker at any
+  // given time
+  let marker: L.Marker | undefined = undefined;
 
-    // Display the clear button if field is not empty
-    searchClearBtnElement.hidden = (value.length === 0);
+  const GetMarker = () => {
+    if (marker === undefined) {
+      marker = L.marker(geolocation, {
+        'icon': L.icon({
+          iconUrl: 'geo.png',
+          iconSize: [20, 20],
+          iconAnchor: [10, 10]
+        })
+      });
+      marker.addTo(map);
+    }
+    return marker;
+  }
 
-    // Do not provide suggstions for strings that are too short
-    if (value.length <= 1) { return; }
-
-    for (const location of locations.markers) {
-      const fullString = `${location.title}, ${location.adr}, ${location.country}`;
-      if (fullString.toLowerCase().indexOf(value) >= 0) {
-
-        const element = document.createElement('li');
-        element.innerText = fullString;
-        suggestionsElement.appendChild(element);
-        suggestionsElement.hidden = false;
-
-        element.addEventListener('click', () => {
-
-          // Insert the name in the search input
-          searchInputElement.value = element.innerText;
-
-          // Move to selected suggestion
-          FlyOrTeleportToCoordinates([location.lat, location.lng], 14);
-
-          // Open the popup of the selected marker
-          markers[location.id].openPopup();
-
-          // Reveal the map
-          suggestionsElement.hidden = true;
-        });
-      }
+  return function() {
+    if ('geolocation' in window.navigator) {
+      window.navigator.geolocation.getCurrentPosition((position) => {
+        geolocation = {
+          lat: position.coords.latitude, 
+          lng: position.coords.longitude
+        };
+        map.setView(geolocation, Math.max(16, map.getZoom()));
+        GetMarker().setLatLng(geolocation);
+        refreshAutocomplete();
+        if (Elements.searchInputElement.value.length === 0) {
+          Elements.suggestionsElement.hidden = false;
+        }
+      });
+    } else {
+      // TODO(owlree) Treat geolocation unavailable here
     }
   }
-};
+})());
+
+const refreshAutocomplete = (() => {
+  let currentValue: string = Elements.searchInputElement.value.toLowerCase();
+  return () => {
+    const value = Elements.searchInputElement.value.toLowerCase();
+
+    // Display the clear button if field is not empty
+    Elements.searchClearBtnElement.hidden = (value.trim().length === 0);
+
+    let results: Array<Location> = [];
+    let bounds: Array<L.LatLngExpression> = [];
+
+    if (value.length === 0) {
+      results = GetClosest(geolocation, map, 5);
+    } else if (value.length === 1) {
+      results = [];
+    } else {
+      if (value === currentValue) return;
+      currentValue = value;
+      results = Search(currentValue);
+    }
+
+    if (value.length === 0) {
+      bounds.push(geolocation);
+    }
+
+    Elements.suggestionsElement.innerHTML = '';
+    for (const location of results) {
+      const element: HTMLElement = document.createElement('li');
+      element.innerHTML = MakeHtml(location);
+      element.className = 'with-hover';
+      Elements.suggestionsElement.appendChild(element);
+
+      element.addEventListener('click', () => {
+
+        Elements.suggestionsElement.hidden = true;
+
+        // Clicking a search result is the same as clicking the marker itself
+        markers[location.id].fire('click');
+
+        const toBounds = bounds.concat([
+          [location.latLng.lat, location.latLng.lng]
+        ]) as L.LatLngBoundsLiteral;
+
+        // Center the marker on map
+        map.flyToBounds(toBounds, { animate: false });
+        map.setZoom(map.getZoom() - 1, { animate: true });
+      });
+
+      // A bit hackish (since Leaflet does not expose its HTML elements),
+      // but nice effect
+      element.addEventListener('mouseenter', () => {
+        // @ts-ignore
+        markers[location.id]._icon.style.filter = 'brightness(1.5)';
+      });
+      element.addEventListener('mouseleave', () => {
+        // @ts-ignore
+        markers[location.id]._icon.style.filter = ''; 
+      })
+    }
+  }
+})();
+
+Elements.searchInputElement.addEventListener('focus', () => {
+  Elements.suggestionsElement.hidden = false;
+});
+
+Elements.mapElement.addEventListener('click', () => {
+  Elements.suggestionsElement.hidden = true;
+});
 
 // Bind the update method to relevant events
-searchInputElement.addEventListener('keyup', update);
-searchInputElement.addEventListener('change', update);
-searchInputElement.addEventListener('focus', update);
+Elements.searchInputElement.addEventListener('keyup', refreshAutocomplete);
+Elements.searchInputElement.addEventListener('change', refreshAutocomplete);
+Elements.searchInputElement.addEventListener('focus', refreshAutocomplete);
 
 // Add functionality to the 'clear' button
-searchClearBtnElement.addEventListener('click', () => {
-  searchInputElement.value = '';
-  searchInputElement.dispatchEvent(new Event('change'));
+Elements.searchClearBtnElement.addEventListener('click', () => {
+  Elements.searchInputElement.value = '';
+  Elements.searchInputElement.dispatchEvent(new Event('change'));
+});
+
+map.on('click', () => {
+  // Push a state linking to root
+  if (document.title !== 'Harta Vot Diaspora') {
+    window.history.pushState({}, '', `${prefix}`);
+    document.title = `Harta Vot Diaspora`;
+  }
+});
+
+window.addEventListener('popstate', (event: PopStateEvent) => {
+  if ('id' in event.state) {
+    markers[event.state.id].openPopup();
+  } else {
+    map.closePopup();
+  }
+});
+
+window.addEventListener('keyup', (e) => {
+  if (e.code === 'Slash') {
+    Elements.searchInputElement.focus();
+  }
 });

@@ -35,14 +35,12 @@ function IndexPage() {
         id='cum-votezi'
         >
         <div className={genericStyles.catpolRow}>
-          <div className={genericStyles.catpolCol12}>
+          <div className={
+            cn(genericStyles.catpolCol8, genericStyles.catpolColOffset2)
+          }>
             <h2>{t('How to Vote')}</h2>
+            <div dangerouslySetInnerHTML={{__html: t('HowToVoteBody')}}></div>
           </div>
-          <div
-            className={
-              cn(genericStyles.catpolCol8, genericStyles.catpolColOffset2)}
-            dangerouslySetInnerHTML={{__html: t('HowToVoteBody')}}
-          ></div>
         </div>
       </section>
       <section
@@ -59,7 +57,19 @@ function IndexPage() {
             <p>{t('MapMessage')}</p>
           </div>
         </div>
-        <iframe src='http://ec2-52-51-209-112.eu-west-1.compute.amazonaws.com:8070' style={{width:'100%', height: '65vh', border: 0}}></iframe>
+        <iframe src='http://localhost:8070/' allow='geolocation' style={{width:'100%', height: '65vh', border: 0}}></iframe>
+      </section>
+      <section className={
+        cn(genericStyles.vdSection, genericStyles.vdSectionLight)}
+      >
+        <div className={genericStyles.catpolRow}>
+          <div className={
+            cn(genericStyles.catpolCol8, genericStyles.catpolColOffset2)
+          }>
+            <h2>{t('Requestion a new station')}</h2>
+            <div dangerouslySetInnerHTML={{__html: t('StationRequestBody')}}></div>
+          </div>
+        </div>
       </section>
     </>
   );

@@ -8,7 +8,9 @@ module.exports = {
       'HeroBody': '<p>On November 10, 2019, presidential elections are taking place in Romania. Romanians everywhere have the right to choose their next president. If you live abroad, you can vote by mail or at the local polling station. Find out by using <i>Vot Diaspora</i> what procedure you must follow for registering to vote by mail or what documents you need to vot at the station.</p><p>If you decided to vote at your local station, it doesn\'t matter you are a resident or just visiting, you can use the map below to see which polling sations are closest to you. The presidential election will be taking place during three days for each voting round.</p>',
       'HowToVoteBody': '???',
       'Map of Polling Stations Abroad': 'Map of Polling Stations Abroad',
-      'MapMessage': 'Use the map below to find what is the closest polling station for you.'
+      'MapMessage': 'Use the map below to find what is the closest polling station for you.',
+      'Requestion a new station': 'Requestion a new station',
+      'StationRequestBody': 'StationRequestBody2'
     }
   },
   ro: {
@@ -63,7 +65,9 @@ module.exports = {
       <p>
         În ziua scrutinului trebuie să ai la tine, pentru a putea vota, unul din următoarele acte de identitate: cartea de identitate, cartea electronică de identitate, cartea de identitate provizorie, buletinul de identitate ori paşaportul diplomatic, paşaportul diplomatic electronic, paşaportul de serviciu, paşaportul de serviciu electronic, paşaportul simplu, paşaportul simplu electronic, paşaportul simplu temporar, titlul de călătorie, iar, în cazul elevilor din şcolile militare, carnetul de serviciu militar, valabile în ziua votării.
       </p>`,
-      'Map of Polling Stations Abroad': 'Harta secțiilor de votare'
+      'Map of Polling Stations Abroad': 'Harta secțiilor de votare',
+      'Requestion a new station': 'Înființarea unei noi secții',
+      'StationRequestBody': '<p>Înscrierea ta în registrul electoral ca cetățean care vrea să voteze în străinătate are și valoare de cerere de înființare de secție de votare. Autoritatea Electorala Permanentă poate cere Ministerului Afacerilor Externe înființarea de secții de votare suplimentare pe lângă cele constituite, de regulă, în sediile misiunilor diplomatice și ale oficiilor consulare ale României din diaspora. Cu acordul autorităților din țara respectivă, AEP poate cere acest lucru pentru localitățile sau grupurile de localități unde au înregistrat cel puțin 100 de alegători. După consultări, AEP stabilește sediile secțiilor de votare din străinătate. Pentru detalii suplimentare, puteți consulta Legea 148/2019, Articolele 1-8 aici.</p>'
     }
   }
 };

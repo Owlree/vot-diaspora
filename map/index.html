@@ -7,8 +7,9 @@
   <title>Harta Vot Diaspora</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+  <link href='/iconography.css' rel='stylesheet'>
+  <base target="_parent">
   <style>
-
     body {
       margin: 0;
       font-family: 'Titillium Web', serif;
@@ -16,30 +17,39 @@
     }
 
     #container {
-      width: 100vw;
-      height: 100vh;
+      width: 100vw; height: 100vh;
       overflow: hidden;
     }
 
     #map {
-      height: 100vh;
-      width: 100vw;
+      position: fixed; /* Prevent the map from moving up or down on mobile */
+      left: 0; top: 0;
 
-      position: absolute;
-      left: 0;
-      top: 0;
+      width: 100vw; height: 100vh;
+    }
+
+    #search-container {
+
+      /* Positioning */
+      position: fixed;
+      left: 1vw; top: 1vw;
+      z-index: 900;
+
+      /* Layout */
+      display: flex;
     }
 
     #search {
-      position: fixed;
-      left: 1vw;
-      top: 1vw;
-      z-index: 900;
-      background-color: #FC0;
+      /* Sizing */
       width: 50vw;
       max-width: 448px;
+
+      /* Layout */
       display: flex;
       flex-direction: column;
+
+      /* Styling */
+      background-color: #FC0;
     }
 
     #search-input-group {
@@ -81,17 +91,24 @@
       overflow-x: hidden;
       order: 2;
       padding: 0;
-
     }
 
     #suggestions li {
       color: #352245;
       font-size: 1em;
       padding: .4em 1em;
-      cursor: pointer;
     }
 
-    #search-clear-btn {
+    #suggestions li h2 {
+      font-size: 1em;
+      margin: 0;
+    }
+
+    #suggestions li p {
+      margin: 0;
+    }
+
+    .search-input-group-button {
       /* Typography */
       font-size: 1em;
 
@@ -108,25 +125,38 @@
     }
 
     @media (max-width: 1024px) {
-      #search {
+      #search-container {
         width: 98vw;
         max-width: unset;
+        top: unset;
+        bottom: 1vw;
+        align-items: flex-end;
+      }
+
+      #search {
+        flex: auto;
+      }
+
+      #search-input-group {
+        order: 2;
       }
 
       #suggestions {
         border: none;
         border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+        order: 1;
       }
     }
 
     /* Only use hover on devices that support it */
     @media not all and (hover: none) {
-      #suggestions li:hover {
+      #suggestions li.with-hover:hover {
         background-color: #352245;
         color: #FC0;
+        cursor: pointer;
       }
 
-      #search-clear-btn:hover {
+      .search-input-grou-button:hover {
         background-color: #352245;
         color: #FC0;
       }
@@ -180,19 +210,66 @@
         }
     }
 
+    /* Leaflet overrides */
+    .leaflet-control-attribution {
+      background: none !important;
+      font-size: 1.2em !important;
+      font-family: 'Titillium Web', serif;
+      margin: 0.5vw 1vw !important;
+      opacity: 0.5;
+      background-color: #FC0 !important;
+      font-style: italic;
+    }
+
+    .leaflet-control-attribution:hover {
+      opacity: 1;
+    }
+
+    .leaflet-control-attribution a {
+      color: #352245;
+    }
+
+    .leaflet-popup {
+      max-width: 90vw;
+    }
+
+    .leaflet-popup-content-wrapper {
+      border-radius: 0;
+      box-shadow: none;
+      /*border: 1px solid black;*/
+      background-color: rgba(255, 204, 0, .9);
+      color: #352245;
+      margin-bottom: -10px;
+      font-family: 'Titillium Web', serif;
+    }
+
+    .leaflet-popup-tip {
+      box-shadow: none;
+      background-color: black;
+      display: none;
+    }
+
+    .leaflet-popup-close-button {
+      color: #352245 !important;
+    }
+
   </style>
 </head>
 
 <body>
   <div id='container'>
     <div id='map'></div>
-    <div id='search'>
-      <div id='search-input-group'>
-        <input id='search-input' autocomplete='off' type='text' placeholder='Caută secții de votare'></input>
-        <button id='search-clear-btn' hidden>X</button>
+    <div id='search-container'>
+      <div id='search'>
+        <div id='search-input-group'>
+          <input id='search-input' autocomplete='off' type='text' placeholder='Caută secții de votare'></input>
+          <button class='search-input-group-button' id='search-clear-btn' hidden>X</button>
+          <button class='search-input-group-button' id='locate-me-button'><i class='icon-target'></i></button>
+        </div>
+        <ul id='suggestions' hidden></ul>
       </div>
-      <ul id='suggestions' hidden></ul>
     </div>
+
   </div>
   <script src='dist/index.js' charset='utf-8'></script>
 </body>

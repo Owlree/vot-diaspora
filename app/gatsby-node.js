@@ -72,6 +72,8 @@ exports.onCreatePage = ({
     // Delete initial page
     deletePage(page);
 
+    if (page.path === '404') return;
+
     // Create a new one for each language
     config.siteMetadata.locales.forEach((locale, index) => {
 

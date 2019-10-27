@@ -13,5 +13,6 @@
     "leaflet": "^1.5.1",
     "ts-loader": "^6.2.0",
     "typescript": "^3.6.3"
-  }
+  },
+  "devDependencies": {}
 }
