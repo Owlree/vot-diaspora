@@ -21,7 +21,7 @@
       overflow: hidden;
     }
 
-    #map {
+    #the-map {
       position: fixed; /* Prevent the map from moving up or down on mobile */
       left: 0; top: 0;
 
@@ -113,15 +113,16 @@
       font-size: 1em;
 
       /* Sizing */
-      padding: 0 1em;
+      padding: 0 0.5em;
 
       /* Styling */
       border: none;
       background: none;
-      background-color: rgba(0, 0, 0, 0.1);
       border-radius: 3px;
       color: #352245;
       cursor: pointer;
+
+
     }
 
     @media (max-width: 1024px) {
@@ -156,10 +157,11 @@
         cursor: pointer;
       }
 
-      .search-input-grou-button:hover {
+      .search-input-group-button:hover {
         background-color: #352245;
         color: #FC0;
       }
+
     }
 
     .code4-map-circle-icon {
@@ -173,15 +175,6 @@
       animation-timing-function: ease-in;
       animation-duration: 0.25s;
     }
-
-    .code4-map-circle-icon-border-1 { border: 1px solid rgba(0, 0, 0, 0); }
-    .code4-map-circle-icon-border-2 { border: 1px solid rgba(0, 0, 0, .1); }
-    .code4-map-circle-icon-border-3 { border: 1px solid rgba(0, 0, 0, .2); }
-    .code4-map-circle-icon-border-4 { border: 1px solid rgba(0, 0, 0, .3); }
-    .code4-map-circle-icon-border-5 { border: 1px solid rgba(0, 0, 0, .4); }
-    .code4-map-circle-icon-border-6 { border: 1px solid rgba(0, 0, 0, .5); }
-    .code4-map-circle-icon-border-7 { border: 1px solid rgba(0, 0, 0, .6); }
-    .code4-map-circle-icon-border-8 { border: 1px solid rgba(0, 0, 0, .7); }
 
     .code4-map-marker {
       opacity: 1;
@@ -258,16 +251,18 @@
 
 <body>
   <div id='container'>
-    <div id='map'></div>
+    <div id='the-map'></div>
     <div id='search-container'>
-      <div id='search'>
-        <div id='search-input-group'>
-          <input id='search-input' autocomplete='off' type='text' placeholder='Caută secții de votare'></input>
-          <button class='search-input-group-button' id='search-clear-btn' hidden>X</button>
-          <button class='search-input-group-button' id='locate-me-button'><i class='icon-target'></i></button>
+      <form id='search-form'>
+        <div id='search'>
+          <div id='search-input-group'>
+            <input id='search-input' autocomplete='off' type='text' placeholder='Caută secții de votare'></input>
+            <button class='search-input-group-button' id='search-form-button'><i class='icon-search'></i></button>
+            <button class='search-input-group-button' id='locate-me-button'><i class='icon-target'></i></button>
+          </div>
+          <ul id='suggestions' hidden></ul>
         </div>
-        <ul id='suggestions' hidden></ul>
-      </div>
+      </form>
     </div>
 
   </div>

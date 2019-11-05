@@ -8,4 +8,5 @@ export const suggestionsElement: HTMLElement =
 document.getElementById('suggestions');
 export const locateMeButton: HTMLButtonElement =
   document.getElementById('locate-me-button') as HTMLButtonElement;
-export const mapElement: HTMLElement = document.getElementById('map');
+export const searchFormElement: HTMLFormElement =
+  document.getElementById('search-form') as HTMLFormElement;
