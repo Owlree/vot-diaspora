@@ -1,7 +1,7 @@
 import * as Leaflet from 'leaflet';
 
-const APP_ID = 'Q5uIy4IiCbHhfRyP3OX3';
-const APP_CODE = '-axcbN41fdFRDa5l21E44g';
+const APP_ID = '';
+const APP_CODE = '';
 
 export interface Result {
   latLng: Leaflet.LatLng,
