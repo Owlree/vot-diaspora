@@ -89,11 +89,33 @@ window.addEventListener('load', async () => {
     if (query.length < 3) return;
 
     // Geocode the query
-    const results = await Data.Geocode(query);
-    for (const result of results) {
-      map.fitBounds(result.bounds);
-      Elements.searchInputElement.value = result.label;
-      break;
+    try {
+      const results = await Data.Geocode(query);
+
+      Elements.suggestionsElement.innerHTML = '';
+      if (results.length > 1) {
+        Elements.suggestionsElement.hidden = false;
+        for (const result of results) {
+          const sugggestionElement = document.createElement('li');
+          sugggestionElement.innerText = result.label;
+          sugggestionElement.classList.add('with-hover');
+          sugggestionElement.addEventListener('click', () => {
+            map.fitBounds(result.bounds);
+          });
+          Elements.suggestionsElement.appendChild(sugggestionElement);
+        }
+      } else if (results.length === 0) {
+        Elements.suggestionsElement.hidden = false;
+        const messageElement = document.createElement('li');
+        messageElement.innerText = 'Căutarea nu a returnat niciun rezultat';
+        Elements.suggestionsElement.appendChild(messageElement);
+      } else {
+        map.fitBounds(results[0].bounds);
+        Elements.searchInputElement.value = results[0].label;
+      }
+
+    } catch(error) {
+      console.error(error);
     }
   });
 });

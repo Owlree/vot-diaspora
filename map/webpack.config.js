@@ -1,7 +1,9 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.ts',
+  mode: 'development',
   module: {
     rules: [{
       use: 'ts-loader',
@@ -17,5 +19,11 @@ module.exports = {
   },
   optimization: {
     minimize: false
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      HERE_MAPS_APP_ID: JSON.stringify(process.env.HERE_MAPS_APP_ID),
+      HERE_MAPS_APP_CODE: JSON.stringify(process.env.HERE_MAPS_APP_CODE)
+    })
+  ]
 };

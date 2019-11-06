@@ -99,12 +99,15 @@ export const CENTER_OF_THE_WORLD: Leaflet.LatLng = new Leaflet.LatLng(48, 12);
 export const TILE_SERVER_URL: string =
   'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}@2x.png?lang=ro';
 
+/**
+ * Calls our Here Maps SDK to obtain coordinates of address
+ */
 export async function Geocode(query: string): Promise<Array<HereMaps.Result>> {
   return new Promise<Array<HereMaps.Result>>((resolve, reject) => {
     HereMaps.Geocode(query).then((results: Array<HereMaps.Result>) => {
       resolve(results);
-    }).catch(() => {
-      reject();
+    }).catch((error) => {
+      reject(error);
     });
   });
 }

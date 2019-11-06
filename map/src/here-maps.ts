@@ -1,7 +1,8 @@
 import * as Leaflet from 'leaflet';
 
-const APP_ID = '';
-const APP_CODE = '';
+
+declare const HERE_MAPS_APP_ID: string;
+declare const HERE_MAPS_APP_CODE: string;
 
 export interface Result {
   latLng: Leaflet.LatLng,
@@ -11,8 +12,8 @@ export interface Result {
 
 export async function Geocode(query: string): Promise<Array<Result>> {
   const params: Map<string, string> = new Map<string, string>([
-    ['app_id', APP_ID],
-    ['app_code', APP_CODE],
+    ['app_id', HERE_MAPS_APP_ID],
+    ['app_code', HERE_MAPS_APP_CODE],
     ['searchText', query]
   ]);
 
@@ -61,7 +62,7 @@ export async function Geocode(query: string): Promise<Array<Result>> {
 
     http.addEventListener('error', function() {
       // TODO(owlree) Pass error here
-      reject();
+      reject('theere was an error');
     });
   })
 }
